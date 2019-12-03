@@ -1,6 +1,6 @@
-# Ayer
+<h1 align="center">Ayer</h1>
 
-> :desert_island: Ayer is a clean and elegant theme for Hexo, also responsive. If you have any queries or advice during the process of using, Please contact me! My email: shenyu@hotmail.com
+ :desert_island: Ayer is a clean and elegant theme for Hexo, also responsive. If you have any queries or advice during the process of using, Please contact me! My email: shenyu@hotmail.com
 
 
 ### [Preview](https://shen-yu.gitee.io)
