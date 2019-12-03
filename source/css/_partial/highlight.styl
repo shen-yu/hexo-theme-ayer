@@ -1,0 +1,148 @@
+highlight-background = #f6f8fa
+highlight-current-line = #efefef
+highlight-selection = #d6d6d6
+highlight-foreground = #4d4d4c
+highlight-comment = #8e908c
+highlight-red = #f2777a
+highlight-orange = #f99157
+highlight-yellow = #ffcc66
+highlight-green = #99cc99
+highlight-aqua = #66cccc
+highlight-blue = #6699cc
+highlight-purple = #cc99cc
+
+$code-block
+  background highlight-background
+  padding 1.5rem
+  margin 1.5rem 0
+  border-radius .4rem
+  overflow auto
+  color highlight-foreground
+
+$line-numbers
+  color highlight-comment
+
+.article-entry
+  pre, code
+    font-family inherit
+    text-shadow none
+  code
+    background highlight-background
+    padding .25rem
+    border-radius(.4rem)
+  pre
+    @extend $code-block
+    code
+      background none
+      padding 0
+  .highlight
+    @extend $code-block
+    pre
+      border none
+      margin 0
+      padding 0
+    table
+      margin 0
+      width auto
+      border none
+    td
+      border none
+      padding 0
+    figcaption
+      clearfix()
+      font-size 85%
+      color highlight-comment
+      line-height 1rem
+      margin-bottom 1rem
+      a
+        float right
+    .gutter
+      -webkit-user-select none
+      -moz-user-select none
+      -ms-user-select none
+      user-select none
+    .gutter pre
+      @extend $line-numbers
+      text-align right
+      padding-right 1.5rem
+    .line
+      height inherit
+    .line.marked
+      background highlight-selection
+  .gist
+    background highlight-background
+    .gist-file
+      border none
+      margin 0
+      .gist-data
+        background none
+        border none
+        .line-numbers
+          @extend $line-numbers
+          background none
+          border none
+        .line-data
+          padding 0 !important
+      .highlight
+        margin 0
+        padding 0
+        border none
+      .gist-meta
+        background highlight-background
+        color highlight-comment
+        padding 0
+        margin-top 1rem
+        a
+          font-weight normal
+          &:hover
+            text-decoration underline
+
+pre
+  .comment
+  .title
+    color highlight-comment
+  .variable
+  .attribute
+  .tag
+  .regexp
+  .ruby .constant
+  .xml .tag .title
+  .xml .pi
+  .xml .doctype
+  .html .doctype
+  .css .id
+  .css .class
+  .css .pseudo
+    color highlight-red
+  .number
+  .preprocessor
+  .built_in
+  .literal
+  .params
+  .constant
+    color highlight-orange
+  .class
+  .ruby .class .title
+  .css .rules .attribute
+    color highlight-green
+  .string
+  .value
+  .inheritance
+  .header
+  .ruby .symbol
+  .xml .cdata
+    color highlight-green
+  .css .hexcolor
+    color highlight-aqua
+  .function
+  .python .decorator
+  .python .title
+  .ruby .function .title
+  .ruby .title .keyword
+  .perl .sub
+  .javascript .title
+  .coffeescript .title
+    color highlight-blue
+  .keyword
+  .javascript .function
+    color highlight-purple

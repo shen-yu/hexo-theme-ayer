@@ -1,0 +1,7 @@
+<section class="outer">
+  <% if (site.tags.length){ %>
+    <h1 class="page-type-title"><%= __('tags') %></h1>
+    <%- list_tags({show_count: theme.show_count}) %>
+  <% } %>
+</section>
+

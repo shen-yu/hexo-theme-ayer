@@ -1,0 +1,89 @@
+
+// apple product
+//
+// macbook air
+color-macbook          = white
+color-macbook-darken   = darken(color-macbook, 5%)
+
+//
+// browser
+color-browser-light    = white
+color-browser-btns     =
+        close            #eb6b60
+        minimize         #f4be4f
+        maximize         #66c655
+
+scrolling-wrap-height  = 30rem
+
+//
+// macbook air
+.macbook 
+  position relative
+  .macbook-screen
+    position relative
+    background-color transparent
+    border-style solid
+    border-color color-macbook
+    border-radius 1rem
+    border-width 1.25rem
+    box-shadow 0 1rem 3rem rgba(black, .15), 0 0 .5rem rgba(black, .15) inset
+  
+  .macbook-keyboard
+    display none
+    position relative
+    box-sizing content-box
+    background-color color-macbook
+    border-bottom solid .75rem color-macbook-darken
+    border-bottom-radius(50%)
+    margin -.5rem -5rem 0
+    height .5rem
+    box-shadow 0 .5rem 3rem rgba(0,0,0,.15)
+    &::before 
+      content ''
+      position absolute
+      center-x()
+      background linear-gradient(90deg, color-macbook-darken, color-macbook, color-macbook-darken)
+      box-shadow 0 0 .1rem rgba(0, 0, 0, .05) inset
+      width 20%
+      height .3rem
+      border-radius .125rem
+ 
+
+//
+@media (min-width: 768px)
+  .macbook
+    .macbook-screen
+      border-width 2rem 1.25rem 1.25rem
+    .macbook-keyboard
+      display block
+
+//
+// markdown article
+.macbook-wrap
+  padding 1rem 9rem
+
+//
+// markdown article shwo scrolling page
+@keyframes scrolling-animation
+  0%
+    top 0
+  10%
+    top 0
+    transform translateY(0)
+  30%
+    transform translateY(-35%)
+  60%
+    transform translateY(-75%)
+  90%
+    transform translateY(-100%)
+  100%
+    transform translateY(-100%)
+
+.scrolling-wrap
+  min-height scrolling-wrap-height
+  overflow hidden
+.scrolling
+  position absolute
+  top scrolling-wrap-height
+  width 100%
+  animation scrolling-animation 10s ease-in-out 1s infinite

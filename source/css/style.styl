@@ -1,0 +1,77 @@
+@import "_variables"
+@import "_mixins"
+@import "_remixicon"
+@import "_normalize"
+
+*,
+*::before
+*::after
+  box-sizing border-box
+
+html, body
+  height: 100%
+
+html
+  font-size font-size-browser
+  -webkit-text-size-adjust 100%
+  -ms-text-size-adjust 100%
+  -ms-overflow-style scrollbar
+  -webkit-tap-highlight-color transparent
+
+body
+  position relative
+  background-color body-background
+  font-family font-family-base
+  font-size font-size-base
+  line-height font-line-height
+  color body-color
+  padding 0
+  margin 0
+  overflow-x hidden
+  text-size-adjust: 100%
+  ::selection
+    background sea-lighter
+    color froth
+a
+  color link-color
+  &:hover
+    color link-hover-color
+  &:active
+    color link-active-color
+  &.disabled
+    color disabled-color
+ul, menu, dir
+  margin 0
+  padding 0
+img
+  max-width 100%
+
+button
+  outline: none
+  cursor pointer
+  
+@import "_extend"
+@import "_partial/layout"
+@import "_partial/lists"
+@import "_partial/categories"
+@import "_partial/tag"
+@import "_partial/ayer"
+@import "_partial/search"
+@import "_partial/article"
+@import "_partial/articles"
+@import "_partial/archive"
+@import "_partial/footer"
+@import "_partial/float"
+@import "_partial/highlight"
+@import "_partial/mobile"
+@import "_partial/pace"
+@import "_partial/gitalk"
+@import "_partial/apple"
+
+if sidebar
+  @import "_partial/sidebar"
+
+// Media Query
+@media (max-width: 768px)
+  html
+    font-size: 60%

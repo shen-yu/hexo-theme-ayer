@@ -1,0 +1,31 @@
+
+@keyframes rocket {
+  0% {
+    transform translateY(0)
+    opacity 1;
+  }
+  45% {
+    transform translateY(-3.2rem)
+    opacity 0;
+  }
+  55% {
+    transform translateY(3.2rem)
+    opacity 0;
+  }
+  100% {
+    transform translateY(0)
+    opacity 1;
+  }
+}
+
+.totop
+  position relative
+  display inline-block
+  overflow hidden
+  cursor pointer
+  rounded-circle(3.2rem)
+  background-color froth-light
+  line-height 3rem
+  &:hover > i {
+    animation rocket .3s ease-in-out
+  }

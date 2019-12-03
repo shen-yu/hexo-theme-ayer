@@ -1,0 +1,92 @@
+.archives-wrap
+  position relative
+  clearfix()
+  &:first-child
+    margin-top 3rem
+  &:last-child
+    margin-bottom 3rem
+
+.archive-year-wrap
+  position absolute
+  top 0
+  left 0
+  width years-width
+  .archive-year
+    position relative
+    display inline-block
+    @extend $block-caption
+    &::after
+      content ''
+      position absolute
+      left 0
+      bottom 0
+      height .15rem
+      background-color sea-lighter
+      width 100%
+
+.archives
+  margin-left years-width
+  border-left border-width border-color dashed
+  padding-left 3rem
+  clearfix()
+
+.archive-article
+  avoid-column-break()
+
+.archive-article-inner
+  @extend $block
+  margin-bottom 1.5rem
+
+.archive-article-header
+  display table-row
+  > a, > h2
+    display table-cell
+  h2
+    margin 0
+    padding-left 3rem
+    .archive-article-title
+      text-decoration: none
+      font-size 1.5rem
+
+.archive-article-footer
+  margin-top: 1.5rem
+
+.archive-article-date
+  position relative
+  display: block
+  @extend $block-caption
+  &::before
+    content ''
+    position absolute
+    top 50%
+    left -3.5rem
+    margin-top -.5rem
+    rounded-circle(1rem)
+    background-color border-color
+
+.page-type-title
+  margin 0
+  padding 3rem 0
+
+.page-nav
+  clearfix()
+  margin: 3rem auto
+  text-align: center
+  overflow: hidden
+  a, span
+    padding: 1rem 1.5rem
+    line-height: 1
+  a
+    text-decoration: none
+  .prev
+    float: left
+  .next
+    float: right
+  .page-number
+    display: inline-block
+    @media mq-mobile
+      display: none
+  .current
+    font-weight: bold
+  .space
+    color: border-color

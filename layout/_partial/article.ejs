@@ -1,0 +1,58 @@
+<article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope
+  itemprop="blogPost" data-scroll-reveal>
+
+  <div class="article-inner">
+    <% if (post.link || post.title){ %>
+    <header class="article-header">
+      <%- partial('post/title', {class_name: 'article-title'}) %>
+    </header>
+    <% } %>
+
+    <% if (index || is_post()) { %>
+    <div class="article-meta">
+      <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
+      <%- partial('post/category') %>
+    </div>
+    <% } %>
+
+    <% if (theme.toc && is_post()){ %>
+    <%- partial('post/tocbot') %>
+    <% } %>
+
+    <div class="article-entry" itemprop="articleBody">
+      <%- partial('post/justifiedGallery') %>
+      <%- partial('post/gallery') %>
+      <% if (post.excerpt && index){ %>
+      <%- post.excerpt %>
+      <% if (theme.excerpt_link){ %>
+      <a class="article-more-link" href="<%- url_for(post.path) %>"><%= theme.excerpt_link %></a>
+      <% } %>
+      <% } else { %>
+      <%- post.content %>
+      <% } %>
+    </div>
+    <footer class="article-footer">
+      <a data-url="<%- post.permalink %>" data-id="<%= post._id %>"
+        class="article-share-link"><%- theme.share_text %></a>
+      <%- partial('post/tag') %>
+    </footer>
+
+  </div>
+
+  <% if (!index){ %>
+  <%- partial('post/nav') %>
+  <% } %>
+
+  <% if (theme.valine && theme.valine.enable){ %>
+  <%- partial('post/valine', {
+            key: post.slug,
+            title: post.title,
+            url: config.url+url_for(post.path)
+          }) %>
+  <% } %>
+
+  <% if (is_post()) { %>
+  <%- partial('post/gitalk') %>
+  <%} %>
+
+</article>

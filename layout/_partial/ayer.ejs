@@ -1,0 +1,23 @@
+<% if (theme.cover.enable) { %>
+<section class="cover">
+  <div class="cover-frame">
+    <div class="bg-box">
+      <img src="<%- theme.cover.path %>" alt="image frame" />
+    </div>
+    <div class="cover-inner text-center text-white">
+      <h1><a href="<%- url_for() %>"><%= config.title %></a></h1>
+      <h2><%= config.subtitle %></h2>
+      <div>
+        <img
+          src="<%- theme.cover.logo %>"
+          class="cover-logo"
+          alt="<%= config.title %>"
+        />
+      </div>
+    </div>
+  </div>
+  <div class="cover-learn-more">
+    <a href="#main" class="anchor"><i class="ri-arrow-down-line"></i></a>
+  </div>
+</section>
+<% } %>

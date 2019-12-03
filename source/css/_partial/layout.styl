@@ -1,0 +1,97 @@
+// Layout
+#app
+  height 100%
+  width 100%
+  position relative
+  overflow hidden
+
+.cover
+  position relative
+  padding 0
+  margin-bottom 3rem
+  text-align center
+
+.content, .sidebar
+  transition(transition-base)
+
+.content
+  position relative
+  z-index 1
+  margin-left 0
+  height 100%
+  width 100%
+  overflow-y scroll
+  overflow-x: hidden
+  -webkit-overflow-scrolling touch
+  &.on
+    transform translateX(aside-width)
+    margin-left 0 !important
+
+.sidebar
+  position fixed
+  z-index 9
+  left - aside-width
+  bottom 0
+  width aside-width
+  height 100%
+  background-color rgba(0,0,0,.8)
+  &.on
+    left 0
+
+.navbar-toggle
+  position absolute
+  top gutter-width
+  left: gutter-width + aside-width
+  border none
+  height 4rem
+  width 4rem
+  border-radius 50%
+  background-color rgba(black, .5)
+  color white
+  transition(transition-base)
+  opacity .5
+  &:hover
+    opacity 1
+  &::before
+    content '\ee09'
+    font-family remixicon
+    font-size larger
+
+.wrap, .outer
+  width 100%
+  padding-right gutter-width
+  padding-left gutter-width
+  margin auto
+  overflow-x hidden
+  clearfix()
+
+.local-search
+  width 100%
+
+
+// Media Query
+@media (min-width: 768px)
+  .cover
+    margin-bottom 0
+    height 100%
+
+  .wrap, .outer
+    width wrap-width
+    padding-right 0
+    padding-left 0
+
+  .local-search
+    width wrap-width
+  
+  .content
+    &.on
+      transform: none
+
+@media (max-width: 768px)
+  .content
+    &.on
+      margin-left -1px !important
+  .sidebar
+    background-color body-color
+  .navbar-toggle
+    transform: scale(1.1)

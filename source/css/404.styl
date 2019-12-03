@@ -1,0 +1,40 @@
+@charset "utf-8"
+//
+// 404
+html, body, div, figure, img
+  margin 0
+  padding 0
+
+body
+  font-family "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+
+.notfound
+  position absolute
+  top 50%
+  left 50%
+  transform translate(-50%, -50%)
+
+figure.forrestgump
+  position relative
+  width 100%
+  img
+    width 100%
+  figcaption
+    float right
+    clear right
+    width 100%
+    padding 0
+    text-align right
+
+@media (min-width: 768.02px)
+  figure.forrestgump
+    width 30rem
+    figcaption
+      width 60%
+      padding 0 2rem
+      
+.notfound-link 
+  position absolute
+  z-index 9
+  margin-top 2rem
+        

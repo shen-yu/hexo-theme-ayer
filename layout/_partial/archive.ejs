@@ -1,0 +1,55 @@
+<section class="outer">
+  <article class="articles">
+    <%
+    var title = '';
+    if (page.category) title = page.category;
+    if (page.tag) title = "#" + "&nbsp" + page.tag;
+    if (page.archive) {
+      if (page.year) title = page.year + (page.month ? '/' + page.month : '');
+      else title = __('archive_a');
+    }
+    %>
+    <h1 class="page-type-title"><%- title %></h1>
+
+    <% if (pagination == 2){ %>
+    <% page.posts.each(function(post){ %>
+    <%- partial('article', {post: post, index: true}) %>
+    <% }) %>
+  </article>
+  <% } else { %>
+  <% var last; %>
+  <% page.posts.each(function(post, i){ %>
+  <% var year = post.date.year(); %>
+  <% if (last != year){ %>
+  <% if (last != null){ %>
+  </div>
+  </div>
+  <% } %>
+  <% last = year; %>
+  <div class="archives-wrap">
+    <div class="archive-year-wrap">
+      <a href="<%- url_for(config.archive_dir + '/' + year) %>" class="archive-year"><%= year %></a>
+    </div>
+    <div class="archives">
+      <% } %>
+      <%- partial('archive-post', {post: post, even: i % 2 == 0}) %>
+      <% }) %>
+      <% if (page.posts.length){ %>
+    </div>
+  </div>
+  <% } %>
+  <% } %>
+
+  <% if (page.total > 1){ %>
+  <nav class="page-nav">
+    <%
+        var prev_text = theme.nav_text.page_prev;
+        var next_text = theme.nav_text.page_next
+      %>
+    <%- paginator({
+        prev_text: prev_text,
+        next_text: next_text
+      }) %>
+  </nav>
+  <% } %>
+</section>

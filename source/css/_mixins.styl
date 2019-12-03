@@ -1,0 +1,59 @@
+clearfix()
+  &::before, &::after
+    content ""
+    display table
+    clear both
+
+hide-text()
+  text-indent: 100%
+  white-space: nowrap
+  overflow: hidden
+
+list-unstyled()
+  list-style none
+  padding-left 0
+  margin-left 0
+
+// Center
+center()
+  top 50%
+  left 50%
+  transform translate(-50%, -50%)
+
+// Horizontal Center
+center-x()
+  left 50%
+  transform translateX(-50%)
+
+// Vertical Center
+center-y()
+  top 50%
+  transform translateY(-50%)
+
+
+border-radius(n)
+  -webkit-border-radius n
+  -moz-border-radius n
+  border-radius n
+
+border-top-radius(n)
+  border-top-left-radius n
+  border-top-right-radius n
+
+border-right-radius(n)
+  border-top-right-radius n
+  border-bottom-right-radius n
+
+border-bottom-radius(n)
+  border-bottom-left-radius n
+  border-bottom-right-radius n
+
+transition(transition)
+  transition transition
+
+rounded-circle(size)
+  width size
+  height size
+  border-radius size / 2
+
+// Media queries

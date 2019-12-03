@@ -1,0 +1,6 @@
+<section class="outer">
+  <% if (site.categories.length){ %>
+    <h1 class="page-type-title"><%= __('categories') %></h1>
+    <%- list_categories({show_count: theme.show_count}) %>
+  <% } %>
+</section>

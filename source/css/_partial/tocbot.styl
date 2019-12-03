@@ -1,0 +1,56 @@
+
+.tocbot
+  position fixed
+  top 14rem
+  left calc((100vw - 70rem) / 2 + 70rem)
+  font-size 80%
+  opacity .8
+  > .toc-list
+    position relative
+    overflow hidden
+
+
+.toc-list
+  list-unstyled()
+  padding-left 1rem
+
+
+a.toc-link
+  height 100%
+  color sea-dark
+  text-decoration none
+  font-size 115%
+
+
+.is-collapsible
+  max-height 1000px
+  overflow hidden
+  transition all 300ms ease-in-out
+
+
+.is-collapsed
+  max-height 0
+
+
+.is-position-fixed
+  position fixed !important
+  top 0
+  right aside-width
+
+.is-active-link
+  font-weight 700
+
+// Left line before pseudo element.
+.toc-link::before
+  background-color water
+  content ' '
+  display inline-block
+  height inherit
+  left 0
+  margin-top -1px
+  position absolute
+  width 2px
+
+
+.is-active-link::before
+  background-color link-active-color

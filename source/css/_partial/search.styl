@@ -1,0 +1,76 @@
+
+.search-form-wrap
+  width 100%
+  position fixed
+  top -100%
+  right aside-width
+  left 0
+  opacity 0
+  transition(.3s)
+  &.on
+    top 0
+    opacity 1
+
+//-------------
+.local-search
+  position relative
+  margin 0 auto
+  padding 1rem 3rem
+  background-color rgba(255,255,255,.5)
+  box-shadow 0 1rem 3rem rgba(sea, .05)
+  max-height 100vh
+  overflow-y auto
+
+.local-search-input
+  font-size 120%
+  border 0
+  border-radius(.4rem)
+  width 100%
+  padding 1rem 1.5rem
+  outline: none
+  &::-webkit-search-results-decoration
+  &::-webkit-search-cancel-button
+    -webkit-appearance: none
+
+.local-search-close
+  position absolute
+  top 1.85rem
+  right 4.25rem
+  display block
+  height 2rem
+  width 2rem
+  padding 0
+  border none
+  border-radius(50%)
+  color white
+  text-align center
+  cursor pointer
+  &::before
+    font-size: 150%
+    content '\eb52'
+    font-family remixicon
+
+// 搜索结果
+.local-search-result
+  text-align left
+
+.search-result-list
+  list-unstyled()
+  li
+    padding 1.5rem 0
+    &:not(:last-child)
+      border-bottom border-width border-color solid
+
+    .search-result-title
+      font-size 1.6rem
+      font-weight bold
+    .search-result
+      padding-top .5rem
+      margin 0
+      max-height 12rem
+      overflow hidden
+    em.search-keyword
+      color sand
+
+.search-result-empty
+  padding 3rem 0 0

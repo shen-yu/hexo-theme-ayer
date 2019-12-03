@@ -1,0 +1,36 @@
+<%- js('/js/jquery-2.0.3.min') %>
+<%- js('/js/jquery.justifiedGallery.min') %>
+<%- js('/js/lazyload.min') %>
+<%- js('/js/busuanzi-2.3.pure.min') %>
+<% if (theme.fancybox){ %>
+  <%- js('fancybox/jquery.fancybox.min') %>
+<% } %>
+
+<% if (theme.toc && is_post()){ %>
+  <%- js('/js/tocbot.min') %>
+  <script>
+    // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+    tocbot.init({
+      tocSelector: '.tocbot',
+      contentSelector: '.article-entry',
+      headingSelector: 'h1, h2, h3, h4, h5, h6',
+      hasInnerContainers: true,
+      scrollSmooth: true,
+      positionFixedSelector: '.tocbot',
+      positionFixedClass: 'is-position-fixed',
+      fixedSidebarOffset: 'auto',
+    });
+  </script>
+<% } %>
+
+<script>
+  var ayerConfig = {
+    mathjax: <%=theme.mathjax %>
+  }
+</script>
+
+<%- js('js/ayer') %>
+
+<% if (theme.mathjax){ %>
+  <%- partial('mathjax') %>
+<% } %>

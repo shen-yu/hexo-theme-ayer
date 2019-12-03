@@ -1,0 +1,82 @@
+$block-caption
+  text-decoration none
+  color sea-lighter
+  &:hover
+    color sea-lighter
+
+$block
+  border-radius 4px
+
+$base-style
+  h1, h2, h3, h4, h5, h6
+    margin 1.5rem 0
+  hr
+    height border-width
+    background-color border-color
+    border none
+    padding 0
+    margin 1.5rem 0
+  strong
+    font-weight bold
+  em, cite
+    font-style italic
+  sup, sub
+    font-size 75%
+    line-height 0
+    position relative
+    vertical-align baseline
+  sup
+    top -.5rem
+  sub
+    bottom -.25rem
+  small
+    font-size 85%
+  acronym, abbr
+    border-bottom border-width border-color dotted
+  ul, ol, dl
+    margin 1.5rem 0
+    line-height line-height
+
+  p, table, blockquote
+    margin 1.5rem 0
+
+  img, video
+    max-width 100%
+    height auto
+    display block
+    margin auto
+  iframe
+    border none
+  table
+    width 100%
+    border-collapse collapse
+    vertical-align middle
+    empty-cells show
+    text-align left
+    th, td, &
+      border border-width border-color solid
+    th, td
+      padding 1rem 1.5rem
+    tbody
+      tr:nth-child(2n)
+        background-color rgba(froth, .25)
+
+  blockquote
+    display block
+    padding 0 1.5rem
+    width 100%
+    overflow auto
+    border-left .3rem water solid
+    color sea-lighter
+    > :first-child
+      margin-top 0;
+    > :last-child
+      margin-bottom 0;
+    footer
+      cite
+        &:before
+          content "—"
+          padding 0 .5rem
+
+
+
