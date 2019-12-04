@@ -7,7 +7,7 @@
 
 ### [中文说明](https://shen-yu.gitee.io/2019/ayer/)
 
-![Screenshot](https://i.loli.net/2019/12/03/SHPinIAclMX1Gra.png)
+![Screenshot](screenshots/hexo-theme-ayer.png)
 
 ### Install
 
