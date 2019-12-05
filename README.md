@@ -74,6 +74,16 @@ nav_text:
 # 文章页是否显示目录
 toc: true
 
+# 打赏
+# 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
+reward_type: 2
+# 打赏wording
+reward_wording: '请我喝杯咖啡吧~'
+# 支付宝二维码图片地址，跟你设置logo的方式一样。比如：/images/alipay.jpg
+alipay: /images/alipay.jpg
+# 微信二维码图片地址
+weixin: /images/wechat.jpg
+
 # 是否启用搜索
 search: true
 

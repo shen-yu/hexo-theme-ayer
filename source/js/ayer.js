@@ -208,7 +208,12 @@
     $content.addClass('on');
     $sidebar.addClass('on');
   }
-
+  // 赞赏
+  $('.tooltip-item').hover(function () {
+    $('.tooltip-content').slideDown(150)
+  }, function () {
+    $('.tooltip-content').slideUp(150)
+  })
 })(jQuery);
 
 
