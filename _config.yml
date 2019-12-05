@@ -1,10 +1,10 @@
 # 侧边栏菜单
 menu:
-  Home: /
-  Archives: /archives
-  Gallery: http://shenyu-vip.lofter.com
-  Travel: /tags/旅行/
-  About: /2019/about
+  主页: /
+  目录: /archives
+  摄影: http://shenyu-vip.lofter.com
+  旅行: /tags/旅行/
+  关于我: /2019/about
 
 # 网站图标和侧边栏logo
 favicon: /favicon.ico
@@ -15,24 +15,22 @@ logo: /images/ayer-side.svg
 cover:
   enable: true
   path: /images/cover1.jpg  # images目录下附送多张美图，可更换
-  logo: /images/ayer.svg
+  logo: false #/images/ayer.svg，如果不要直接设置成false
 
 # 页面顶部进度条  
 progressBar: ture
 
 # 文章配置
 # 文章太长，截断按钮文字(在需要截断的行增加此标记：<!--more-->)
-excerpt_link: Read More...
+excerpt_link: 阅读更多...
 # 文章分享文字
-share_text: Share
-# 搜索文字
-search_text: Search
+share_text: 分享
 # 分页文字
 nav_text:
-  page_prev: Prev page
-  page_next: Next page
-  post_prev: Newer posts
-  post_next: Older posts
+  page_prev: 上一页
+  page_next: 下一页
+  post_prev: 上一篇
+  post_next: 下一篇
 
 # 文章页是否显示目录
 toc: true

@@ -8,11 +8,13 @@
       <h1><a href="<%- url_for() %>"><%= config.title %></a></h1>
       <h2><%= config.subtitle %></h2>
       <div>
+        <% if (theme.cover.logo) { %>
         <img
           src="<%- theme.cover.logo %>"
           class="cover-logo"
           alt="<%= config.title %>"
         />
+        <% } %>
       </div>
     </div>
   </div>

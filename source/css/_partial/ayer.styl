@@ -27,6 +27,7 @@
   h1
     font-size 8rem
     margin 0
+    opacity .95
   h2 
     font-size 3rem
     margin .5rem 0 1.5rem
@@ -58,11 +59,13 @@
   right 50px
   z-index 9
   text-align center
+  transform scale(1.2)
 
 // Media Query
 @media (max-width: 768px)
   .cover-inner
-    transform: translate(-50%, -70%);
+    transform translate(-50%, -70%);
+    width 100%
     h1
       font-size 6rem
     h2
