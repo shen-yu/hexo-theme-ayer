@@ -57,8 +57,8 @@ rss: /atom.xml
 # 启用Valine必须先创建leancloud应用， 获取 id|key 填入即可
 leancloud:  
   enable: true
-  app_id: #
-  app_key: #
+  app_id: chaSYi8FMdJBwzIBpxeNjqWC-gzGzoHsz
+  app_key: PqqkLYgPkHvH1BmyQqySWnSK
 # Valine配置
 valine:
   enable: true # 是否启用
@@ -84,7 +84,7 @@ busuanzi:
 # 友盟cnzz统计(url填js代码src链接)
 cnzz:
   enable: true
-  url: #
+  url: https://s9.cnzz.com/z_stat.php?id=1278069914&web_id=1278069914
 
 # 数学公式
 mathjax: true
