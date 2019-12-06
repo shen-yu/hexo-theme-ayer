@@ -125,6 +125,11 @@ cnzz:
   enable: true
   url: #
 
+# Google Analytics
+google_analytics: ''
+# 百度统计
+baidu_analytics: ''
+
 # 数学公式
 mathjax: true
 
