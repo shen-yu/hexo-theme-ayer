@@ -2,8 +2,9 @@
 menu:
   主页: /
   目录: /archives
-  摄影: http://shenyu-vip.lofter.com
+  标签: /tags
   旅行: /tags/旅行/
+  摄影: http://shenyu-vip.lofter.com
   关于我: /2019/about
 
 # 网站图标和侧边栏logo
@@ -85,6 +86,11 @@ busuanzi:
 cnzz:
   enable: true
   url: https://s9.cnzz.com/z_stat.php?id=1278069914&web_id=1278069914
+
+# Google Analytics
+google_analytics: ''
+# 百度统计
+baidu_analytics: ''
 
 # 数学公式
 mathjax: true
