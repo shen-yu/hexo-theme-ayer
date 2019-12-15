@@ -113,6 +113,11 @@ gitalk:
   owner: # GitHub ID
   admin: # GitHub ID
 
+# GitHub Ribbons(https://github.blog/2008-12-19-github-ribbons/)
+github: 
+  # (关闭请设置为false)
+  url: https://github.com/Shen-Yu/hexo-theme-ayer
+
 # fancybox(仅用于相册展示，若需要可配置albums)
 fancybox: true
 

@@ -3,6 +3,12 @@
 <body>
   <div id="app">
     <main class="content">
+      <% if (theme.github && theme.github.url){ %>
+        <%# "GitHub Ribbons" %>
+        <a class="forkMe" style="position:absolute;z-index:999;top:0;right:0" href="<%=theme.github.url%>"
+          target="_blank"><img width="149" height="149" src="<%- url_for('images/forkme.png') %>"
+            class="attachment-full size-full" alt="Fork me on GitHub" data-recalc-dims="1"></a>
+      <% } %>
       <%- body %>
       <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
     <div class="to_top">
