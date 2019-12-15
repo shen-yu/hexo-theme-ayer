@@ -10,6 +10,11 @@
   padding 0
   margin-bottom 3rem
   text-align center
+  .forkMe
+    position absolute
+    z-index 999
+    top 0
+    right 0
 
 .content, .sidebar
   transition(transition-base)
@@ -88,6 +93,9 @@
       transform: none
 
 @media (max-width: 768px)
+  .cover
+    .forkMe
+      display none
   .content
     &.on
       margin-left -1px !important
