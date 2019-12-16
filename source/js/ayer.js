@@ -1,6 +1,6 @@
 (function ($) {
   //
-  // Search ------------
+  // Search
   var $searchWrap = $('.search-form-wrap'),
     isSearchAnim = false,
     searchAnimDuration = 200;
@@ -208,11 +208,15 @@
     $content.addClass('on');
     $sidebar.addClass('on');
   }
-  // 赞赏
-  $('.tooltip-item').hover(function () {
-    $('.tooltip-content').slideDown(150)
-  }, function () {
-    $('.tooltip-content').slideUp(150)
+
+  // reward
+  $('#reward-btn').on('click', function () {
+    $('#mask').fadeIn(100)
+    $('#reward').fadeIn(100)
+  });
+  $('#reward .close, #mask').on('click', function () {
+    $('#mask').fadeOut(100)
+    $('#reward').fadeOut(100)
   })
 })(jQuery);
 

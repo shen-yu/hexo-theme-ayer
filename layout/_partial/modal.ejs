@@ -1,0 +1,21 @@
+<div id="mask"></div>
+
+<!-- #reward -->
+<div id="reward">
+  <span class="close"><i class="ri-close-line"></i></span>
+  <p class="reward-p"><i class="ri-cup-line"></i><%= theme.reward_wording%></p>
+  <div class="reward-box">
+    <% if(theme.alipay) {%>
+    <div class="reward-item">
+      <img class="reward-img" src="<%- url_for(theme.alipay) %>">
+      <span class="reward-type">支付宝</span>
+    </div>
+    <% } %>
+    <% if(theme.weixin) {%>
+    <div class="reward-item">
+      <img class="reward-img" src="<%- url_for(theme.weixin) %>">
+      <span class="reward-type">微信</span>
+    </div>
+    <% } %>
+  </div>
+</div>

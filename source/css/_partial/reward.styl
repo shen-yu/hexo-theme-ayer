@@ -1,54 +1,81 @@
-.page-reward 
-  margin: 60px 0;
-  text-align: center;
-
-  .page-reward-btn
-    position: relative;
-    display: inline-block;
-    width: 56px;
-    height: 56px;
-    line-height: 56px;
-    font-size: 20px;
-    color: #fff;
-    background: body-color;
-    border-radius: 50%;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    -webkit-transition: .4s ease-in-out;
-    transition: .4s ease-in-out;
-
+#reward-btn
+    position relative
+    display inline-block
+    height 36px
+    line-height 36px
+    margin-top 3rem
+    padding 0 20px
+    font-size 18px
+    color #fff
+    background body-color
+    text-decoration none
+    border-radius 4px
+    margin-left 50%
+    transform translateX(-50%)
+    box-shadow 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12)
+    -webkit-transition .4s ease-in-out
+    transition .4s ease-in-out
+    cursor pointer
     &:hover,
     &:active
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 4px 15px rgba(0, 0, 0, 0.2);
+      box-shadow 0 6px 12px rgba(0, 0, 0, 0.2), 0 4px 15px rgba(0, 0, 0, 0.2)
     
-
-    .tooltip-item 
-      display: block;
-      width: 56px;
-      height: 56px;
-    
-
-  .reward-box 
-    display: flex;
-    justify-content: space-around;
-  
-
+#reward 
+  position absolute
+  z-index 9999
+  left 50%
+  top 20%
+  transform translateX(-50%)
+  margin 60px 0
+  padding 0px 20px 20px
+  background-color lighten(water,30%)
+  display none
+  .close
+    height 28px
+    line-height 28px
+    width 28px
+    display block
+    text-align center
+    position absolute
+    right: -12px;
+    top: -10px;
+    border-radius: 50%
+    background-color body-color
+    cursor pointer
+    i
+      font-size: 20px
+      color white
   .reward-p 
-    color: body-color;
-    font-weight: bold;
-    text-shadow: 1px 1px 1px main-color;
-
-    .icon 
-      margin: 0 10px;
-      color: #ddd;
-
+    color body-color
+    font-weight bold
+    font-size 20px
+    text-align center
+    text-shadow 1px 1px 1px main-color
+    i
+      margin 0 10px
+      transform translateY(2px)
+  .reward-box 
+    display: flex
+    justify-content space-between  
+    width 100%
+    .reward-item
+      text-align center
+      margin: 0 10px
   .reward-type 
-    font-size: 16px;
-    display: block;
-    color: #4d4d4d;
-    margin: 20px 0 0 0;
-
+    font-size 16px
+    display block
+    color black
+    margin-top 10px
   .reward-img 
-    width: 130px;
-    height: 130px;
-    border: 6px solid #fff;
-    border-radius: 3px;
+    display block
+    width 12rem
+    height 12rem
+    border-radius 3px
+
+@media (max-width: 768px)
+  #reward 
+    padding 0 10px 10px
+    .reward-img
+      max-width 10rem
+      max-height 10rem
+      margin 0 5px
