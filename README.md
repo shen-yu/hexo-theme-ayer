@@ -1,6 +1,9 @@
 <p align="center"><a href="https://shen-yu.gitee.io" target="_blank" rel="noopener noreferrer"><img width="100" src="logo.png" alt="ayer logo"></a></p>
 
-<h1 align="center">Ayer</h1>
+<h3 align="center">一个干净且优雅的 Hexo 主题</h3>
+<h2 align="center">Ayer</h2>
+
+---
 
 :ocean: Ayer is a clean and elegant theme for Hexo, also fast, powerful and responsive. It contains many awesome features, It's perfect for your blog, "Ayer" means "water" in Malaysian and "yesterday" in Spanish. If you have any queries or advice during the process of using, Please contact me!  
 
