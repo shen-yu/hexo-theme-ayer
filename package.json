@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"---test start---\""
+    "test": "stylint source/css/style.styl -c .stylintrc"
   },
   "keywords": [
     "ayer",
