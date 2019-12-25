@@ -2,6 +2,27 @@
 
 <h3 align="center">一个干净且优雅的 Hexo 主题</h3>
 
+<p align="center">
+  <a href="https://travis-ci.org/Shen-Yu/hexo-theme-ayer?branch=master" target="_blank" rel="noopener noreferrer">
+    <img alt="travis-ci" src="https://travis-ci.org/Shen-Yu/hexo-theme-ayer.svg?branch=master">
+  </a>
+  <a href="http://standardjs.com" target="_blank" rel="noopener noreferrer">
+    <img alt="js-standard-style" src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg">
+  </a>
+  <a href="https://gitter.im/hexo-theme-ayer/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge" target="_blank" rel="noopener noreferrer">
+    <img alt="Gitter" src="https://badges.gitter.im/Join%20Chat.svg">
+  </a>
+  <br>
+  <a href="https://github.com/Shen-Yu/hexo-theme-ayer/releases" target="_blank" rel="noopener noreferrer">
+    <img alt="GitHub release" src="https://img.shields.io/badge/release-v1.0-blue.svg">
+  </a>
+ <img alt="language" src="https://img.shields.io/badge/language-ejs--stylus-orange.svg">
+  <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener noreferrer">
+    <img alt="hexo" src="https://img.shields.io/badge/hexo-%3E%3D3.0-blue.svg">
+  </a>
+ <img alt="platform" src="https://img.shields.io/badge/platform-PC--ios--android-cc2e8b.svg">
+</p>
+
 ---
 
 :ocean: Ayer is a clean and elegant theme for Hexo, also fast, powerful and responsive. It contains many awesome features, It's perfect for your blog, "Ayer" means "water" in Malaysian and "yesterday" in Spanish. If you have any queries or advice during the process of using, Please contact me!  
