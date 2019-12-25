@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "ayer 是一个轻量优雅的 Hexo 主题",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "stylint": "^2.0.0"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

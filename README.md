@@ -1,7 +1,6 @@
 <p align="center"><a href="https://shen-yu.gitee.io" target="_blank" rel="noopener noreferrer"><img width="100" src="logo.png" alt="ayer logo"></a></p>
 
 <h3 align="center">一个干净且优雅的 Hexo 主题</h3>
-<h2 align="center">Ayer</h2>
 
 ---
 
