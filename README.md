@@ -29,7 +29,7 @@
 
 <b>注：收藏本主题请点右上角Star，谢谢~</b>
 
-### [Preview](https://shen-yu.gitee.io)
+### [Preview 预览](https://shen-yu.gitee.io)
 
 ### [中文说明](https://shen-yu.gitee.io/2019/ayer/)
 
@@ -61,7 +61,7 @@ git pull
 let me know if you can’t find something.
 
 ``` yml
-# Menu-侧边栏菜单
+# Menu-Sidebar
 menu:
   Home: /
   Archives: /archives
@@ -69,65 +69,65 @@ menu:
   Travel: /tags/旅行/
   About: /2019/about
 
-# 网站图标和侧边栏logo
+# Favicon and sidebar logo
 favicon: /favicon.ico
 logo: /images/ayer-side.svg
 
-# 封面配置
-# enable-是否启用封面；path-封面背景图；logo-封面logo
+# Cover Setting 
+# enable: [true|false]；path: [background-image path]；logo: [cover-logo path]
 cover:
   enable: true
   path: /images/cover1.jpg  # images目录下附送多张美图，可更换
   logo: /images/ayer.svg
 
-# 页面顶部进度条  
+# ProgressBar  
 progressBar: ture
 
-# 文章配置
-# 文章太长，截断按钮文字(在需要截断的行增加此标记：<!--more-->)
+# Article Setting
+# (Use this to excerpt if article is too long：<!--more-->)
 excerpt_link: Read More...
-# 文章分享文字
+# share text
 share_text: Share
-# 搜索文字
+# search text
 search_text: Search
-# 分页文字
+# nav text
 nav_text:
   page_prev: Prev page
   page_next: Next page
   post_prev: Newer posts
   post_next: Older posts
 
-# 文章页是否显示目录
+# Catalog in article
 toc: true
 
-# 打赏
-# 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
+# Reward Setting
+# type：0-close reward； 1-only open in article which you have configured reward:true； 2-open in all articles
 reward_type: 2
-# 打赏wording
+# reward word
 reward_wording: '请我喝杯咖啡吧~'
-# 支付宝二维码图片地址，跟你设置logo的方式一样。比如：/images/alipay.jpg
+# qrcode image path
 alipay: /images/alipay.jpg
-# 微信二维码图片地址
+# qrcode image path
 weixin: /images/wechat.jpg
 
-# 是否启用搜索
+# Search
 search: true
 
-# RSS订阅(先安装hexo-generator-feed插件，再去博客根目录config进行配置)
+# RSS(npm i hexo-generator-feed)
 rss: /atom.xml
 
-# 评论：1、Valine(推荐)；2、Gitalk
+# Comment：1、Valine(recommended)；2、Gitalk
 
-# 1、Valine[一款快速、简洁且高效的无后端评论系统](https://github.com/xCss/Valine)
-# 启用Valine必须先创建leancloud应用， 获取 id|key 填入即可
+# 1、Valine [A fast, simple & powerful comment system](https://github.com/xCss/Valine)
+# You need create leancloud account first (https://console.leancloud.app), then put the id|key in below.
 leancloud:  
   enable: true
   app_id: #
   app_key: #
-# Valine配置
+# Valine Setting
 valine:
-  enable: true # 是否启用
-  avatar: mp # 头像样式(https://valine.js.org/avatar.html)
+  enable: true 
+  avatar: mp # (https://valine.js.org/avatar.html)
   placeholder: 给我的文章加点评论吧~ # placeholder
 
 # 2、Gitalk(https://github.com/gitalk/gitalk)
@@ -141,33 +141,33 @@ gitalk:
 
 # GitHub Ribbons(https://github.blog/2008-12-19-github-ribbons/)
 github: 
-  # (关闭请设置为false)
+  # (Set false if you don't need)
   url: https://github.com/Shen-Yu/hexo-theme-ayer
 
-# fancybox(仅用于相册展示，若需要可配置albums)
+# fancybox(Use for gallery, set false if you don't need)
 fancybox: true
 
-# 访问量统计(不蒜子)
+# pv&uv statistics
 busuanzi:
   enable: true
 
-# 友盟cnzz统计(url填js代码src链接)
+# cnzz statistics
 cnzz:
   enable: true
   url: #
 
 # Google Analytics
 google_analytics: ''
-# 百度统计
+# Baidu Analytics
 baidu_analytics: ''
 
-# 数学公式
+# mathjax
 mathjax: true
 
-# 网站成立年份(默认为 2019，若填入年份小于当前年份，则显示为 2018-2019 类似的格式)
+# since year
 since: 2019
 
-#是否显示页脚信息(建议保留，有助于本主题的推广)
+# pageFooter (Set true and let more people know this theme, Thanks!)
 pageFooter: true
 ```
 
