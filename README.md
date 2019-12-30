@@ -58,7 +58,7 @@ git pull
 
 ### Configuration
 
-let me know if you can’t find something.
+let me know if you can’t find anything.
 
 ``` yml
 # Menu-Sidebar
@@ -74,10 +74,10 @@ favicon: /favicon.ico
 logo: /images/ayer-side.svg
 
 # Cover Setting 
-# enable: [true|false]；path: [background-image path]；logo: [cover-logo path]
+# enable: [true|false]；path: [background-image]；logo: [cover-logo-image]
 cover:
   enable: true
-  path: /images/cover1.jpg  # images目录下附送多张美图，可更换
+  path: /images/cover1.jpg  # there are some beautiful cover images in Ayer's directory: /source/images, choose your favorite image to replace it.
   logo: /images/ayer.svg
 
 # ProgressBar  
@@ -104,7 +104,7 @@ toc: true
 # type：0-close reward； 1-only open in article which you have configured reward:true； 2-open in all articles
 reward_type: 2
 # reward word
-reward_wording: '请我喝杯咖啡吧~'
+reward_wording: 'Buy me a cup of coffee~'
 # qrcode image path
 alipay: /images/alipay.jpg
 # qrcode image path
@@ -113,10 +113,10 @@ weixin: /images/wechat.jpg
 # Search
 search: true
 
-# RSS(npm i hexo-generator-feed)
+# RSS
 rss: /atom.xml
 
-# Comment：1、Valine(recommended)；2、Gitalk
+# Comment：1、Valine (recommended)；2、Gitalk
 
 # 1、Valine [A fast, simple & powerful comment system](https://github.com/xCss/Valine)
 # You need create leancloud account first (https://console.leancloud.app), then put the id|key in below.
@@ -128,7 +128,7 @@ leancloud:
 valine:
   enable: true 
   avatar: mp # (https://valine.js.org/avatar.html)
-  placeholder: 给我的文章加点评论吧~ # placeholder
+  placeholder: Add some comments to my article~ # placeholder
 
 # 2、Gitalk(https://github.com/gitalk/gitalk)
 gitalk:
@@ -167,18 +167,18 @@ mathjax: true
 # since year
 since: 2019
 
-# pageFooter (Set true and let more people know this theme, Thanks!)
+# pageFooter (Set true can let more people know this theme, Thanks!)
 pageFooter: true
 ```
 
 ### Plugins
 
-+ [hexo-generator-search](https://github.com/wzpan/hexo-generator-search) Local search
++ [hexo-generator-search](https://github.com/wzpan/hexo-generator-search) (for Local Search)
 	
   ```yml
   $ npm install hexo-generator-searchdb --save
   ```
-  Then add the plugin configuration for hexo's configuration file `_config.yml` (note: not the theme's configuration file):
+  Then add the plugin configuration in hexo's configuration file `_config.yml` (note: not the theme's configuration file):
   
   ```yml
   # Hexo-generator-search
@@ -188,13 +188,13 @@ pageFooter: true
     format: html
   ```
 
-+ [hexo-generate-feed](https://github.com/hexojs/hexo-generator-feed) RSS
++ [hexo-generate-feed](https://github.com/hexojs/hexo-generator-feed) (for RSS)
 
   ```yml
   $ npm install hexo-generator-feed --save
   ```
   
-  Then add the plugin configuration for hexo's configuration file `_config.yml` (note: not the theme's configuration file):
+  Then add the plugin configuration in hexo's configuration file `_config.yml` (note: not the theme's configuration file):
   
   ```yml
   feed:
@@ -208,7 +208,7 @@ pageFooter: true
       order_by: -date	
   ```
   
-+ [hexo-generator-index-pin-top](https://github.com/netcan/hexo-generator-index-pin-top)
++ [hexo-generator-index-pin-top](https://github.com/netcan/hexo-generator-index-pin-top) (for Sticky Post)
 	
 	``` bash
   $ npm uninstall hexo-generator-index --save
