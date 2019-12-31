@@ -29,8 +29,9 @@
 
 <b>注：收藏本主题请点右上角Star，谢谢~</b>
 
-<a href="https://shen-yu.gitee.io" target="_blank"><h3>Preview 预览</h3></a>
-<a href="https://shen-yu.gitee.io/2019/ayer" target="_blank"><h3>中文说明</h3></a>
+### [Preview 预览](https://shen-yu.gitee.io)
+
+### [中文说明](https://shen-yu.gitee.io/2019/ayer/)
 
 ![Screenshot](screenshots/hexo-theme-ayer.png)
 
