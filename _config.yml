@@ -36,6 +36,14 @@ nav_text:
 # 文章页是否显示目录
 toc: true
 
+# https://github.com/willin/hexo-wordcount
+# 是否开启字数统计(关闭请设置enable为false)
+# 也可以单独在md文件里Front-matter设置`no_word_count: true`属性，来自定义关闭字数统计
+word_count:
+  enable: true
+  # 只在文章详情显示(不在首页显示)
+  only_article_visit: true
+
 # 打赏
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
 reward_type: 2

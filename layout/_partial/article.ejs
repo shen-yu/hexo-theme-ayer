@@ -12,6 +12,9 @@
     <div class="article-meta">
       <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
       <%- partial('post/category') %>
+      <% if(theme.word_count && theme.word_count.enable && !post.no_word_count){%>
+      <%- partial('post/word') %>
+      <% } %>
     </div>
     <% } %>
 
@@ -32,10 +35,10 @@
       <% } %>
       <!-- 打赏 -->
       <% if ((theme.reward_type === 2 || (theme.reward_type === 1 && post.reward)) && !index){ %>
-        <div id="reward-btn">
-          打赏
-        </div>
-        <% } %>
+      <div id="reward-btn">
+        打赏
+      </div>
+      <% } %>
     </div>
     <footer class="article-footer">
       <a data-url="<%- post.permalink %>" data-id="<%= post._id %>"
