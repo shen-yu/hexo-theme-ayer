@@ -100,6 +100,12 @@ nav_text:
 # Catalog in article
 toc: true
 
+# https://github.com/willin/hexo-wordcount
+word_count:
+  enable: true
+  # only display in article page(not in index page)
+  only_article_visit: true
+
 # Reward Setting
 # type：0-close reward； 1-only open in article which you have configured reward:true； 2-open in all articles
 reward_type: 2
