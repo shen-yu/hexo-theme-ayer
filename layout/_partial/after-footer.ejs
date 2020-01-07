@@ -19,6 +19,10 @@
       positionFixedSelector: '.tocbot',
       positionFixedClass: 'is-position-fixed',
       fixedSidebarOffset: 'auto',
+			onClick: (e) => {
+      	document.getElementById(e.target.innerText).scrollIntoView()
+      	return false;
+    	}
     });
   </script>
 <% } %>
