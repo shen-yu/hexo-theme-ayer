@@ -137,11 +137,11 @@
     margins: 5
   });
 
-  //
+  // scroll down
   $(document).ready(function ($) {
-    $('.anchor').click(function (event) {
-      event.preventDefault();
-      $('main').animate({ scrollTop: $(this.hash).offset().top }, 'smooth');
+    $('.anchor').click(function (e) {
+      e.preventDefault();
+      $('main').animate({ scrollTop: $('.cover').height() }, 'smooth');
     });
   });
 
