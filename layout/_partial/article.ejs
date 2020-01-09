@@ -34,7 +34,7 @@
       <%- post.content %>
       <% } %>
       <!-- 打赏 -->
-      <% if ((theme.reward_type === 2 || (theme.reward_type === 1 && post.reward)) && !index){ %>
+      <% if ((theme.reward_type === 2 || (theme.reward_type === 1 && post.reward)) && !index && !post.no_reward){ %>
       <div id="reward-btn">
         打赏
       </div>
@@ -52,7 +52,7 @@
   <%- partial('post/nav') %>
   <% } %>
 
-  <% if (theme.valine && theme.valine.enable){ %>
+  <% if (theme.valine && theme.valine.enable && !post.no_valine){ %>
   <%- partial('post/valine', {
             key: post.slug,
             title: post.title,
