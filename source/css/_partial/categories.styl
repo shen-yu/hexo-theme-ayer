@@ -4,10 +4,36 @@
   list-unstyled()
   margin-right -.5rem
   margin-left -.5rem
-  > .category-list-item
-    display inline-block
-    padding .5rem 1rem
+  .category-list-item
+    margin: 10px 10px;
+    padding: 0 14px;
+    display: inline-block;
+    text-align: center;
+    height: 38px;
+    min-width: 80px;
+    line-height: 38px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 5px;
+    word-wrap: break-word;
+    cursor: pointer;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .12);
+    background-color: water
     &:before
       content "\efde"
       font-family remixicon
       margin-right .5rem
+      display inline-block
+      vertical-align middle
+    &:hover
+      background: linear-gradient(to right, link-hover-color 0%, link-active-color 100%) !important;
+      a
+        color: #fff
+      &:before
+        color: #fff
+  a 
+    display inline-block
+    vertical-align middle
+    text-decoration: none 
+    color: body-color
+    

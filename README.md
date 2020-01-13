@@ -220,6 +220,21 @@ pageFooter: true
   $ npm uninstall hexo-generator-index --save
   $ npm install hexo-generator-index-pin-top --save
   ```
+### Categories
+``` bash
+  hexo new page categories
+```
+Then paste following codes to file: _posts/categories/index.md
+``` md
+---
+title: categories
+type: categories
+layout: "categories"
+---
+```
+
+### Tags
+Same as categories.
 
 ### Post poster
 
