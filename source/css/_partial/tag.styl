@@ -16,11 +16,17 @@
       vertical-align middle
       color: tag-color
     .tag-list-link
+      display inline-block
+      vertical-align middle
       text-decoration: none
       height 30px
       line-height 30px
-      padding: 5px 15px
+      padding: 0 15px
       font-size: 1.5rem
       border-radius: 15px
       background-color tag-color
       color white
+      box-shadow: 0 3px 5px rgba(0,0,0,0.12)
+      transition: .2s
+      &:hover
+        transform: scale(1.1)
