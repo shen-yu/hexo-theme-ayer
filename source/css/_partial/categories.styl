@@ -17,8 +17,8 @@
     border-radius: 5px;
     word-wrap: break-word;
     cursor: pointer;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, .12);
-    background-color: water
+    box-shadow: 0px 3px 5px rgba(0,0,0,0.08);
+    border: 1px solid #e7e7eb
     &:before
       content "\efde"
       font-family remixicon
@@ -26,11 +26,12 @@
       display inline-block
       vertical-align middle
     &:hover
-      background: linear-gradient(to right, link-hover-color 0%, link-active-color 100%) !important;
+      border: 1px solid darken(water,20%)
+      box-shadow:  0 3px 5px water
       a
-        color: #fff
+        color: darken(water,30%);
       &:before
-        color: #fff
+        color: darken(water,30%);
   a 
     display inline-block
     vertical-align middle
