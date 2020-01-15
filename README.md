@@ -1,6 +1,6 @@
 <p align="center"><a href="https://shen-yu.gitee.io" target="_blank" rel="noopener noreferrer"><img width="100" src="logo.png" alt="ayer logo"></a></p>
 
-<h3 align="center">一个干净且优雅的 Hexo 主题</h3>
+<h3 align="center">一个安静且优雅的 Hexo 主题</h3>
 
 <p align="center">
   <a href="https://travis-ci.org/Shen-Yu/hexo-theme-ayer?branch=master" target="_blank" rel="noopener noreferrer">
@@ -32,6 +32,8 @@
 ### [Preview 预览](https://shen-yu.gitee.io)
 
 ### [中文说明](https://shen-yu.gitee.io/2019/ayer/)
+
+### [国内镜像](https://gitee.com/shen-yu/hexo-theme-ayer)
 
 ![Screenshot](screenshots/hexo-theme-ayer.png)
 
