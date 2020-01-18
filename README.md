@@ -14,7 +14,7 @@
   </a>
   <br>
   <a href="https://github.com/Shen-Yu/hexo-theme-ayer/releases" target="_blank" rel="noopener noreferrer">
-    <img alt="GitHub release" src="https://img.shields.io/badge/release-v1.3-blue.svg">
+    <img alt="GitHub release" src="https://img.shields.io/badge/release-v1.5-blue.svg">
   </a>
  <img alt="language" src="https://img.shields.io/badge/language-ejs--stylus-orange.svg">
   <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener noreferrer">
@@ -285,6 +285,5 @@ Use Tocbot to parse the title tags (h1~h6) in the content and insert the directo
 
 ---
 
-Inspired by [Ocean](https://github.com/zhwangart/hexo-theme-ocean)
-
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Ayer</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://github.com/Shen-Yu/hexo-theme-ayer" property="cc:attributionName" rel="cc:attributionURL">Eric-Shen</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+<br/>
+<a src="https://github.com/Shen-Yu/hexo-theme-ayer">Ayer</a> by <a  href="https://github.com/Shen-Yu">Eric-Shen</a> is licensed under  <a rel="license" href="https://www.mit-license.org/">MIT</a>.
