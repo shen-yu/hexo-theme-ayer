@@ -25,16 +25,20 @@
       margin-right .5rem
       display inline-block
       vertical-align middle
-    &:hover
-      border: 1px solid darken(water,20%)
-      box-shadow:  0 3px 5px water
-      a
-        color: darken(water,30%);
-      &:before
-        color: darken(water,30%);
+    i 
+      font-style normal
+      margin-left 10px
+      color: darken(water,20%)
   a 
     display inline-block
     vertical-align middle
     text-decoration: none 
     color: body-color
+    &:hover
+      .category-list-item
+        border: 1px solid darken(water,20%)
+        box-shadow:  0 3px 5px water
+        color: darken(water,30%);
+      &:before
+        color: darken(water,30%);
     
