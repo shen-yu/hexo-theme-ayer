@@ -36,6 +36,9 @@ nav_text:
 # 文章页是否显示目录
 toc: true
 
+# 文章中的图片是否支持点击放大
+image_viewer: true
+
 # https://github.com/willin/hexo-wordcount
 # 是否开启字数统计(关闭请设置enable为false)
 # 也可以单独在md文件里Front-matter设置`no_word_count: true`属性，来自定义关闭字数统计

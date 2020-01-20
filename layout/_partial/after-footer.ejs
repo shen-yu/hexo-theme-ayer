@@ -3,28 +3,28 @@
 <%- js('/js/lazyload.min') %>
 <%- js('/js/busuanzi-2.3.pure.min') %>
 <% if (theme.fancybox){ %>
-  <%- js('fancybox/jquery.fancybox.min') %>
+<%- js('fancybox/jquery.fancybox.min') %>
 <% } %>
 
 <% if (theme.toc && is_post()){ %>
-  <%- js('/js/tocbot.min') %>
-  <script>
-    // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
-    tocbot.init({
-      tocSelector: '.tocbot',
-      contentSelector: '.article-entry',
-      headingSelector: 'h1, h2, h3, h4, h5, h6',
-      hasInnerContainers: true,
-      scrollSmooth: true,
-      positionFixedSelector: '.tocbot',
-      positionFixedClass: 'is-position-fixed',
-      fixedSidebarOffset: 'auto',
-			onClick: (e) => {
-      	document.getElementById(e.target.innerText).scrollIntoView()
-      	return false;
-    	}
-    });
-  </script>
+<%- js('/js/tocbot.min') %>
+<script>
+  // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
+  tocbot.init({
+    tocSelector: '.tocbot',
+    contentSelector: '.article-entry',
+    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    hasInnerContainers: true,
+    scrollSmooth: true,
+    positionFixedSelector: '.tocbot',
+    positionFixedClass: 'is-position-fixed',
+    fixedSidebarOffset: 'auto',
+    onClick: (e) => {
+      document.getElementById(e.target.innerText).scrollIntoView()
+      return false;
+    }
+  });
+</script>
 <% } %>
 
 <script>
@@ -38,10 +38,12 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
 
+<% if (theme.image_viewer){ %>
+<%- partial('viewer') %>
+<% } %>
+
 <% if (theme.mathjax){ %>
-  <%- partial('mathjax') %>
+<%- partial('mathjax') %>
 <% } %>
 
 <script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
-  
-  
