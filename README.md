@@ -102,6 +102,9 @@ nav_text:
 # Catalog in article
 toc: true
 
+# images in the article support click to fullscreen
+image_viewer: true
+
 # https://github.com/willin/hexo-wordcount
 word_count:
   enable: true
