@@ -60,7 +60,7 @@ git pull
 
 ### Configuration
 
-let me know if you can’t find anything.
+let me know if you have any questions.
 
 ``` yml
 # Menu-Sidebar
