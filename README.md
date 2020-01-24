@@ -14,7 +14,7 @@
   </a>
   <br>
   <a href="https://github.com/Shen-Yu/hexo-theme-ayer/releases" target="_blank" rel="noopener noreferrer">
-    <img alt="GitHub release" src="https://img.shields.io/badge/release-v1.5-blue.svg">
+    <img alt="GitHub release" src="https://img.shields.io/badge/release-v1.6-blue.svg">
   </a>
  <img alt="language" src="https://img.shields.io/badge/language-ejs--stylus-orange.svg">
   <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener noreferrer">
@@ -138,6 +138,7 @@ leancloud:
 # Valine Setting
 valine:
   enable: true 
+  verify: false # comment verify
   avatar: mp # (https://valine.js.org/avatar.html)
   placeholder: Add some comments to my article~ # placeholder
 
@@ -208,7 +209,7 @@ pageFooter: true
   Then add the plugin configuration in hexo's configuration file `_config.yml` (note: not the theme's configuration file):
   
   ```yml
-  feed:
+  feed:m 
       type: atom
       path: atom.xml
       limit: 20
