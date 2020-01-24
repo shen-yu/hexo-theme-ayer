@@ -10,7 +10,7 @@
     new Valine({
         el: '#vcomments',
         notify: false,
-        verify: false,
+        verify: '<%- theme.leancloud.verify %>',
         app_id: '<%- theme.leancloud.app_id %>',
         app_key: '<%- theme.leancloud.app_key %>',
         path: window.location.pathname,
