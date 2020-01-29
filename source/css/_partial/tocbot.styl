@@ -1,6 +1,6 @@
 
 .tocbot
-  position fixed
+  position absolute
   top 14rem
   left calc((100vw - 70rem) / 2 + 70rem)
   font-size 80%
@@ -47,3 +47,9 @@ a.toc-link
   margin-top -1px
   position absolute
   width 2px
+
+.is-active-link::before
+  background-color sea-blue
+
+.is-active-link
+  font-weight 700

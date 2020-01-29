@@ -16,11 +16,14 @@
     headingSelector: 'h1, h2, h3, h4, h5, h6',
     hasInnerContainers: true,
     scrollSmooth: true,
+    scrollContainer:'main',
     positionFixedSelector: '.tocbot',
     positionFixedClass: 'is-position-fixed',
     fixedSidebarOffset: 'auto',
     onClick: (e) => {
-      document.getElementById(e.target.innerText).scrollIntoView()
+      $('.toc-link').removeClass('is-active-link');
+      $(`a[href=${e.target.hash}]`).addClass('is-active-link');
+      $(e.target.hash).scrollIntoView();
       return false;
     }
   });
