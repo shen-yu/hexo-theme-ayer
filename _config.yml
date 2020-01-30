@@ -13,6 +13,8 @@ menu:
 subtitle:
   enable: true  # 是否开启动效
   text: 面朝大海，春暖花开  # 显示的文字
+  text2: 愿你一生努力，一生被爱   # 滚动播放，如果不需要可以留空
+  text3: 想要的都拥有，得不到的都释怀  # 最多支持三段文字
   startDelay: 0   # 延迟时间
   typeSpeed: 200  # 打字速度
   loop: true  # 是否循环

@@ -77,7 +77,9 @@ menu:
 # https://github.com/mattboldt/typed.js
 subtitle:
   enable: true
-  text: a clean and elegant theme
+  text: A clean and elegant theme
+  text2: It's perfect for your hexo blog
+  text3: Have fun!  #Supports up to three lines of text
   startDelay: 0
   typeSpeed: 200
   loop: true
