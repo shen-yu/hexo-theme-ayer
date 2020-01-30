@@ -14,7 +14,7 @@
   </a>
   <br>
   <a href="https://github.com/Shen-Yu/hexo-theme-ayer/releases" target="_blank" rel="noopener noreferrer">
-    <img alt="GitHub release" src="https://img.shields.io/badge/release-v1.6-blue.svg">
+    <img alt="GitHub release" src="https://img.shields.io/badge/release-v1.7-blue.svg">
   </a>
  <img alt="language" src="https://img.shields.io/badge/language-ejs--stylus-orange.svg">
   <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener noreferrer">
@@ -67,9 +67,22 @@ let me know if you have any questions.
 menu:
   Home: /
   Archives: /archives
+  Categories: /categories
+  Tags: /tags
   Gallery: http://shenyu-vip.lofter.com
   Travel: /tags/旅行/
   About: /2019/about
+
+# Subtitle and Typing animation
+# https://github.com/mattboldt/typed.js
+subtitle:
+  enable: true
+  text: a clean and elegant theme
+  startDelay: 0
+  typeSpeed: 200
+  loop: true
+  backSpeed: 100
+  showCursor: true
 
 # Favicon and sidebar logo
 favicon: /favicon.ico
@@ -241,19 +254,6 @@ layout: "categories"
 
 ### Tags
 Same as categories.
-
-### Post poster
-
-``` md
----
-title: Post name
-
-photos: [
-        ["img_url"],
-        ["img_url"]
-        ]
----
-```
 
 ### Gallery
 Need to write in the head of the markdown, this is not a good way to write, I hope to get a better way to write on github.

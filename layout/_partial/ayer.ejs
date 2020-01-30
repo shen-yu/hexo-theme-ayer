@@ -12,7 +12,13 @@
     </div>
     <div class="cover-inner text-center text-white">
       <h1><a href="<%- url_for() %>"><%= config.title %></a></h1>
-      <h2><%= config.subtitle %></h2>
+      <div id="subtitle-box">
+        <% if (theme.subtitle.enable) { %>
+        <span id="subtitle"></span>
+        <% }else{ %>
+          <span id="subtitle"><%= theme.subtitle.text %></span>
+        <% } %>
+      </div>
       <div>
         <% if (theme.cover.logo) { %>
         <img

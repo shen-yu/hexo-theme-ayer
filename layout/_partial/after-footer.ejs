@@ -6,6 +6,20 @@
 <%- js('fancybox/jquery.fancybox.min') %>
 <% } %>
 
+<% if (theme.subtitle.enable){ %>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
+<script>
+  var typed = new Typed("#subtitle", {
+    strings: ['<%= theme.subtitle.text %>'],
+    startDelay: <%= theme.subtitle.startDelay %>,
+    typeSpeed: <%= theme.subtitle.typeSpeed %>,
+    loop: <%= theme.subtitle.loop %>,
+    backSpeed: <%= theme.subtitle.backSpeed %>,
+    showCursor: <%= theme.subtitle.showCursor %>
+    });
+</script>
+<% } %>
+
 <% if (theme.toc && is_post()){ %>
 <%- js('/js/tocbot.min') %>
 <script>

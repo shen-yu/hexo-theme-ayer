@@ -8,6 +8,17 @@ menu:
   摄影: http://shenyu-vip.lofter.com
   关于我: /2019/about
 
+# 站点次标题和打字动效
+# https://github.com/mattboldt/typed.js
+subtitle:
+  enable: true  # 是否开启动效
+  text: 面朝大海，春暖花开  # 显示的文字
+  startDelay: 0   # 延迟时间
+  typeSpeed: 200  # 打字速度
+  loop: true  # 是否循环
+  backSpeed: 100  # 回退速度
+  showCursor: true  # 是否显示光标
+
 # 网站图标和侧边栏logo
 favicon: /favicon.ico
 logo: /images/ayer-side.svg
