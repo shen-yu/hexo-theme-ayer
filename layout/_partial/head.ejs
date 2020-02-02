@@ -6,7 +6,7 @@
   <% var title = page.title; if (is_archive()) { title = __('archive_a'); if
     (is_month()) { title += ': ' + page.year + '/' + page.month; } else if
     (is_year()) { title += ': ' + page.year; } } else if (is_category()) { title
-    = __('categories.ejs') + ': ' + page.categories; } else if (is_tag()) {
+    = page.category; } else if (is_tag()) {
     title = __('tag') + ': ' + page.tag; } %> <% if (page.keywords){ %>
   <meta name="keywords" content="<%= page.keywords %>,<%= config.keywords %>" />
   <% } else if (config.keywords){ %>
