@@ -38,8 +38,12 @@ progressBar: ture
 # 文章配置
 # 文章太长，截断按钮文字(在需要截断的行增加此标记：<!--more-->)
 excerpt_link: 阅读更多...
+
+# 是否开启文章分享按钮
+share_enable: true
 # 文章分享文字
 share_text: 分享
+
 # 分页文字
 nav_text:
   page_prev: 上一页
