@@ -103,6 +103,11 @@ progressBar: ture
 # Article Setting
 # (Use this to excerpt if article is too long：<!--more-->)
 excerpt_link: Read More...
+
+# Share
+share_enable: true
+# If you are not in China, maybe you prefer to set:false
+share_china: true
 # share text
 share_text: Share
 # search text

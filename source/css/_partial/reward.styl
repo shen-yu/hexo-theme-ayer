@@ -30,6 +30,18 @@
   padding 0px 20px 20px
   background-color lighten(water,30%)
   display none
+  &.ready {
+    visibility: hidden;
+    display: block;
+    transform: translate(-50%, -100%);
+    transition: .3s;
+  }
+
+  &.in {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
   .close
     height 28px
     line-height 28px

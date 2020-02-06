@@ -41,9 +41,9 @@
       <% } %>
     </div>
     <footer class="article-footer">
-      <% if (theme.share_enable){ %><a data-url="<%- post.permalink %>" data-id="<%= post._id %>"
-        class="article-share-link"><%- theme.share_text %></a>
-        <% } %>
+      <% if (!index && theme.share_enable){ %>
+          <%- partial('post/share') %>
+      <% } %>
       <%- partial('post/tag') %>
     </footer>
 
