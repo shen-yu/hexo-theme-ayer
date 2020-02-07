@@ -77,6 +77,10 @@ alipay: /images/alipay.jpg
 # 微信二维码图片地址
 weixin: /images/wechat.jpg
 
+# 版权声明
+# 版权声明type设定：0-关闭版权声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有文章均有版权声明
+copyright_type: 2
+
 # 是否启用搜索
 search: true
 
@@ -110,7 +114,7 @@ gitalk:
 # GitHub Ribbons(https://github.blog/2008-12-19-github-ribbons/)
 github: 
   # (关闭请设置为false)
-  url: https://github.com/Shen-Yu/hexo-theme-ayer
+  url: false
 
 # fancybox(仅用于相册展示，若需要可配置albums)
 fancybox: true

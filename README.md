@@ -141,6 +141,10 @@ alipay: /images/alipay.jpg
 # qrcode image path
 weixin: /images/wechat.jpg
 
+# Copyright
+# type：0-close all； 1-only display in article which you have configured copyright: true； 2-all articles
+copyright_type: 2
+
 # Search
 search: true
 
