@@ -1,7 +1,7 @@
 highlight-background = #2d2d2d
 highlight-code = #f2f2f2
 highlight-code-color = #c7254e
-highlight-current-line = #efefef
+highlight-current-line = grey
 highlight-selection = #000
 highlight-foreground = #dedede
 highlight-comment = #8e908c
@@ -13,142 +13,247 @@ highlight-aqua = #66cccc
 highlight-blue = #6699cc
 highlight-purple = #cc99cc
 
-$code-block
-  background highlight-background
-  padding 1.5rem
-  margin 1.5rem 0
-  border-radius .4rem
-  overflow auto
-  color highlight-foreground
+.article-entry pre,
+.article-entry .highlight {
+  background: highlight-background;
+  margin: 10px 0;
+  padding: 10px 10px;
+  overflow: hidden;
+  overflow-x: auto;
+  color: highlight-foreground;
+  font-size: 0.9em;
+  line-height: 22.400000000000002px;
 
-$line-numbers
-  color highlight-comment
+  /** 滚动条整体部分 */
+  &::-webkit-scrollbar {
+    height: 10px;
+    width: 7px;
+    background: rgba(0, 0, 0, 0.1);
+    /* 高宽分别对应横竖滚动条的尺寸 */
+    /* width: 10px;
+    height: 10px;
+    background: #ccc;
+    border-radius: 0; */
+  }
 
-.article-entry
-  ol>li>ul
-    padding-inline-start: 2rem;
-  pre, code
-    font-family inherit
-    text-shadow none
-  code
-    color highlight-code-color
-    background highlight-code
-    padding .25rem .6rem
-    border-radius(.4rem)
-  pre
-    @extend $code-block
-    code
-      background none
-      padding 0
-  .highlight
-    @extend $code-block
-    pre
-      border none
-      margin 0
-      padding 0
-    table
-      margin 0
-      width auto
-      border none
-    td
-      border none
-      padding 0
-    figcaption
-      clearfix()
-      font-size 85%
-      color highlight-comment
-      line-height 1rem
-      margin-bottom 1rem
-      a
-        float right
-    .gutter
-      -webkit-user-select none
-      -moz-user-select none
-      -ms-user-select none
-      user-select none
-    .gutter pre
-      @extend $line-numbers
-      text-align right
-      padding-right 1.5rem
-    .line
-      height inherit
-    .line.marked
-      background highlight-selection
-  .gist
-    background highlight-background
-    .gist-file
-      border none
-      margin 0
-      .gist-data
-        background none
-        border none
-        .line-numbers
-          @extend $line-numbers
-          background none
-          border none
-        .line-data
-          padding 0 !important
-      .highlight
-        margin 0
-        padding 0
-        border none
-      .gist-meta
-        background highlight-background
-        color highlight-comment
-        padding 0
-        margin-top 1rem
-        a
-          font-weight normal
-          &:hover
-            text-decoration underline
+  &::-webkit-scrollbar:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
 
-pre
-  .comment
-  .title
-    color highlight-comment
-  .variable
-  .attribute
-  .tag
-  .regexp
-  .ruby .constant
-  .xml .tag .title
-  .xml .pi
-  .xml .doctype
-  .html .doctype
-  .css .id
-  .css .class
-  .css .pseudo
-    color highlight-red
-  .number
-  .preprocessor
-  .built_in
-  .literal
-  .params
-  .constant
-    color highlight-orange
-  .class
-  .ruby .class .title
-  .css .rules .attribute
-    color highlight-green
-  .string
-  .value
-  .inheritance
-  .header
-  .ruby .symbol
-  .xml .cdata
-    color highlight-green
-  .css .hexcolor
-    color highlight-aqua
-  .function
-  .python .decorator
-  .python .title
-  .ruby .function .title
-  .ruby .title .keyword
-  .perl .sub
-  .javascript .title
-  .coffeescript .title
-    color highlight-blue
-  .keyword
-  .javascript .function
-    color highlight-purple
-  
+  /* 滚动条里面小方块 */
+  &::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    border-radius: 6px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    -webkit-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25);
+    /* Webkit browsers */
+    -moz-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25);
+    /* Firefox */
+    -ms-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25);
+    /* IE9 */
+    -o-box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25);
+    /* Opera(Old) */
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.25);
+    /* IE9+, News */
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  /** 滚动条里面的轨道 */
+  &::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2); */
+    background: #ededed;
+    border-radius: 10px;
+  }
+
+}
+
+.article-entry .highlight .gutter pre,
+.article-entry .highlight .gutter pre .line,
+.article-entry .gist .gist-file .gist-data .line-numbers {
+  /* color: #666; */
+  color: highlight-current-line;
+}
+
+.article-entry pre,
+.article-entry code {
+  font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+}
+
+.article-entry code {
+  background: #eee;
+  padding: 0 0.3em;
+  border: none;
+}
+
+.article-entry pre code {
+  background: none;
+  text-shadow: none;
+  padding: 0;
+  color: highlight-foreground;
+}
+
+.article-entry .highlight {
+  border-radius: 4px;
+}
+
+.article-entry .highlight pre {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.article-entry .highlight table {
+  margin: 0;
+  width: auto;
+  border: none;
+}
+
+.article-entry .highlight td {
+  border: none;
+  padding: 0;
+}
+
+.article-entry .highlight figcaption {
+  color: highlight-comment;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+
+.article-entry .highlight figcaption:before,
+.article-entry .highlight figcaption:after {
+  content: "";
+  display: table;
+}
+
+.article-entry .highlight figcaption:after {
+  clear: both;
+}
+
+.article-entry .highlight figcaption a {
+  float: right;
+}
+
+.article-entry .highlight .gutter pre {
+  text-align: right;
+  padding-right: 20px;
+}
+
+.article-entry .highlight .gutter pre .line {
+  text-shadow: none;
+}
+
+.article-entry .highlight .line {
+  color: highlight-foreground;
+  min-height: 19px;
+}
+
+.article-entry .gist {
+  margin: 0 -20px;
+  border-style: solid;
+  border-color: #ddd;
+  border-width: 1px 0;
+  background: #272822;
+  padding: 15px 20px 15px 0;
+}
+
+.article-entry .gist .gist-file {
+  border: none;
+  font-family: "Source Code Pro", Consolas, Monaco, Menlo, Consolas, monospace;
+  margin: 0;
+}
+
+.article-entry .gist .gist-file .gist-data {
+  background: none;
+  border: none;
+}
+
+.article-entry .gist .gist-file .gist-data .line-numbers {
+  background: none;
+  border: none;
+  padding: 0 20px 0 0;
+}
+
+.article-entry .gist .gist-file .gist-data .line-data {
+  padding: 0 !important;
+}
+
+.article-entry .gist .gist-file .highlight {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.article-entry .gist .gist-file .gist-meta {
+  background: #272822;
+  color: highlight-comment;
+  font: 0.85em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-shadow: 0 0;
+  padding: 0;
+  margin-top: 1em;
+  margin-left: 20px;
+}
+
+.article-entry .gist .gist-file .gist-meta a {
+  color: #258fb8;
+  font-weight: normal;
+}
+
+.article-entry .gist .gist-file .gist-meta a:hover {
+  text-decoration: underline;
+}
+
+pre .comment {
+  /* color: #75715e; */
+  color: #ffd300;
+}
+
+pre .keyword,
+pre .function .keyword,
+pre .class .params {
+  color: #66d9ef;
+}
+
+pre .tag,
+pre .doctype,
+pre .params,
+pre .function,
+pre .css .value {
+  color: highlight-foreground;
+}
+
+pre .css~* .tag,
+pre .title,
+pre .at_rule,
+pre .at_rule .keyword,
+pre .preprocessor,
+pre .preprocessor .keyword {
+  color: #f92672;
+}
+
+pre .attribute,
+pre .built_in,
+pre .class,
+pre .css~* .class,
+pre .function .title {
+  color: #a6e22e;
+}
+
+pre .value,
+pre .string {
+  color: highlight-foreground;
+}
+
+pre .number {
+  color: #7163d7;
+}
+
+pre .id,
+pre .css~* .id {
+  color: #fd971f;
+}
