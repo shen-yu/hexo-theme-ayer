@@ -103,6 +103,7 @@ progressBar: ture
 # Article Setting
 # (Use this to excerpt if article is too long：<!--more-->)
 excerpt_link: Read More...
+excerpt_all: false
 
 # Share
 share_enable: true
@@ -146,6 +147,7 @@ weixin: /images/wechat.jpg
 copyright_type: 2
 
 # Search
+# https://github.com/theme-next/hexo-generator-searchdb
 search: true
 
 # RSS

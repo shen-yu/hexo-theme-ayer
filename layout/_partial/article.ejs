@@ -22,6 +22,7 @@
     <%- partial('post/tocbot') %>
     <% } %>
 
+    <% if (!theme.excerpt_all){ %>
     <div class="article-entry" itemprop="articleBody">
       <%- partial('post/justifiedGallery') %>
       <%- partial('post/gallery') %>
@@ -40,6 +41,8 @@
       </div>
       <% } %>
     </div>
+    
+    <% } %>
       <!-- copyright -->
       <% if (((theme.copyright_type === 2) || (theme.copyright_type === 1 && post.copyright)) && !index){ %>
         <div class="declare">
