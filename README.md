@@ -256,7 +256,7 @@ pageFooter: true
 ``` bash
   hexo new page categories
 ```
-Then paste following codes to file: _posts/categories/index.md
+Then paste following codes to file: /source/categories/index.md
 ``` md
 ---
 title: categories
