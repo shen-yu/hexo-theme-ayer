@@ -22,9 +22,9 @@
         <%- partial('post/busuanzi') %>
         <% } %>
       </li>
-      <% if (theme.beian){ %>
+      <% if (theme.icp&&theme.icp.enable){ %>
       <li>
-        <a href="http://www.beian.miit.gov.cn/" target="_black"><%= theme.beian %></a>
+        <a href="<%= theme.icp.url %>" target="_black"><%= theme.icp.text %></a>
       </li>
       <% } %>
       <li>

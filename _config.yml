@@ -146,5 +146,8 @@ since: 2015
 # 是否显示页脚信息(建议保留，有助于本主题的推广)
 pageFooter: true
 
-# 备案信息(不需要就留空)
-beian: ''
+#ICP备案信息尾部显示
+icp:
+  enable: false
+  url: 'http://www.beian.miit.gov.cn/' # 备案链接
+  text: '浙ICP备88888888' # 备案信息
