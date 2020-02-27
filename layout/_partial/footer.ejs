@@ -8,7 +8,7 @@
       </li>
       <li>
         <% if (theme.pageFooter){ %>
-          Powered by
+        Powered by
         <% var hexoLink = '<a href="https://hexo.io" target="_blank">Hexo</a>'; %>
         <% var themeLink = '<a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>'; %>
         <%- hexoLink %> Theme <%- themeLink %>
@@ -22,6 +22,11 @@
         <%- partial('post/busuanzi') %>
         <% } %>
       </li>
+      <% if (theme.beian){ %>
+      <li>
+        <a href="http://www.beian.miit.gov.cn/" target="_black"><%= theme.beian %></a>
+      </li>
+      <% } %>
       <li>
         <!-- cnzz统计 -->
         <% if (theme.cnzz&&theme.cnzz.enable){ %>
