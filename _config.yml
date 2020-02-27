@@ -42,7 +42,7 @@ music:
   enable: false
   # 播放器尺寸类型(1：小尺寸、2：大尺寸)
   type: 1
-  id: 518895142  # 网易云分享的音乐ID(更换音乐请更改此配置项)
+  id: 22707008  # 网易云分享的音乐ID(更换音乐请更改此配置项)
   autoPlay: true  # 是否开启自动播放
 
 # 文章配置
@@ -125,7 +125,7 @@ gitalk:
   owner: # GitHub ID
   admin: # GitHub ID
 
-# GitHub Ribbons(https://github.blog/2008-12-19-github-ribbons/)
+# GitHub Ribbons-封面右上角的forkme
 github: 
   # (关闭请设置为false)
   url: https://github.com/Shen-Yu/hexo-theme-ayer
