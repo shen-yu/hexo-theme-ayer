@@ -27,6 +27,8 @@ logo: /images/ayer-side.svg
 
 # 封面配置
 # enable-是否启用封面；path-封面背景图；logo-封面logo
+
+
 cover:
   enable: true
   path: /images/cover1.jpg  # images目录下附送多张美图，可更换
@@ -34,6 +36,14 @@ cover:
 
 # 页面顶部进度条  
 progressBar: ture
+
+# 网易云音乐插件
+music:
+  enable: false
+  # 播放器尺寸类型(1：小尺寸、2：大尺寸)
+  type: 1
+  id: 518895142  # 网易云分享的音乐ID(更换音乐请更改此配置项)
+  autoPlay: true  # 是否开启自动播放
 
 # 文章配置
 # 文章太长，截断按钮文字(在需要截断的行增加此标记：<!--more-->)

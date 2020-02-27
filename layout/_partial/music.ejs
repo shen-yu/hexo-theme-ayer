@@ -1,0 +1,16 @@
+<div id="music">
+    <%# "bottom:120px; left:auto;position:fixed;  width:85%" %>
+    <% var defaultHeight = theme.music.type == 1 ? '32' : '66'; %>
+    <% var defaultIframeHeight = theme.music.type == 1 ? '52' : '86'; %>
+    <iframe frameborder="no" border="1" marginwidth="0" marginheight="0" width="200" height="<%=defaultIframeHeight%>"
+        src="//music.163.com/outchain/player?type=2&id=<%=theme.music.id||518895142%>&auto=<%=theme.music.autoPlay?1:0%>&height=<%=defaultHeight%>"></iframe>
+</div>
+
+<style>
+    #music {
+        position: fixed;
+        right: 15px;
+        bottom: 0;
+        z-index: 998;
+    }
+</style>

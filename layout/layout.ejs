@@ -5,15 +5,19 @@
     <main class="content">
       <%- body %>
       <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
-    <div class="to_top">
+      <div class="to_top">
         <%- partial('_partial/totop') %>
       </div>
     </main>
-      <aside class="sidebar">
-        <%- partial('_partial/sidebar') %>
-      </aside>
-      <%- partial('_partial/modal') %>
-      <%- partial('_partial/after-footer') %>
+    <aside class="sidebar">
+      <%- partial('_partial/sidebar') %>
+    </aside>
+    <%- partial('_partial/modal') %>
+    <%- partial('_partial/after-footer') %>
+
+    <% if (theme.music&&theme.music.enable){ %>
+    <%- partial('_partial/music') %>
+    <% } %>
   </div>
 </body>
 
