@@ -15,7 +15,7 @@
   <br>
   <a href="https://github.com/Shen-Yu/hexo-theme-ayer/releases" target="_blank" rel="noopener noreferrer">
     <img alt="GitHub release" src="https://img.shields.io/badge/release-v1.9-blue.svg">
-  </a>
+  </a> 
  <img alt="language" src="https://img.shields.io/badge/language-ejs--stylus-orange.svg">
   <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener noreferrer">
     <img alt="hexo" src="https://img.shields.io/badge/hexo-%3E%3D3.0-blue.svg">
