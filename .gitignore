@@ -5,6 +5,7 @@
 yarn.lock
 package-lock.json
 node_modules/
+.cache
 
 # Setting
 _config.yml
