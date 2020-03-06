@@ -35,7 +35,7 @@ cover:
   logo: false #/images/ayer.svg，如果不要直接设置成false
 
 # 页面顶部进度条  
-progressBar: ture
+progressBar: true
 
 # 网易云音乐插件
 music:

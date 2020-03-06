@@ -24,8 +24,9 @@
   <link rel="shortcut icon" href="<%- theme.favicon %>" />
   <% } %>
   <%- css('css/main') %>
-  <%- js('/js/pace.min.js') %>
-
+  <% if (theme.progressBar){ %>
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+  <% } %>
   <%- partial('google-analytics') %>
   <%- partial('baidu-analytics') %>
 </head>

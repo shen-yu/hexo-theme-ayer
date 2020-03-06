@@ -1,26 +1,20 @@
 <%- js('/js/jquery-2.0.3.min') %>
-<%- js('/js/jquery.justifiedGallery.min') %>
-<%- js('/js/lazyload.min') %>
-<%- js('/js/busuanzi-2.3.pure.min') %>
 <%- js('/js/share') %>
-<% if (theme.fancybox){ %>
-<%- js('fancybox/jquery.fancybox.min') %>
-<% } %>
-
+<%- js('/js/lazyload.min') %>
 <% if (theme.subtitle.enable){ %>
 <script>
   try {
     var typed = new Typed("#subtitle", {
-    strings: ['<%= theme.subtitle.text %>','<%= theme.subtitle.text2 %>','<%= theme.subtitle.text3 %>'],
-    startDelay: <%= theme.subtitle.startDelay %>,
-    typeSpeed: <%= theme.subtitle.typeSpeed %>,
-    loop: <%= theme.subtitle.loop %>,
-    backSpeed: <%= theme.subtitle.backSpeed %>,
-    showCursor: <%= theme.subtitle.showCursor %>
+      strings: ['<%= theme.subtitle.text %>', '<%= theme.subtitle.text2 %>', '<%= theme.subtitle.text3 %>'],
+      startDelay: <%= theme.subtitle.startDelay %>,
+      typeSpeed: <%= theme.subtitle.typeSpeed %>,
+      loop: <%= theme.subtitle.loop %>,
+      backSpeed: <%= theme.subtitle.backSpeed %>,
+      showCursor: <%= theme.subtitle.showCursor %>
     });
   } catch (err) {
   }
-  
+
 </script>
 <% } %>
 
@@ -34,7 +28,7 @@
     headingSelector: 'h1, h2, h3, h4, h5, h6',
     hasInnerContainers: true,
     scrollSmooth: true,
-    scrollContainer:'main',
+    scrollContainer: 'main',
     positionFixedSelector: '.tocbot',
     positionFixedClass: 'is-position-fixed',
     fixedSidebarOffset: 'auto',
@@ -48,23 +42,30 @@
 </script>
 <% } %>
 
-<script>
-  var ayerConfig = {
-    mathjax: <%=theme.mathjax %>
-  }
-</script>
-
-<%- js('js/ayer') %>
 
 <script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
+<%- js('js/ayer') %>
 
 <% if (theme.image_viewer){ %>
 <%- partial('viewer') %>
 <% } %>
-
 <% if (theme.mathjax){ %>
 <%- partial('mathjax') %>
+<script>
+  var ayerConfig = {
+    mathjax: true
+  }
+</script>
+<% } %>
+<% if (theme.busuanzi && theme.busuanzi.enable){ %>
+<%- js('/js/busuanzi-2.3.pure.min') %>
 <% } %>
 
 <script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
+
+<% if (theme.fancybox){ %>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
+<% } %>
