@@ -14,8 +14,7 @@
     display inline-block
     overflow hidden
     background gray /* To have gray placeholders while the gallery is loading with waitThumbnailsLoad = false */
-    filter "alpha(opacity=10)"
-    opacity 0.1
+    opacity 1
     margin 0
     padding 0
     > img, > a > img, > svg, > a > svg
@@ -25,8 +24,7 @@
       margin 0
       padding 0
       border none
-      filter "alpha(opacity=0)"
-      opacity 0
+      opacity 1
     > .caption
       display none
       position absolute
@@ -40,11 +38,9 @@
       &.caption-visible
         display initial
   > .jg-entry-visible
-    filter "alpha(opacity=100)"
     opacity 1
     background none
     > img, > a > img, > svg, > a > svg
-      filter "alpha(opacity=100)"
       opacity 1
       -webkit-transition opacity 500ms ease-in
       -moz-transition opacity 500ms ease-in
@@ -58,13 +54,11 @@
       margin-left -24px
       padding 10px 0 10px 0
       left 50%
-      filter "alpha(opacity=100)"
       opacity 1
       overflow initial
     > span
       display inline-block
-      filter "alpha(opacity=0)"
-      opacity 0
+      opacity 1
       width 8px
       height 8px
       margin 0 4px 0 4px
