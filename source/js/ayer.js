@@ -1,5 +1,4 @@
 (function ($) {
-  //
   // Search
   var $searchWrap = $('.search-form-wrap'),
     isSearchAnim = false,
@@ -32,7 +31,6 @@
     }
   });
 
-  //
   // 移动设备侦测
   var isMobile = {
     Android: function () {
@@ -55,7 +53,6 @@
     }
   };
 
-  //
   // 建议在移动端不初始化，其实 /search.xml 文件还挺大的，
   if ($('.local-search').size()) {
     $.getScript('/js/search.js', function () {
@@ -63,25 +60,14 @@
     });
   }
 
-  //
   // Share
-  $('.share-outer').click(()=>$('.share-wrap').fadeToggle())
+  $('.share-outer').click(() => $('.share-wrap').fadeToggle())
 
-  //
-  // fancybox
-  if ($.fancybox) {
-    $('[data-fancybox]').fancybox({
-      protect: true
-    });
-  }
-
-  //
   // lazyload
   $("img.lazy").lazyload({
     effect: "fadeIn"
   });
 
-  //
   // justifiedGallery
   $('#gallery').justifiedGallery({
     rowHeight: 200,

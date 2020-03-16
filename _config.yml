@@ -130,9 +130,6 @@ github:
   # (关闭请设置为false)
   url: https://github.com/Shen-Yu/hexo-theme-ayer
 
-# fancybox(仅用于相册展示，若需要可配置albums)
-fancybox: true
-
 # 访问量统计(不蒜子)
 busuanzi:
   enable: true

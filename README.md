@@ -182,9 +182,6 @@ github:
   # (Set false if you don't need)
   url: https://github.com/Shen-Yu/hexo-theme-ayer
 
-# fancybox(Use for gallery, set false if you don't need)
-fancybox: true
-
 # pv&uv statistics
 busuanzi:
   enable: true
