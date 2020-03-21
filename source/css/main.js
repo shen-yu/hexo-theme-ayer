@@ -3,4 +3,3 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"epB2":[function(require,module,exports) {
 "use strict";require("./css/style.styl");
 },{"./css/style.styl":"MiQR"}]},{},["epB2"], null)
-//# sourceMappingURL=/main.js.map
