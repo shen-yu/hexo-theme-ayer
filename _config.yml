@@ -100,6 +100,9 @@ search: true
 # RSS订阅(先安装hexo-generator-feed插件，再去博客根目录config进行配置)
 rss: /atom.xml
 
+# 是否启用黑夜模式开关
+darkmode: true
+
 # 评论：1、Valine(推荐)；2、Gitalk
 
 # 1、Valine[一款快速、简洁且高效的无后端评论系统](https://github.com/xCss/Valine)

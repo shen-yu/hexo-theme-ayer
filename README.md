@@ -153,6 +153,9 @@ search: true
 # RSS
 rss: /atom.xml
 
+# DarkMode
+darkmode: true
+
 # Comment：1、Valine (recommended)；2、Gitalk
 
 # 1、Valine [A fast, simple & powerful comment system](https://github.com/xCss/Valine)

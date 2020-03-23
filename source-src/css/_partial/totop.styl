@@ -18,14 +18,21 @@
   }
 }
 
-.totop
+.totop,.todark
   position relative
-  display inline-block
+  display block
   overflow hidden
   cursor pointer
   rounded-circle(3.2rem)
-  background-color froth-light
+  background-color darken(froth-light,2%)
   line-height 3rem
+  opacity .6
+  transition(opacity 1s ease)
+  &:hover
+    opacity 1
+  
+.totop
+  margin-bottom .8rem
   &:hover > i {
     animation rocket .3s ease-in-out
   }

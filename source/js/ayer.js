@@ -99,9 +99,9 @@
     $('.content').scroll(function () {
       var scrollTop = $('.content').scrollTop();
       if (scrollTop > upperLimit) {
-        $(scrollElem).stop().fadeTo(300, 1); // fade back in
+        $(scrollElem).stop().fadeTo(200, .6); // fade back in
       } else {
-        $(scrollElem).stop().fadeTo(300, 0); // fade out
+        $(scrollElem).stop().fadeTo(200, 0); // fade out
       }
     });
 
@@ -138,6 +138,26 @@
   $('#reward .close, #mask').on('click', function () {
     $('#mask').fadeOut(100)
     $('#reward').fadeOut(100)
+  })
+
+  // darkmode
+  if(sessionStorage.getItem('darkmode')==1){
+    $('body').addClass('darkmode')
+    $('#todark i').removeClass('ri-moon-line').addClass('ri-sun-line')
+  }else{
+    $('body').removeClass('darkmode')
+    $('#todark i').removeClass('ri-sun-line').addClass('ri-moon-line')
+  }
+  $('#todark').click(()=>{
+    if(sessionStorage.getItem('darkmode')==1){
+      $('body').removeClass('darkmode')
+      $('#todark i').removeClass('ri-sun-line').addClass('ri-moon-line')
+      sessionStorage.removeItem('darkmode')
+    }else{
+      $('body').addClass('darkmode')
+      $('#todark i').removeClass('ri-moon-line').addClass('ri-sun-line')
+      sessionStorage.setItem('darkmode',1)
+    }
   })
 })(jQuery);
 
