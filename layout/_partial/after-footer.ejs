@@ -17,7 +17,7 @@
 </script>
 <% } %>
 
-<% if (theme.toc && is_post() && page.toc){ %>
+<% if (theme.toc && is_post() && !page.no_toc){ %>
 <%- js('/js/tocbot.min') %>
 <script>
   // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/

@@ -296,7 +296,7 @@ Use Tocbot to parse the title tags (h1~h6) in the content and insert the directo
 
 	``` md
 	---
-  toc: false
+  no_toc: true
   ---
 	```
 
