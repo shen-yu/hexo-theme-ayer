@@ -1,21 +1,21 @@
 (function ($) {
   // Search
-  var $searchWrap = $('.search-form-wrap'),
+  let $searchWrap = $('.search-form-wrap'),
     isSearchAnim = false,
     searchAnimDuration = 200;
 
-  var startSearchAnim = function () {
+  const startSearchAnim = () => {
     isSearchAnim = true;
   };
 
-  var stopSearchAnim = function (callback) {
+  const stopSearchAnim = (callback) => {
     setTimeout(function () {
       isSearchAnim = false;
       callback && callback();
     }, searchAnimDuration);
   };
 
-  $('.nav-item-search').on('click', function () {
+  $('.nav-item-search').click(() => {
     if (isSearchAnim) return;
     startSearchAnim();
     $searchWrap.addClass('on');
@@ -24,15 +24,15 @@
     });
   });
 
-  $(document).mouseup(function (e) {
-    var _con = $('.local-search');
+  $(document).mouseup((e) => {
+    const _con = $('.local-search');
     if (!_con.is(e.target) && _con.has(e.target).length === 0) {
       $searchWrap.removeClass('on');
     }
   });
 
-  // 移动设备侦测
-  var isMobile = {
+  // Mobile Detect
+  const isMobile = {
     Android: function () {
       return navigator.userAgent.match(/Android/i);
     },
@@ -53,28 +53,21 @@
     }
   };
 
-  // 建议在移动端不初始化，其实 /search.xml 文件还挺大的，
-  if ($('.local-search').size()) {
-    $.getScript('/js/search.js', function () {
-      searchFunc("/search.xml", 'local-search-input', 'local-search-result');
-    });
-  }
-
   // Share
   $('.share-outer').click(() => $('.share-wrap').fadeToggle())
 
-  // lazyload
+  // Lazyload
   $("img.lazy").lazyload({
     effect: "fadeIn"
   });
 
-  // justifiedGallery
+  // JustifiedGallery
   $('#gallery').justifiedGallery({
     rowHeight: 200,
     margins: 5
   });
 
-  // scroll down
+  // ScrollDown
   $(document).ready(function ($) {
     $('.anchor').click(function (e) {
       e.preventDefault();
@@ -82,22 +75,22 @@
     });
   });
 
-  // To top
-  (function ($) {
+  // To Top
+  (() => {
     // When to show the scroll link
     // higher number = scroll link appears further down the page
-    var upperLimit = 1000;
+    const upperLimit = 1000;
 
     // Our scroll link element
-    var scrollElem = $('#totop');
+    const scrollElem = $('#totop');
 
     // Scroll to top speed
-    var scrollSpeed = 1600;
+    const scrollSpeed = 1600;
 
     // Show and hide the scroll to top link based on scroll position
     scrollElem.hide();
     $('.content').scroll(function () {
-      var scrollTop = $('.content').scrollTop();
+      const scrollTop = $('.content').scrollTop();
       if (scrollTop > upperLimit) {
         $(scrollElem).stop().fadeTo(200, .6); // fade back in
       } else {
@@ -109,10 +102,10 @@
     $(scrollElem).click(function () {
       $('.content').animate({ scrollTop: 0 }, scrollSpeed); return false;
     });
-  })(jQuery);
+  })();
 
-  // Mobile nav
-  var $content = $('.content'),
+  // Mobile Nav
+  const $content = $('.content'),
     $sidebar = $('.sidebar');
 
   $('.navbar-toggle').on('click', function () {
@@ -120,7 +113,7 @@
     $sidebar.toggleClass('on');
   });
 
-  $($content).on('click', function () {
+  $content.click(() => {
     $content.removeClass('on');
     $sidebar.removeClass('on');
   });
@@ -130,33 +123,33 @@
     $sidebar.addClass('on');
   }
 
-  // reward
-  $('#reward-btn').on('click', function () {
+  // Reward
+  $('#reward-btn').click(() => {
     $('#reward').fadeIn(150)
     $('#mask').fadeIn(150)
   });
-  $('#reward .close, #mask').on('click', function () {
+  $('#reward .close, #mask').click(() => {
     $('#mask').fadeOut(100)
     $('#reward').fadeOut(100)
   })
 
-  // darkmode
-  if(sessionStorage.getItem('darkmode')==1){
+  // DarkMode
+  if (sessionStorage.getItem('darkmode') == 1) {
     $('body').addClass('darkmode')
     $('#todark i').removeClass('ri-moon-line').addClass('ri-sun-line')
-  }else{
+  } else {
     $('body').removeClass('darkmode')
     $('#todark i').removeClass('ri-sun-line').addClass('ri-moon-line')
   }
-  $('#todark').click(()=>{
-    if(sessionStorage.getItem('darkmode')==1){
+  $('#todark').click(() => {
+    if (sessionStorage.getItem('darkmode') == 1) {
       $('body').removeClass('darkmode')
       $('#todark i').removeClass('ri-sun-line').addClass('ri-moon-line')
       sessionStorage.removeItem('darkmode')
-    }else{
+    } else {
       $('body').addClass('darkmode')
       $('#todark i').removeClass('ri-moon-line').addClass('ri-sun-line')
-      sessionStorage.setItem('darkmode',1)
+      sessionStorage.setItem('darkmode', 1)
     }
   })
 })(jQuery);

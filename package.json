@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "a clean and elegant theme for hexo.",
   "scripts": {
-    "dev": "parcel serve source-src/main.js -d source/css",
-    "build": "parcel build source-src/main.js -d source/css --no-source-maps"
+    "dev": "parcel serve source-src/main.js -d source/dist",
+    "build": "parcel build source-src/main.js -d source/dist --no-source-maps"
   },
   "source": "source-src/main.js",
   "repository": {

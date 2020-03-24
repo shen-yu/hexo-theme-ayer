@@ -9,19 +9,13 @@ function generate(url, opts) {
 }
 
 function showWX() {
-  let $wx = $('.wx-share-modal')
-  let $mask = $('#share-mask')
-  $wx.addClass('in')
-  $wx.addClass('ready')
-  $mask.show()
+  $('.wx-share-modal').addClass('in ready')
+  $('#share-mask').show()
 }
 
 function hideWX() {
-  let $wx = $('.wx-share-modal')
-  let $mask = $('#share-mask')
-  $wx.removeClass('in')
-  $wx.removeClass('ready')
-  $mask.hide()
+  $('.wx-share-modal').removeClass('in ready')
+  $('#share-mask').hide()
 }
 
 function handleClick(type, opts) {
@@ -44,10 +38,9 @@ function handleClick(type, opts) {
   }
 }
 
-let init = function () {
+const share_init = () => {
   let $sns = document.querySelectorAll('.share-sns');
   if (!$sns || $sns.length === 0) return;
-
   let sUrl = window.location.href;
   let sTitle = document.querySelector('title').innerHTML;
   let $img = document.querySelectorAll('.article-entry img');
@@ -55,7 +48,6 @@ let init = function () {
   if ((sPic !== '') && !/^(http:|https:)?\/\//.test(sPic)) {
     sPic = window.location.origin + sPic
   }
-
   $sns.forEach(($em) => {
     $em.onclick = (e) => {
       let type = $em.getAttribute('data-type')
@@ -72,4 +64,4 @@ let init = function () {
   document.querySelector('.modal-close').onclick = hideWX
 }
 
-init()
+share_init()
