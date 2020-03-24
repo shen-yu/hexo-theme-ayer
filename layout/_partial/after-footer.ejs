@@ -17,7 +17,7 @@
 </script>
 <% } %>
 
-<% if (theme.toc && is_post()){ %>
+<% if (theme.toc && is_post() && !page.no_toc){ %>
 <%- js('/js/tocbot.min') %>
 <script>
   // Tocbot_v4.7.0  http://tscanlin.github.io/tocbot/
@@ -30,13 +30,7 @@
     scrollContainer: 'main',
     positionFixedSelector: '.tocbot',
     positionFixedClass: 'is-position-fixed',
-    fixedSidebarOffset: 'auto',
-    onClick: (e) => {
-      $('.toc-link').removeClass('is-active-link');
-      $(`a[href=${e.target.hash}]`).addClass('is-active-link');
-      $(e.target.hash).scrollIntoView();
-      return false;
-    }
+    fixedSidebarOffset: 'auto'
   });
 </script>
 <% } %>
