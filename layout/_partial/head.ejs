@@ -1,5 +1,10 @@
 <!DOCTYPE html>
+
+<% if (config.language){ %>
+<html lang="<%= config.language %>" >
+<% } else { %>
 <html lang="en">
+<% }%>
 
 <head>
   <meta charset="utf-8" />
