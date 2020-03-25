@@ -116,19 +116,10 @@
     $sidebar = $('.sidebar');
 
   $('.navbar-toggle').on('click', function () {
+    $('.content,.sidebar').addClass('anim')
     $content.toggleClass('on');
     $sidebar.toggleClass('on');
   });
-
-  $content.click(() => {
-    $content.removeClass('on');
-    $sidebar.removeClass('on');
-  });
-
-  if (window.matchMedia("(min-width: 768px)").matches) {
-    $content.addClass('on');
-    $sidebar.addClass('on');
-  }
 
   // Reward
   $('#reward-btn').click(() => {
