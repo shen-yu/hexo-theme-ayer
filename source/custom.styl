@@ -1,0 +1,24 @@
+$wrap-width = convert(hexo-config('layout.article_width'))
+$aside-width = convert(hexo-config('layout.sidebar_width'))
+
+.sidebar
+    left - $aside-width
+    width $aside-width
+    &.on
+        left 0
+.content
+    &.on
+        margin-left 0 !important
+.navbar-toggle
+    left 1.5rem + $aside-width
+.search-form-wrap
+    right $aside-width
+
+@media(min-width: 768px)
+    .outer, .wrap
+        width $wrap-width !important
+@media(max-width: 768px)
+    .content
+        &.on
+            transform translateX($aside-width)
+    

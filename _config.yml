@@ -27,8 +27,6 @@ logo: /images/ayer-side.svg
 
 # 封面配置
 # enable-是否启用封面；path-封面背景图；logo-封面logo
-
-
 cover:
   enable: true
   path: /images/cover1.jpg  # images目录下附送多张美图，可更换
@@ -36,14 +34,6 @@ cover:
 
 # 页面顶部进度条  
 progressBar: true
-
-# 网易云音乐插件
-music:
-  enable: false
-  # 播放器尺寸类型(1：小尺寸、2：大尺寸)
-  type: 1
-  id: 22707008  # 网易云分享的音乐ID(更换音乐请更改此配置项)
-  autoPlay: true  # 是否开启自动播放
 
 # 文章配置
 # 文章太长，截断按钮文字(在需要截断的行增加此标记：<!--more-->)
@@ -103,6 +93,11 @@ rss: /atom.xml
 # 是否启用黑夜模式开关
 darkmode: true
 
+# 页面宽度自定义（不建议修改，可能造成布局混乱），article_width文章宽度，sidebar_width侧边栏宽度
+layout:
+  article_width: 80rem
+  sidebar_width: 8rem
+
 # 评论：1、Valine(推荐)；2、Gitalk
 
 # 1、Valine[一款快速、简洁且高效的无后端评论系统](https://github.com/xCss/Valine)
@@ -132,6 +127,14 @@ gitalk:
 github: 
   # (关闭请设置为false)
   url: https://github.com/Shen-Yu/hexo-theme-ayer
+
+# 网易云音乐插件
+music:
+  enable: false
+  # 播放器尺寸类型(1：小尺寸、2：大尺寸)
+  type: 1
+  id: 22707008  # 网易云分享的音乐ID(更换音乐请更改此配置项)
+  autoPlay: true  # 是否开启自动播放
 
 # 访问量统计(不蒜子)
 busuanzi:

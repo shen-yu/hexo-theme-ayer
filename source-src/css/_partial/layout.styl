@@ -30,7 +30,6 @@
   overflow-x: hidden
   -webkit-overflow-scrolling touch
   &.on
-    transform translateX(aside-width)
     margin-left 0 !important
 
 .sidebar
@@ -64,11 +63,11 @@
     font-size larger
 
 .wrap, .outer
+  position relative
   width 100%
   padding-right gutter-width
   padding-left gutter-width
   margin auto
-  overflow-x hidden
   min-height calc( 100% - 157px )
   clearfix()
 

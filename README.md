@@ -98,7 +98,7 @@ cover:
   logo: /images/ayer.svg
 
 # ProgressBar  
-progressBar: ture
+progressBar: true
 
 # Article Setting
 # (Use this to excerpt if article is too long：<!--more-->)
@@ -155,6 +155,11 @@ rss: /atom.xml
 
 # DarkMode
 darkmode: true
+
+# articleWidth and sidebarWidth
+layout:
+  article_width: 80rem
+  sidebar_width: 8rem
 
 # Comment：1、Valine (recommended)；2、Gitalk
 
