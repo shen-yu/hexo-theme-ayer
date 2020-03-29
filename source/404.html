@@ -5,7 +5,31 @@
   <title>404</title>
   <meta name="keywords" content="Hexo,404,Design">
   <meta name="description" content="Tribute Forrest Gump">
-  <link rel="stylesheet" href="/css/404.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <style>
+    html,figure {
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+    body{
+      margin: 20px;
+      overflow: hidden;
+    }
+    h1,h3{
+      width: 100%;
+      text-align: center;
+    }
+    .forrestgump img{
+      width: 50rem;
+      margin-left: 50%;
+      transform: translateX(-50%);
+    }
+    @media screen and (max-width: 768px){
+      .forrestgump img{
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
 <div class="notfound">
@@ -15,9 +39,9 @@
   <figure class="forrestgump">
     <figcaption>
       <h1 style="color: #6b0b0c;">404<br>Not Found!</h1>
-      <h3 style="color: #14206a;">Life was like a box of chocolates, you never know what you're going to get.</h3>
+      <h3 style="color: #14206a;">Life was like a journey on the sea, you never know what you're going to get.</h3>
     </figcaption>
-    <img src="/images/forrestgump.png">
+    <img src="/images/404.jpg">
   </figure>
 </div>
 </body>
