@@ -52,11 +52,14 @@
   }
 </script>
 <% } %>
+<% if (theme.katex.enable){ %>
+<%- partial('katex') %>
+<% } %>
 <% if (theme.busuanzi && theme.busuanzi.enable){ %>
 <%- js('/js/busuanzi-2.3.pure.min') %>
 <% } %>
 
 <script type="text/javascript" src="https://js.users.51.la/20544303.js"></script>
 <% if (theme.clickLove){ %>
-   <script src="<%- url_for('js/clickLove.js') %>"></script>
+  <%- js('/js/clickLove') %>
 <% } %>

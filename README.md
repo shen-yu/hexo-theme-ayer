@@ -207,8 +207,14 @@ google_analytics: ''
 # Baidu Analytics
 baidu_analytics: ''
 
-# mathjax
+# Mathjax Support
 mathjax: true
+
+# Katex Support
+katex:
+  enable: false # true
+  allpost: true
+  copy_tex: false
 
 # since year
 since: 2019

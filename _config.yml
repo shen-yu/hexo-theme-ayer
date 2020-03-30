@@ -153,8 +153,14 @@ google_analytics: ''
 # 百度统计
 baidu_analytics: ''
 
-# 数学公式
+# Mathjax数学公式
 mathjax: false
+
+# Katex数学公式(allpost设置为false时只有头部设置math:true的文章才开启)
+katex:
+  enable: false # true
+  allpost: true
+  copy_tex: false
 
 # 网站成立年份(默认为 2019，若填入年份小于当前年份，则显示为 2018-2019 类似的格式)
 since: 2015
