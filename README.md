@@ -156,6 +156,9 @@ rss: /atom.xml
 # DarkMode
 darkmode: true
 
+# ClickLove
+clickLove: false
+
 # articleWidth and sidebarWidth
 layout:
   article_width: 80rem

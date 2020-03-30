@@ -93,6 +93,9 @@ rss: /atom.xml
 # 是否启用黑夜模式开关
 darkmode: true
 
+# 页面点击小红心(开启请设置为true)
+clickLove: false
+
 # 页面宽度自定义（不建议修改，可能造成布局混乱），article_width文章宽度，sidebar_width侧边栏宽度
 layout:
   article_width: 80rem
