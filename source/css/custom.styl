@@ -18,6 +18,8 @@ $aside-width = convert(hexo-config('layout.sidebar_width'))
     .outer, .wrap
         width $wrap-width !important
 @media(max-width: 768px)
+    .tocbot
+        display none !important
     .content
         &.on
             transform translateX($aside-width)
