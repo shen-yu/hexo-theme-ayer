@@ -17,3 +17,12 @@ powered_by: Construido por
 rss_feed: RSS
 category: Categoría
 tag: Tag
+
+post:
+  word_count: El recuento de palabras
+  read_time: Tiempo de lectura
+  minutes: minutos
+  reward: Recompensa
+  sticky: Arriba
+  copyright_title: Derechos de autor
+  copyright_content: Los derechos de autor son propiedad del autor. Para reimpresiones comerciales, comuníquese con el autor para obtener autorización. Para reimpresiones no comerciales, indique la fuente.

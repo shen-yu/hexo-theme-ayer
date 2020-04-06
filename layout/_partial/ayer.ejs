@@ -1,6 +1,6 @@
 <% if (theme.cover.enable) { %>
 <section class="cover">
-    <% if (theme.github && theme.github.url){ %>
+    <% if (theme.github.enable && theme.github.url){ %>
       <%# "GitHub Ribbons" %>
       <a class="forkMe" href="<%=theme.github.url%>"
         target="_blank"><img width="149" height="149" src="<%- url_for('images/forkme.png') %>"

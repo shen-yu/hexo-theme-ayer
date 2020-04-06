@@ -17,3 +17,12 @@ powered_by: Powered by
 rss_feed: RSS Feed
 category: Kategorie
 tag: Tag
+
+post:
+  word_count: Wortzahl
+  read_time: Lesezeit
+  minutes: Minuten
+  reward: Belohnung
+  sticky: Oben
+  copyright_title: Copyright-Hinweis
+  copyright_content: Sofern nicht anders angegeben, liegt das Urheberrecht aller Artikel in diesem Blog beim Autor. Nachdruck bitte Quelle angeben!
