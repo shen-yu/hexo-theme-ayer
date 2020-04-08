@@ -101,14 +101,14 @@ layout:
   article_width: 80rem
   sidebar_width: 8rem
 
-# 评论：1、Valine(推荐)；2、Gitalk
+# 评论：1、Valine(推荐)；2、Gitalk；3、MiniValine
 
 # 1、Valine[一款快速、简洁且高效的无后端评论系统](https://github.com/xCss/Valine)
 # 启用Valine必须先创建leancloud应用， 获取 id|key 填入即可
 leancloud:  
   enable: true
-  app_id: #
-  app_key: #
+  app_id:  # Your leancloud application appid
+  app_key:  # Your leancloud application appkey
 # Valine配置
 valine:
   enable: true # 是否启用
@@ -125,6 +125,20 @@ gitalk:
   repo: # Repository name
   owner: # GitHub ID
   admin: # GitHub ID
+
+# 3、MiniValine
+# See: https://github.com/MiniValine/MiniValine
+minivaline:
+  enable: true
+  placeholder: Write a Comment # Comment box placeholder
+  adminEmailMd5: # The MD5 of Admin Email to show Admin Flag.
+  math: true # Support MathJax.
+  md: true # Support Markdown.
+  # MiniValine's display language depends on user's browser or system environment
+  # If you want everyone visiting your site to see a uniform language, you can set a force language value
+  # Available values: en  | zh-CN | (and many more)
+  # More i18n info: https://github.com/MiniValine/minivaline-i18n
+  lang:
 
 # GitHub Ribbons-封面右上角的forkme，换样式直接在source/images目录下替换forkme图片
 github: 
