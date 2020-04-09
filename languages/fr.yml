@@ -17,3 +17,12 @@ powered_by: Propulsé par
 rss_feed: Flux RSS
 category: Catégorie
 tag: Mot-clé
+
+post:
+  word_count: Nombre de mots
+  read_time: Temps de lecture
+  minutes: min
+  reward: Récompense
+  sticky: Haut
+  copyright_title: Avis de copyright
+  copyright_content: Le droit d'auteur appartient à l'auteur. Pour les réimpressions commerciales, veuillez contacter l'auteur pour autorisation. Pour les réimpressions non commerciales, veuillez indiquer la source.

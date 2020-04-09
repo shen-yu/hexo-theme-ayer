@@ -38,7 +38,7 @@
       <!-- reward -->
       <% if ((theme.reward_type === 2 || (theme.reward_type === 1 && post.reward)) && !index && !post.no_reward){ %>
       <div id="reward-btn">
-        打赏
+        <%= __('post.reward') %>
       </div>
       <% } %>
     </div>
@@ -50,9 +50,8 @@
           <ul class="post-copyright">
             <li>
               <i class="ri-copyright-line"></i>
-              <strong>版权声明： </strong s>
-              本博客所有文章除特别声明外，均采用 <a href="https://www.apache.org/licenses/LICENSE-2.0.html" rel="external nofollow"
-                target="_blank">Apache License 2.0</a> 许可协议。转载请注明出处！
+              <strong><%= __('post.copyright_title') %>： </strong>
+              <%= __('post.copyright_content') %>
             </li>
           </ul>
         </div>

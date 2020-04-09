@@ -1,0 +1,28 @@
+categories: Thể loại
+search: Tìm Kiếm
+tags: thẻ
+tagcloud: thẻ đám mây
+tweets: Tweets
+prev: trước
+next: kế tiếp
+comment: bình luận
+archive_a: Archives
+archive_b: "Archives: %s"
+page: Page %d
+recent_posts: Bài viết gần đây
+newer: mới hơn
+older: lớn hơn
+share: chia sẻ
+powered_by: Powered by
+rss_feed: RSS Feed
+category: Thể loại
+tag: thẻ
+
+post:
+  word_count: Đếm từ
+  read_time: Thời gian đọc
+  minutes: min
+  reward: tặng
+  sticky: dính
+  copyright_title: Bản quyền
+  copyright_content: Bản quyền thuộc sở hữu của tác giả. Đối với tái bản thương mại, xin vui lòng liên hệ với tác giả cho phép. Đối với tái bản phi thương mại, xin vui lòng cho biết nguồn.

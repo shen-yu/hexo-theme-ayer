@@ -17,3 +17,12 @@ powered_by: Powered by
 rss_feed: RSS Feed
 category: Category
 tag: Tag
+
+post:
+  word_count: 字數統計
+  read_time: 閱讀時長
+  minutes: 分鐘
+  reward: 打賞
+  sticky: 置頂
+  copyright_title: 版權聲明
+  copyright_content: 本博客所有文章除特別聲明外，著作權歸作者所有。轉載請註明出處！

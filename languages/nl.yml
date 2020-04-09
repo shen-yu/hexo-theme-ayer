@@ -17,3 +17,12 @@ powered_by: Powered by
 rss_feed: RSS Feed
 category: Categorie
 tag: Label
+
+post:
+  word_count: Aantal woorden in artikel
+  read_time: Leestijd
+  minutes: min
+  reward: Doneer
+  sticky: Sticky
+  copyright_title: Copyright melding
+  copyright_content: Copyright is eigendom van de auteur. Neem voor commerciële herdrukken contact op met de auteur voor autorisatie. Geef de bron aan voor niet-commerciële herdrukken.

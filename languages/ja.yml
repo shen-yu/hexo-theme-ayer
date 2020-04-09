@@ -17,3 +17,12 @@ powered_by: Powered by
 rss_feed: RSSフィード
 category: カテゴリ
 tag: タグ
+
+post:
+  word_count: 単語数
+  read_time: 読書の時間
+  minutes: 分
+  reward: 報酬
+  sticky: 上へ
+  copyright_title: 著作権表示
+  copyright_content: 著作権は著者が所有しています。商業版の複製については、承認について著者に連絡してください。非商業版の複製については、出典を明記してください。
