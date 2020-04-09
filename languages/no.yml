@@ -17,3 +17,12 @@ powered_by: Powered by
 rss_feed: RSS Feed
 category: Category
 tag: Tag
+
+post:
+  word_count: Ordtelling
+  read_time: Lesetid
+  minutes: min
+  reward: Donere
+  sticky: Sticky
+  copyright_title: Opphavsrett
+  copyright_content: Opphavsrett eies av forfatteren. For kommersielle opptrykk, vennligst kontakt forfatteren for godkjenning. For ikke-kommersiell uttrykk, vennligst oppgi kilden.
