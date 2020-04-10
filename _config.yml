@@ -11,15 +11,15 @@ menu:
 # 站点次标题和打字动效
 # https://github.com/mattboldt/typed.js
 subtitle:
-  enable: true  # 是否开启动效
-  text: 面朝大海，春暖花开  # 显示的文字
-  text2: 愿你一生努力，一生被爱   # 滚动播放，如果不需要可以留空
-  text3: 想要的都拥有，得不到的都释怀  # 最多支持三段文字
-  startDelay: 0   # 延迟时间
-  typeSpeed: 200  # 打字速度
-  loop: true  # 是否循环
-  backSpeed: 100  # 回退速度
-  showCursor: true  # 是否显示光标
+  enable: true # 是否开启动效
+  text: 面朝大海，春暖花开 # 显示的文字
+  text2: 愿你一生努力，一生被爱 # 滚动播放，如果不需要可以留空
+  text3: 想要的都拥有，得不到的都释怀 # 最多支持三段文字
+  startDelay: 0 # 延迟时间
+  typeSpeed: 200 # 打字速度
+  loop: true # 是否循环
+  backSpeed: 100 # 回退速度
+  showCursor: true # 是否显示光标
 
 # 网站图标和侧边栏logo
 favicon: /favicon.ico
@@ -29,10 +29,10 @@ logo: /images/ayer-side.svg
 # enable-是否启用封面；path-封面背景图；logo-封面logo
 cover:
   enable: true
-  path: /images/cover1.jpg  # /source/images目录下附送多张美图，可更换
+  path: /images/cover1.jpg # /source/images目录下附送多张美图，可更换
   logo: false #/images/ayer.svg，如果不要直接设置成false
 
-# 页面顶部进度条  
+# 页面顶部进度条
 progressBar: true
 
 # 文章配置
@@ -73,7 +73,7 @@ word_count:
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
 reward_type: 2
 # 打赏wording
-reward_wording: '请我喝杯咖啡吧~'
+reward_wording: "请我喝杯咖啡吧~"
 # 支付宝二维码图片地址，跟你设置logo的方式一样。比如：/images/alipay.jpg
 alipay: /images/alipay.jpg
 # 微信二维码图片地址
@@ -105,10 +105,10 @@ layout:
 
 # 1、Valine[一款快速、简洁且高效的无后端评论系统](https://github.com/xCss/Valine)
 # 启用Valine必须先创建leancloud应用， 获取 id|key 填入即可
-leancloud:  
+leancloud:
   enable: true
-  app_id:  # Your leancloud application appid
-  app_key:  # Your leancloud application appkey
+  app_id: # Your leancloud application appid
+  app_key: # Your leancloud application appkey
 # Valine配置
 valine:
   enable: true # 是否启用
@@ -129,7 +129,7 @@ gitalk:
 # 3、MiniValine
 # See: https://github.com/MiniValine/MiniValine
 minivaline:
-  enable: true
+  enable: false
   placeholder: Write a Comment # Comment box placeholder
   adminEmailMd5: # The MD5 of Admin Email to show Admin Flag.
   math: true # Support MathJax.
@@ -141,7 +141,7 @@ minivaline:
   lang:
 
 # GitHub Ribbons-封面右上角的forkme，换样式直接在source/images目录下替换forkme图片
-github: 
+github:
   # (关闭请设置为false)
   enable: true
   url: https://github.com/Shen-Yu/hexo-theme-ayer
@@ -151,8 +151,8 @@ music:
   enable: false
   # 播放器尺寸类型(1：小尺寸、2：大尺寸)
   type: 1
-  id: 22707008  # 网易云分享的音乐ID(更换音乐请更改此配置项)
-  autoPlay: true  # 是否开启自动播放
+  id: 22707008 # 网易云分享的音乐ID(更换音乐请更改此配置项)
+  autoPlay: true # 是否开启自动播放
 
 # 访问量统计(不蒜子)
 busuanzi:
@@ -164,9 +164,9 @@ cnzz:
   url: https://s9.cnzz.com/z_stat.php?id=1278069914&web_id=1278069914
 
 # Google Analytics
-google_analytics: ''
+google_analytics: ""
 # 百度统计
-baidu_analytics: ''
+baidu_analytics: ""
 
 # Mathjax数学公式
 mathjax: false
@@ -186,5 +186,5 @@ pageFooter: true
 #ICP备案信息尾部显示
 icp:
   enable: false
-  url: 'http://www.beian.miit.gov.cn/' # 备案链接
-  text: '浙ICP备88888888' # 备案信息
+  url: "http://www.beian.miit.gov.cn/" # 备案链接
+  text: "浙ICP备88888888" # 备案信息
