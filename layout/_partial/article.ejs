@@ -82,7 +82,7 @@
   <%- partial('post/gitalk') %>
   <% } %>
   
-  <% if (is_post()) { %>
+  <% if (theme.minivaline && theme.minivaline.enable && !post.no_minivaline){ %>
   <%- partial('post/minivaline') %>
   <% } %>
 

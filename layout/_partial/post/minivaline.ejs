@@ -1,13 +1,13 @@
 <% if (!index && theme.leancloud && theme.leancloud.enable){ %>
 <!-- minivaline评论 -->
-<div id="vcomments-box">
-    <div id="vcomments">
+<div id="mvcomments-box">
+    <div id="mvcomments">
     </div>
 </div>
-<script src='https://unpkg.com/minivaline/dist/MiniValine.min.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/minivaline/dist/MiniValine.min.js'></script>
 <script>
 	new MiniValine({
-	  el: '#vcomments',
+	  el: '#mvcomments',
 	  appId: '<%- theme.leancloud.app_id %>',
 	  appKey: '<%- theme.leancloud.app_key %>',
 	  placeholder: '<%- theme.minivaline.placeholder %>',
@@ -16,7 +16,7 @@
 	  math: <%- theme.minivaline.math %>,
 	  md: <%- theme.minivaline.md %>
 	});
-    const infoEle = document.querySelector('#vcomments .info');
+    const infoEle = document.querySelector('#mvcomments .info');
     if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
         infoEle.childNodes.forEach(function (item) {
             item.parentNode.removeChild(item);
@@ -24,17 +24,17 @@
     }
 </script>
 <style>
-    #vcomments-box {
+    #mvcomments-box {
         padding: 5px 30px;
     }
 
     @media screen and (max-width: 800px) {
-        #vcomments-box {
+        #mvcomments-box {
             padding: 5px 0px;
         }
     }
 
-    #vcomments-box #vcomments {
+    #mvcomments-box #mvcomments {
         background-color: #fff;
     }
 
