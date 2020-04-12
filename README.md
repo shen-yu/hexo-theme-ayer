@@ -105,6 +105,8 @@ progressBar: true
 excerpt_link: Read More...
 excerpt_all: false
 
+# Copy code button
+copy_btn: true
 # Share
 share_enable: true
 # If you are not in China, maybe you prefer to set:false

@@ -63,3 +63,9 @@
 <% if (theme.clickLove){ %>
   <%- js('/js/clickLove') %>
 <% } %>
+
+<!-- 复制 -->
+<% if (theme.copy_btn == true) { %>
+  <%- css('/css/clipboard') %>
+  <%- partial('post/clipboard') %>
+<% } %>

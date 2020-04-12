@@ -41,6 +41,8 @@ excerpt_link: 阅读更多...
 # 如果你嫌每篇文章手动加more标记比较麻烦，又不想在首页全文显示，可以把excerpt_all设置成true，这样首页只会显示文章归档
 excerpt_all: false
 
+# 是否开启代码复制按钮
+copy_btn: true
 # 是否开启文章分享按钮
 share_enable: true
 # 国内的社交平台(If you are not in China, maybe you prefer to set:false)
