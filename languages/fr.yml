@@ -13,10 +13,13 @@ recent_posts: Articles récents
 newer: Récent
 older: Ancien
 share: Partager
-powered_by: Propulsé par
+powered_by: Powered by %s
+theme: Theme - %s
 rss_feed: Flux RSS
 category: Catégorie
 tag: Mot-clé
+site_visitors: Visitors
+page_views: Views
 
 post:
   word_count: Nombre de mots

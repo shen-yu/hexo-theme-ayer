@@ -13,10 +13,13 @@ recent_posts: letzter Beitrag
 newer: Neuer
 older: Älter
 share: Teilen
-powered_by: Powered by
+powered_by: Powered by %s
+theme: Theme - %s
 rss_feed: RSS Feed
 category: Kategorie
 tag: Tag
+site_visitors: Visitors
+page_views: Views
 
 post:
   word_count: Wortzahl

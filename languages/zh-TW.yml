@@ -13,10 +13,13 @@ recent_posts: 最新文章
 newer: Newer
 older: Older
 share: Share
-powered_by: Powered by
+powered_by: Powered by %s
+theme: Theme - %s
 rss_feed: RSS Feed
 category: Category
 tag: Tag
+site_visitors: Visitors
+page_views: Views
 
 post:
   word_count: 字數統計

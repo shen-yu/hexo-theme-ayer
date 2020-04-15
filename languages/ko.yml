@@ -13,10 +13,13 @@ recent_posts: 최근 포스트
 newer: 최신
 older: 이전
 share: 공유
-powered_by: Powered by
+powered_by: Powered by %s
+theme: Theme - %s
 rss_feed: RSS Feed
 category: 카테고리
 tag: 태그
+site_visitors: Visitors
+page_views: Views
 
 post:
   word_count: 단어 수

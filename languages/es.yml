@@ -13,10 +13,13 @@ recent_posts: Posts recientes
 newer: Nuevo
 older: Viejo
 share: Compartir
-powered_by: Construido por
+powered_by: Powered by %s
+theme: Theme - %s
 rss_feed: RSS
 category: Categoría
 tag: Tag
+site_visitors: Visitors
+page_views: Views
 
 post:
   word_count: El recuento de palabras

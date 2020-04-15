@@ -13,10 +13,13 @@ recent_posts: 最新文章
 newer: Newer
 older: Older
 share: 分享
-powered_by: Powered by
+powered_by: 由 %s 强力驱动
+theme: 主题 - %s
 rss_feed: RSS Feed
 category: Category
 tag: Tag
+site_visitors: 访问人数
+page_views: 浏览次数
 
 post:
   word_count: 字数统计

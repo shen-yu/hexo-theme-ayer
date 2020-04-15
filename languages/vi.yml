@@ -13,10 +13,13 @@ recent_posts: Bài viết gần đây
 newer: mới hơn
 older: lớn hơn
 share: chia sẻ
-powered_by: Powered by
+powered_by: Powered by %s
+theme: Theme - %s
 rss_feed: RSS Feed
 category: Thể loại
 tag: thẻ
+site_visitors: Visitors
+page_views: Views
 
 post:
   word_count: Đếm từ

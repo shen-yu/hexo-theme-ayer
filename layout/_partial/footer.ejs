@@ -1,32 +1,39 @@
 <footer class="footer">
   <div class="outer">
-    <ul class="list-inline">
+    <ul>
       <li>
-        &copy;
+        Copyrights &copy;
         <% if (theme.since && !isNaN(theme.since) && theme.since < date(new Date(), 'YYYY')) { %><%- theme.since%>-<% } %><%= date(new Date(), 'YYYY') %>
-        <%= config.author || config.title %>
+        <i class="ri-heart-fill heart_icon"></i> <%= config.author || config.title %>
       </li>
+    </ul>
+    <ul>
       <li>
         <% if (theme.pageFooter){ %>
-        Powered by
         <% var hexoLink = '<a href="https://hexo.io" target="_blank">Hexo</a>'; %>
         <% var themeLink = '<a href="https://github.com/Shen-Yu/hexo-theme-ayer" target="_blank">Ayer</a>'; %>
-        <%- hexoLink %> Theme <%- themeLink %>
+        <%- __('powered_by', hexoLink) %>
+        <span class="division">|</span>
+        <%- __('theme', themeLink) %>
         <% } %>
       </li>
     </ul>
-    <ul class="list-inline">
+    <ul>
       <li>
         <% if (theme.busuanzi && theme.busuanzi.enable){ %>
         <%# "不蒜子统计" %>
         <%- partial('post/busuanzi') %>
         <% } %>
       </li>
+    </ul>
+    <ul>
       <% if (theme.icp&&theme.icp.enable){ %>
-      <li>
-        <a href="<%= theme.icp.url %>" target="_black"><%= theme.icp.text %></a>
-      </li>
-      <% } %>
+        <li>
+          <a href="<%= theme.icp.url %>" target="_black"><%= theme.icp.text %></a>
+        </li>
+        <% } %>
+    </ul>
+    <ul>
       <li>
         <!-- cnzz统计 -->
         <% if (theme.cnzz&&theme.cnzz.enable){ %>

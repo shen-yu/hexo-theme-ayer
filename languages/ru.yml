@@ -13,10 +13,13 @@ recent_posts: Недавние записи
 newer: Следующий
 older: Предыдущий
 share: Поделиться
-powered_by: Создано с помощью
+powered_by: Powered by %s
+theme: Theme - %s
 rss_feed: RSS-каналы
 category: Категория
 tag: Метка
+site_visitors: Visitors
+page_views: Views
 
 post:
   word_count: Количество слов
