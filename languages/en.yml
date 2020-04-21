@@ -13,16 +13,19 @@ recent_posts: Recent Posts
 newer: Newer
 older: Older
 share: Share
-powered_by: Powered by
+powered_by: Powered by %s
+theme: Theme - %s
 rss_feed: RSS Feed
 category: Category
 tag: Tag
+site_visitors: Visitors
+page_views: Views
 
 post:
   word_count: Word count
   read_time: Reading time
   minutes: min
-  reward: Reward
+  reward: Donate
   sticky: Sticky
   copyright_title: Copyright
   copyright_content: Copyright is owned by the author. For commercial reprints, please contact the author for authorization. For non-commercial reprints, please indicate the source.

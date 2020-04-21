@@ -13,10 +13,13 @@ recent_posts: 最近の投稿
 newer: 次の記事
 older: 前の記事
 share: 共有
-powered_by: Powered by
+powered_by: Powered by %s
+theme: Theme - %s
 rss_feed: RSSフィード
 category: カテゴリ
 tag: タグ
+site_visitors: Visitors
+page_views: Views
 
 post:
   word_count: 単語数

@@ -4,7 +4,7 @@
   "description": "a clean and elegant theme for hexo.",
   "scripts": {
     "dev": "parcel serve source-src/main.js -d source/dist",
-    "build": "parcel build source-src/main.js -d source/dist --no-source-maps"
+    "build": "rimraf source/dist && parcel build source-src/main.js -d source/dist --no-source-maps"
   },
   "source": "source-src/main.js",
   "repository": {

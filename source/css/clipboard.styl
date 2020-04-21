@@ -1,0 +1,35 @@
+// 代码块复制按钮
+if hexo-config('copy_btn') == true
+  .highlight
+    position: relative
+
+  .btn-copy
+    z-index: 1
+    display: inline-block
+    cursor: pointer
+    border: none
+    disable-user-select()
+    -webkit-appearance: none
+    font-size: 12px
+    font-weight: bold
+    padding: 3px 6px
+    >i
+      margin-right: 4px
+      font-size: 10px
+      transform: translateY(1px);
+    color: #333
+    background: rgba(255,255,255,.8)
+    border-radius: 2px
+    position: absolute
+    top: 0
+    right: 0
+    opacity: 0
+    transition: all linear .2s
+    &:hover
+      background: rgba(255,255,255,.7)
+
+  .highlight:hover .btn-copy
+    opacity: 1
+
+  .article pre:hover .btn-copy
+    opacity: 1

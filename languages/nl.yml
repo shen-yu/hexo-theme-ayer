@@ -13,10 +13,13 @@ recent_posts: Recente berichten
 newer: Nieuwer
 older: Ouder
 share: Delen
-powered_by: Powered by
+powered_by: Powered by %s
+theme: Theme - %s
 rss_feed: RSS Feed
 category: Categorie
 tag: Label
+site_visitors: Visitors
+page_views: Views
 
 post:
   word_count: Aantal woorden in artikel

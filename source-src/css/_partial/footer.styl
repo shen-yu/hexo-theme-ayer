@@ -1,19 +1,50 @@
+@keyframes footerHeartBeat
+      0%
+        transform: scale(1)
+      50%
+        transform: scale(1.2)
+      100%
+        transform: scale(1)
 
 .footer
   border-top 2px solid #f6f6f6 
   padding 3rem 0
+  font-size 115%
   .outer
     &>ul
       position relative
       display flex
-      justify-content space-between
-      &:first-child
-        border-bottom border-width solid #f1f1f1
-
+      justify-content center
       li
         display inline-block
-        padding .5rem 0
+        padding .3rem 0
         a
           text-decoration none
+        .division
+          display inline
+          margin 0 5px
+        i 
+          margin 0 2px
+          font-style normal
+          transform translateY(2px)
       span
         margin-right 6px
+
+.heart_icon
+  display: inline-block;
+  margin: 0 0.4rem;
+  font-size: 1em;
+  color: #f00;
+  -webkit-animation: footerHeartBeat 1.2s infinite;
+  -moz-animation: footerHeartBeat 1.2s infinite;
+  -o-animation: footerHeartBeat 1.2s infinite;
+  -ms-animation: footerHeartBeat 1.2s infinite;
+  animation: footerHeartBeat 1.2s infinite;
+  animation-duration: 1.2s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: footerHeartBeat;
