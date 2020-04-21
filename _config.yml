@@ -90,6 +90,7 @@ copyright_type: 2
 search: true
 
 # RSS订阅(先安装hexo-generator-feed插件，再去博客根目录config进行配置)
+# 不想显示可以直接留空
 rss: /atom.xml
 
 # 是否启用黑夜模式开关

@@ -153,6 +153,7 @@ copyright_type: 2
 search: true
 
 # RSS
+# leave it empty if you dont' need
 rss: /atom.xml
 
 # DarkMode
