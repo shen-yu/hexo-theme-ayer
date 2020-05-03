@@ -3,6 +3,10 @@
 <h3 align="center">一个安静且优雅的 Hexo 主题</h3>
 
 <p align="center">
+
+  <img alt="GitHub" src="https://img.shields.io/github/license/Shen-Yu/hexo-theme-ayer">
+   <img alt="platform" src="https://img.shields.io/badge/platform-PC--ios--android-ea5a76.svg">
+  <br>
   <a href="https://travis-ci.org/Shen-Yu/hexo-theme-ayer?branch=master" target="_blank" rel="noopener noreferrer">
     <img alt="travis-ci" src="https://travis-ci.org/Shen-Yu/hexo-theme-ayer.svg?branch=master">
   </a>
@@ -14,13 +18,13 @@
   </a>
   <br>
   <a href="https://github.com/Shen-Yu/hexo-theme-ayer/releases" target="_blank" rel="noopener noreferrer">
-    <img alt="GitHub release" src="https://img.shields.io/badge/release-v2.1-blue.svg">
+    <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/Shen-Yu/hexo-theme-ayer?color=blue">
   </a> 
  <img alt="language" src="https://img.shields.io/badge/language-ejs--stylus-orange.svg">
   <a href="https://hexo.io/zh-cn/" target="_blank" rel="noopener noreferrer">
     <img alt="hexo" src="https://img.shields.io/badge/hexo-%3E%3D3.0-blue.svg">
   </a>
- <img alt="platform" src="https://img.shields.io/badge/platform-PC--ios--android-cc2e8b.svg">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Shen-Yu/hexo-theme-ayer?color=%23af8ddc">
 </p>
 
 ---
