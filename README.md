@@ -165,6 +165,8 @@ darkmode: true
 
 # ClickLove
 clickLove: false
+# ClickBoom
+clickBoom: false
 
 # articleWidth and sidebarWidth
 layout:
