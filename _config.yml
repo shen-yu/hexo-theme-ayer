@@ -98,6 +98,8 @@ darkmode: true
 
 # 页面点击小红心(开启请设置为true)
 clickLove: false
+# 页面点击烟花效果(开启请设置为true)
+clickBoom: false
 
 # 页面宽度自定义（不建议修改，可能造成布局混乱），article_width文章宽度，sidebar_width侧边栏宽度
 layout:
@@ -110,8 +112,8 @@ layout:
 # 启用Valine必须先创建leancloud应用， 获取 id|key 填入即可
 leancloud:
   enable: true
-  app_id: # Your leancloud application appid
-  app_key: # Your leancloud application appkey
+  app_id: #
+  app_key: #
 # Valine配置
 valine:
   enable: true # 是否启用
