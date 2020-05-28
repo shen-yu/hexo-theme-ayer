@@ -1,30 +1,25 @@
 // Categories
-
-.category-list
-  list-unstyled()
+.categories-box
+  max-width 320px
   margin-right -.5rem
   margin-left -.5rem
-  .category-list-item
-    margin: 10px 10px;
-    padding: 0 14px;
-    display: inline-block;
-    text-align: center;
-    height: 38px;
-    min-width: 80px;
-    line-height: 38px;
-    font-size: 1.5rem;
+  border-left 1px solid #eee
+  span
+    padding-left: 5px;
+    color: #aaa;
+    font-size: 14px
+  ul li, ol li
+    list-unstyled()
+    margin: 15px 0;
+    padding-left: 15px;
+    padding-bottom: 12px;
+    font-size: 16px;
     font-weight: 500;
-    border-radius: 5px;
     word-wrap: break-word;
-    cursor: pointer;
-    box-shadow: 0px 3px 5px rgba(0,0,0,0.08);
-    border: 1px solid #e7e7eb
-    &:before
-      content "\efde"
-      font-family remixicon
-      margin-right .5rem
-      display inline-block
-      vertical-align middle
+    border-bottom: 1px solid #eee;
+    &:last-child
+      margin-bottom 0
+      border-bottom 0 solid #000
     i 
       font-style normal
       margin-left 10px
@@ -35,10 +30,23 @@
     text-decoration: none 
     color: body-color
     &:hover
-      .category-list-item
-        border: 1px solid darken(water,20%)
-        box-shadow:  0 3px 5px water
-        color: darken(water,50%);
-      &:before
-        color: darken(water,50%);
-    
+      opacity .8
+    &:before
+      content "\efde"
+      font-family remixicon
+      margin-right .5rem
+      display inline-block
+      vertical-align middle
+  ul ul,ol ul,ul ol,ol ol
+    list-unstyled()
+    margin 0 20px
+  ul ul li,ol ul li,ul ol li,ol ol li
+    list-unstyled()
+    border: none;
+    padding-bottom: 0;
+.category-list-count:before, .tag-list-count:before, .archive-list-count:before
+  content: "(";
+.category-list-count:after, .tag-list-count:after, .archive-list-count:after
+  content: ")";
+ 
+  
