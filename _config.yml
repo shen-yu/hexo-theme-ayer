@@ -98,8 +98,10 @@ darkmode: true
 
 # 页面点击小红心(开启请设置为true)
 clickLove: false
-# 页面点击烟花效果(开启请设置为true)
+# 页面点击-粒子烟花效果(开启请设置为true)
 clickBoom: false
+# 页面点击-爆炸烟花效果(开启请设置为true)
+clickBoom2: false
 
 # 页面宽度自定义（不建议修改，可能造成布局混乱），article_width文章宽度，sidebar_width侧边栏宽度
 layout:
@@ -130,20 +132,6 @@ gitalk:
   repo: # Repository name
   owner: # GitHub ID
   admin: # GitHub ID
-
-# 3、MiniValine
-# See: https://github.com/MiniValine/MiniValine
-minivaline:
-  enable: false
-  placeholder: Write a Comment # Comment box placeholder
-  adminEmailMd5: # The MD5 of Admin Email to show Admin Flag.
-  math: true # Support MathJax.
-  md: true # Support Markdown.
-  # MiniValine's display language depends on user's browser or system environment
-  # If you want everyone visiting your site to see a uniform language, you can set a force language value
-  # Available values: en  | zh-CN | (and many more)
-  # More i18n info: https://github.com/MiniValine/minivaline-i18n
-  lang:
 
 # GitHub Ribbons-封面右上角的forkme，换样式直接在source/images目录下替换forkme图片
 github:

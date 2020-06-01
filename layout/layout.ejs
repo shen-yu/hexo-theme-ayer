@@ -2,7 +2,20 @@
 
 <body>
   <% if (theme.clickBoom){ %>
-  <canvas width="1777" height="841" style="position: fixed; left: 0px; top: 0px; z-index: 999; pointer-events: none;"></canvas>
+  <canvas width="1777" height="841"
+    style="position: fixed; left: 0px; top: 0px; z-index: 999; pointer-events: none;"></canvas>
+  <% } %>
+  <% if (theme.clickBoom2){ %>
+  <canvas class="fireworks"></canvas>
+  <style>
+    .fireworks {
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 99999;
+      pointer-events: none;
+    }
+  </style>
   <% } %>
   <div id="app">
     <main class="content on">
