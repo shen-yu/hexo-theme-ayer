@@ -60,16 +60,16 @@
 <%- js('/js/busuanzi-2.3.pure.min') %>
 <% } %>
 <!-- ClickLove -->
-<% if (theme.clickLove){ %>
+<% if (theme.click_effect===1){ %>
 <%- js('/js/clickLove') %>
 <% } %>
-<!-- ClickBoom -->
-<% if (theme.clickBoom){ %>
-<%- js('/js/clickBoom') %>
+<!-- ClickBoom1 -->
+<% if (theme.click_effect===2){ %>
+<script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script>
+<%- js('/js/clickBoom1') %>
 <% } %>
 <!-- ClickBoom2 -->
-<% if (theme.clickBoom2){ %>
-<script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script>
+<% if (theme.click_effect===3){ %>
 <%- js('/js/clickBoom2') %>
 <% } %>
 <!-- CodeCopy -->

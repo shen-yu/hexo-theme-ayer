@@ -171,12 +171,8 @@ mouse:
   enable: false
   path: /images/mouse.cur
 
-# ClickLove
-clickLove: false
-# ClickBoom style 1
-clickBoom: false
-# ClickBoom style 2
-clickBoom2: false
+# Click effect: 0-close，1-love，2-boom，3-particles
+click_effect: 0
 
 # articleWidth and sidebarWidth
 layout:

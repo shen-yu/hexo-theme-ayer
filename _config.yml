@@ -97,19 +97,15 @@ rss: /atom.xml
 darkmode: true
 
 # 动态背景效果: 0-关闭，1-动态线条(跟随鼠标)
-canvas_bg: 0
+canvas_bg: 1
 
 # 自定义鼠标样式，直接替换/images/mouse.cur文件
 mouse:
   enable: false
   path: /images/mouse.cur
 
-# 页面点击小红心(开启请设置为true)
-clickLove: false
-# 页面点击-粒子烟花效果(开启请设置为true)
-clickBoom: false
-# 页面点击-爆炸烟花效果(开启请设置为true)
-clickBoom2: false
+# 鼠标点击效果：0-关闭，1-爱心，2-爆炸烟花，3-粒子烟花
+click_effect: 0
 
 # 页面宽度自定义（不建议修改，可能造成布局混乱），article_width文章宽度，sidebar_width侧边栏宽度
 layout:
