@@ -4,7 +4,7 @@
 
 <p align="center">
 
-  <img alt="GitHub" src="https://img.shields.io/github/license/Shen-Yu/hexo-theme-ayer">
+  <img alt="LICENSE" src="https://img.shields.io/badge/LICENSE-SATA-red">
    <img alt="platform" src="https://img.shields.io/badge/platform-PC--ios--android-ea5a76.svg">
   <br>
   <a href="https://travis-ci.org/Shen-Yu/hexo-theme-ayer?branch=master" target="_blank" rel="noopener noreferrer">
@@ -328,4 +328,6 @@ Use Tocbot to parse the title tags (h1~h6) in the content and insert the directo
 ---
 
 <br/>
-<a src="https://github.com/Shen-Yu/hexo-theme-ayer">Ayer</a> by <a  href="https://github.com/Shen-Yu">Eric-Shen</a> is licensed under  <a rel="license" href="https://www.mit-license.org/">MIT</a>.
+<a src="https://github.com/Shen-Yu/hexo-theme-ayer">Ayer</a> by <a  href="https://github.com/Shen-Yu">Eric-Shen</a> is licensed under  <a rel="license" href="https://github.com/Shen-Yu/hexo-theme-ayer/blob/master/LICENSE">SATA-License</a>.
+
+The basic idea is, whenever using a project using SATA license, people shall star/like/+1 that project and thank the author. Just imagine Google stared your project and send you a thank-you letter because they used your project in github!
