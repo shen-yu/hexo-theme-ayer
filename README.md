@@ -4,7 +4,8 @@
 
 <p align="center">
 
-  <img alt="LICENSE" src="https://img.shields.io/badge/LICENSE-SATA-red">
+  <a href="https://github.com/Shen-Yu/hexo-theme-ayer/blob/master/LICENSE" target="_blank" rel="noopener noreferrer"><img alt="LICENSE" src="https://img.shields.io/badge/LICENSE-SATA-red">
+  </a>
    <img alt="platform" src="https://img.shields.io/badge/platform-PC--ios--android-ea5a76.svg">
   <br>
   <a href="https://travis-ci.org/Shen-Yu/hexo-theme-ayer?branch=master" target="_blank" rel="noopener noreferrer">
