@@ -163,6 +163,14 @@ rss: /atom.xml
 # DarkMode
 darkmode: true
 
+# Canvas background style: 0-close，1-moveline
+canvas_bg: 0
+
+# Custom mouse pointer，replace /images/mouse.cur
+mouse:
+  enable: false
+  path: /images/mouse.cur
+
 # ClickLove
 clickLove: false
 # ClickBoom style 1

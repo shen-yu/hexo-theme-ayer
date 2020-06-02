@@ -96,6 +96,14 @@ rss: /atom.xml
 # 是否启用黑夜模式开关
 darkmode: true
 
+# 动态背景效果: 0-关闭，1-动态线条(跟随鼠标)
+canvas_bg: 0
+
+# 自定义鼠标样式，直接替换/images/mouse.cur文件
+mouse:
+  enable: false
+  path: /images/mouse.cur
+
 # 页面点击小红心(开启请设置为true)
 clickLove: false
 # 页面点击-粒子烟花效果(开启请设置为true)

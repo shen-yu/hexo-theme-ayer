@@ -1,5 +1,10 @@
 $wrap-width = convert(hexo-config('layout.article_width'))
 $aside-width = convert(hexo-config('layout.sidebar_width'))
+$mouse-url = convert(hexo-config('mouse.path'))
+
+if hexo-config('mouse.enable')
+    body
+        cursor: url($mouse-url),auto;
 
 .sidebar
     left - $aside-width
