@@ -228,6 +228,7 @@ baidu_analytics: ''
 mathjax: true
 
 # Katex Support
+# note: need change the hexo-renderer，npm un hexo-renderer-marked -S && npm i hexo-renderer-markdown-it-katex -S
 katex:
   enable: false # true
   allpost: true
