@@ -2,6 +2,22 @@
 
 <body>
   <div id="app">
+    <% if (theme.click_effect===2){ %>
+      <canvas class="fireworks"></canvas>
+      <style>
+        .fireworks {
+          position: fixed;
+          left: 0;
+          top: 0;
+          z-index: 99999;
+          pointer-events: none;
+        }
+      </style>
+      <% } %>
+      <% if (theme.click_effect===3){ %>
+      <canvas width="1777" height="841"
+        style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
+      <% } %>
     <main class="content on">
       <%- body %>
       <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
@@ -24,23 +40,6 @@
     <% if (theme.music&&theme.music.enable){ %>
     <%- partial('_partial/music') %>
     <% } %>
-    
-    <% if (theme.click_effect===2){ %>
-      <canvas class="fireworks"></canvas>
-      <style>
-        .fireworks {
-          position: fixed;
-          left: 0;
-          top: 0;
-          z-index: 99999;
-          pointer-events: none;
-        }
-      </style>
-      <% } %>
-      <% if (theme.click_effect===3){ %>
-      <canvas width="1777" height="841"
-        style="position: fixed; left: 0px; top: 0px; z-index: 99999; pointer-events: none;"></canvas>
-      <% } %>
   </div>
 </body>
 
