@@ -35,26 +35,54 @@
   }
 </script>
 <style>
-  #mvcomments-box {
-    padding: 5px 30px;
-  }
+	#mvcomments-box {
+	padding: 5px 30px;
+	}
 
-  @media screen and (max-width: 800px) {
-    #mvcomments-box {
-      padding: 5px 0px;
-    }
-  }
+	@media screen and (max-width: 800px) {
+	#mvcomments-box {
+	  padding: 5px 0px;
+	}
+	}
 
-  #mvcomments-box #mvcomments {
-    background-color: #fff;
-  }
+	.v .vlist .vcard .vh {
+	padding-right: 20px;
+	}
 
-  .v .vlist .vcard .vh {
-    padding-right: 20px;
-  }
-
-  .v .vlist .vcard {
-    padding-left: 10px;
-  }
+	.v .vlist .vcard {
+	padding-left: 10px;
+	}
+	
+	.darkmode .commentTrigger{
+		background-color: #403e3e !important;
+	  }
+	.darkmode .MiniValine .vpage .more{
+		background: #21232F
+	}
+	.darkmode img{
+		  filter: brightness(30%)
+	}
+	.darkmode .MiniValine .vlist .vcard .vcomment-body .text-wrapper .vcomment.expand:before{
+		background: linear-gradient(180deg, rgba(246,246,246,0), rgba(0,0,0,0.9))
+	}
+	.darkmode .MiniValine .vlist .vcard .vcomment-body .text-wrapper .vcomment.expand:after{
+		background: rgba(0,0,0,0.9)
+	}
+	.darkmode .MiniValine .vlist .vcard .vcomment-body .text-wrapper .vcomment pre{
+		background: #282c34
+		border: 1px solid #282c34
+	}
+	.darkmode .MiniValine .vinputs-area .textarea-wrapper textarea{
+		color: #000;
+	}
+	.darkmode .MiniValine .vinputs-area .auth-section .input-wrapper input{
+		color: #000;
+	}
+	.darkmode .MiniValine .info .col .count{
+		color: #000;
+	}
+	.darkmode .MiniValine .vinputs-area .vextra-area .vsmile-icons{
+		background: transparent;
+	}
 </style>
 <% } %>
