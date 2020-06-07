@@ -5,16 +5,28 @@
 </div>
 <script src="https://cdn.jsdelivr.net/npm/minivaline@2/dist/MiniValine.min.js"></script>
 <script>
-  new MiniValine({
-    el: '#mvcomments',
-    appId: '<%- theme.leancloud.app_id %>',
-    appKey: '<%- theme.leancloud.app_key %>',
-    placeholder: '<%- theme.minivaline.placeholder %>',
-    lang: '<%- theme.minivaline.lang %>',
-    adminEmailMd5: '<%- theme.minivaline.adminEmailMd5 %>',
-    math: <%- theme.minivaline.math %>,
-    md: <%- theme.minivaline.md %>
-  });
+    new MiniValine({
+        el: '#mvcomments',
+        appId: '<%- theme.leancloud.app_id %>',
+        appKey: '<%- theme.leancloud.app_key %>',
+        mode: '<%- theme.minivaline.mode %>',
+        placeholder: '<%- theme.minivaline.placeholder %>',
+        pathname: window.location.pathname,
+        lang: '<%- theme.minivaline.lang %>',
+        adminEmailMd5: '<%- theme.minivaline.adminEmailMd5 %>',
+        tagMeta: <%- '["' + theme.minivaline.tagMeta.join('", "') + '"]' %>,
+        master: <%- '["' + theme.minivaline.master.join('", "') + '"]' %>,
+        friends: <%- '["' + theme.minivaline.friends.join('", "') + '"]' %>,
+        math: <%- theme.minivaline.math %>,
+        md: <%- theme.minivaline.md %>,
+        enableQQ: <%- theme.minivaline.enableQQ %>,
+        NoRecordIP: <%- theme.minivaline.NoRecordIP %>,
+        visitor: <%- theme.minivaline.visitor %>,
+        maxNest: <%- theme.minivaline.maxNest %>,
+        pageSize: <%- theme.minivaline.pageSize %>,
+        serverURLs: '<%- theme.minivaline.serverURLs %>',
+        emoticonUrl: <%- '["' + theme.minivaline.emoticonUrl.join('", "') + '"]' %>,
+    });
   const infoEle = document.querySelector('#mvcomments .info');
   if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
       infoEle.childNodes.forEach(function (item) {
