@@ -112,14 +112,64 @@ layout:
   article_width: 80rem
   sidebar_width: 8rem
 
+# GitHub Ribbons-封面右上角的forkme，换样式直接在source/images目录下替换forkme图片
+github:
+  # (关闭请设置为false)
+  enable: true
+  url: https://github.com/Shen-Yu/hexo-theme-ayer
+
+# 网易云音乐插件
+music:
+  enable: false
+  # 播放器尺寸类型(1：小尺寸、2：大尺寸)
+  type: 1
+  id: 22707008 # 网易云分享的音乐ID(更换音乐请更改此配置项)
+  autoPlay: true # 是否开启自动播放
+
+# 访问量统计(不蒜子)
+busuanzi:
+  enable: true
+
+# 友盟cnzz统计(url填js代码src链接)
+cnzz:
+  enable: true
+  url: https://s9.cnzz.com/z_stat.php?id=1278069914&web_id=1278069914
+
+# Google Analytics
+google_analytics: ""
+# 百度统计
+baidu_analytics: ""
+
+# Mathjax数学公式
+mathjax: false
+
+# Katex数学公式(allpost设置为false时只有头部设置math:true的文章才开启)
+# 需要更换hexo渲染器，npm un hexo-renderer-marked -S && npm i hexo-renderer-markdown-it-katex -S
+katex:
+  enable: false # true
+  allpost: true
+  copy_tex: false
+
+# 网站成立年份(默认为 2019，若填入年份小于当前年份，则显示为 2018-2019 类似的格式)
+since: 2015
+
+# 是否显示页脚信息(建议保留)
+pageFooter: true
+
+#ICP备案信息尾部显示
+icp:
+  enable: false
+  url: "http://www.beian.miit.gov.cn/" # 备案链接
+  text: "浙ICP备88888888" # 备案信息
+
 # 评论：1、Valine(推荐)；2、Gitalk；3、MiniValine
 
 # 1、Valine[一款快速、简洁且高效的无后端评论系统](https://github.com/xCss/Valine)
 # 启用Valine必须先创建leancloud应用， 获取 id|key 填入即可
 leancloud:
   enable: true
-  app_id: chaSYi8FMdJBwzIBpxeNjqWC-gzGzoHsz
-  app_key: PqqkLYgPkHvH1BmyQqySWnSK
+  app_id: #
+  app_key: #
 # Valine配置
 valine:
   enable: true # 是否启用
@@ -174,53 +224,3 @@ minivaline:
     - https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest
     - https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest
     - https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest
-
-# GitHub Ribbons-封面右上角的forkme，换样式直接在source/images目录下替换forkme图片
-github:
-  # (关闭请设置为false)
-  enable: true
-  url: https://github.com/Shen-Yu/hexo-theme-ayer
-
-# 网易云音乐插件
-music:
-  enable: false
-  # 播放器尺寸类型(1：小尺寸、2：大尺寸)
-  type: 1
-  id: 22707008 # 网易云分享的音乐ID(更换音乐请更改此配置项)
-  autoPlay: true # 是否开启自动播放
-
-# 访问量统计(不蒜子)
-busuanzi:
-  enable: true
-
-# 友盟cnzz统计(url填js代码src链接)
-cnzz:
-  enable: true
-  url: https://s9.cnzz.com/z_stat.php?id=1278069914&web_id=1278069914
-
-# Google Analytics
-google_analytics: ""
-# 百度统计
-baidu_analytics: ""
-
-# Mathjax数学公式
-mathjax: false
-
-# Katex数学公式(allpost设置为false时只有头部设置math:true的文章才开启)
-# 需要更换hexo渲染器，npm un hexo-renderer-marked -S && npm i hexo-renderer-markdown-it-katex -S
-katex:
-  enable: false # true
-  allpost: true
-  copy_tex: false
-
-# 网站成立年份(默认为 2019，若填入年份小于当前年份，则显示为 2018-2019 类似的格式)
-since: 2015
-
-# 是否显示页脚信息(建议保留，有助于本主题的推广)
-pageFooter: true
-
-#ICP备案信息尾部显示
-icp:
-  enable: false
-  url: "http://www.beian.miit.gov.cn/" # 备案链接
-  text: "浙ICP备88888888" # 备案信息
