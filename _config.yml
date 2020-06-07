@@ -97,7 +97,7 @@ rss: /atom.xml
 darkmode: true
 
 # 动态背景效果: 0-关闭，1-动态线条(跟随鼠标)
-canvas_bg: 1
+canvas_bg: 0
 
 # 自定义鼠标样式，直接替换/images/mouse.cur文件
 mouse:
@@ -118,13 +118,11 @@ layout:
 # 启用Valine必须先创建leancloud应用， 获取 id|key 填入即可
 leancloud:
   enable: true
-  app_id: #
-  app_key: #
+  app_id: chaSYi8FMdJBwzIBpxeNjqWC-gzGzoHsz
+  app_key: PqqkLYgPkHvH1BmyQqySWnSK
 # Valine配置
 valine:
   enable: true # 是否启用
-  verify: false # 是否启用防垃圾验证
-  notify: false # 是否开启邮件提醒(https://valine.js.org/notify.html)
   avatar: monsterid # 头像样式(https://valine.js.org/avatar.html)
   placeholder: 给我的文章加点评论吧~ # placeholder
 
