@@ -138,7 +138,7 @@ gitalk:
 # 3、MiniValine
 # See: https://github.com/MiniValine/MiniValine
 minivaline:
-  enable: true
+  enable: false
   placeholder: Write a Comment # Comment box placeholder
   adminEmailMd5: # The MD5 of Admin Email to show Admin Flag.
   math: true # Support MathJax.
