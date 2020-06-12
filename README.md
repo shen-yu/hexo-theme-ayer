@@ -12,7 +12,7 @@
   <br>
   <a href="https://hubble.js.org?owner=Shen-Yu&repo=hexo-theme-ayer&start"><img src="https://img.shields.io/badge/since-2019-409eff.svg" alt="Hubble"></a>
   <a href="https://shen-yu.gitee.io" target="_blank" rel="noopener noreferrer">
-   <img alt="platform" src="https://img.shields.io/badge/platform-PC--ios--android-ea5a76.svg">
+   <img alt="platform" src="https://img.shields.io/badge/platform-PC--ios--android-e68db8.svg">
    </a>
   <a href="https://gitter.im/hexo-theme-ayer/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge" target="_blank" rel="noopener noreferrer">
     <img alt="Gitter" src="https://badges.gitter.im/Join%20Chat.svg">
@@ -23,7 +23,7 @@
   </a> 
  <img alt="language" src="https://img.shields.io/badge/language-ejs--stylus-green.svg">
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Shen-Yu/hexo-theme-ayer?color=%23af8ddc">
-  <a href="https://github.com/Shen-Yu/hexo-theme-ayer/blob/master/LICENSE" target="_blank" rel="noopener noreferrer"><img alt="LICENSE" src="https://img.shields.io/badge/LICENSE-sata-orange">
+  <a href="https://github.com/Shen-Yu/hexo-theme-ayer/blob/master/LICENSE" target="_blank" rel="noopener noreferrer"><img alt="LICENSE" src="https://img.shields.io/badge/LICENSE-SATA-efa96e">
   </a>
 </p>
 
