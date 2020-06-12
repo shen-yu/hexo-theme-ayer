@@ -97,7 +97,7 @@ rss: /atom.xml
 darkmode: true
 
 # 动态背景效果: 0-关闭，1-动态线条(跟随鼠标)
-canvas_bg: 1
+canvas_bg: 0
 
 # 自定义鼠标样式，直接替换/images/mouse.cur文件
 mouse:
@@ -111,31 +111,6 @@ click_effect: 0
 layout:
   article_width: 80rem
   sidebar_width: 8rem
-
-# 评论：1、Valine(推荐)；2、Gitalk
-
-# 1、Valine[一款快速、简洁且高效的无后端评论系统](https://github.com/xCss/Valine)
-# 启用Valine必须先创建leancloud应用， 获取 id|key 填入即可
-leancloud:
-  enable: true
-  app_id: chaSYi8FMdJBwzIBpxeNjqWC-gzGzoHsz
-  app_key: PqqkLYgPkHvH1BmyQqySWnSK
-# Valine配置
-valine:
-  enable: true # 是否启用
-  verify: false # 是否启用防垃圾验证
-  notify: true # 是否开启邮件提醒(https://valine.js.org/notify.html)
-  avatar: monsterid # 头像样式(https://valine.js.org/avatar.html)
-  placeholder: 给我的文章加点评论吧~ # placeholder
-
-# 2、Gitalk(https://github.com/gitalk/gitalk)
-gitalk:
-  enable: false # true
-  clientID: # GitHub Application Client ID
-  clientSecret: # Client Secret
-  repo: # Repository name
-  owner: # GitHub ID
-  admin: # GitHub ID
 
 # GitHub Ribbons-封面右上角的forkme，换样式直接在source/images目录下替换forkme图片
 github:
@@ -178,7 +153,7 @@ katex:
 # 网站成立年份(默认为 2019，若填入年份小于当前年份，则显示为 2018-2019 类似的格式)
 since: 2015
 
-# 是否显示页脚信息(建议保留，有助于本主题的推广)
+# 是否显示页脚信息(建议保留)
 pageFooter: true
 
 #ICP备案信息尾部显示
@@ -186,3 +161,66 @@ icp:
   enable: false
   url: "http://www.beian.miit.gov.cn/" # 备案链接
   text: "浙ICP备88888888" # 备案信息
+
+# 评论：1、Valine(推荐)；2、Gitalk；3、MiniValine
+
+# 1、Valine[一款快速、简洁且高效的无后端评论系统](https://github.com/xCss/Valine)
+# 启用Valine必须先创建leancloud应用， 获取 id|key 填入即可
+leancloud:
+  enable: true
+  app_id: chaSYi8FMdJBwzIBpxeNjqWC-gzGzoHsz
+  app_key: PqqkLYgPkHvH1BmyQqySWnSK
+# Valine配置
+valine:
+  enable: true # 是否启用
+  avatar: monsterid # 头像样式(https://valine.js.org/avatar.html)
+  placeholder: 给我的文章加点评论吧~ # placeholder
+
+# 2、Gitalk(https://github.com/gitalk/gitalk)
+gitalk:
+  enable: false # true
+  clientID: # GitHub Application Client ID
+  clientSecret: # Client Secret
+  repo: # Repository name
+  owner: # GitHub ID
+  admin: # GitHub ID
+
+# 3、MiniValine
+# See: https://github.com/MiniValine/MiniValine
+minivaline:
+  enable: false
+  mode: DesertsP # DesertsP or xCss
+  placeholder: Write a Comment # Comment box placeholder
+  math: true # Support MathJax.
+  md: true # Support Markdown.
+  enableQQ: false # Enable QQ avatar API.
+  NoRecordIP: false # Do not record commenter IP.
+  visitor: true # Article reading statistics.
+  maxNest: 6 # Sub-comment maximum nesting depth.
+  pageSize: 6 # Pagination size.
+  adminEmailMd5: de8a7aa53d07e6b6bceb45c64027763d # The MD5 of Admin Email to show Admin Flag.[Just Only DesertsP Style mode]
+  tagMeta: # The String Array of Words to show Flag.[Just Only xCss Style mode]
+    - 管理员
+    - 小伙伴
+    - 访客
+  master: # The MD5 String Array of master Email to show master Flag.[Just Only xCss Style mode]
+    - de8a7aa53d07e6b6bceb45c64027763d
+  friends: # The MD5 String Array of friends Email to show friends Flag.[Just Only xCss Style mode]
+    - b5bd5d836c7a0091aa8473e79ed4c25e
+    - adb7d1cd192658a55c0ad22a3309cecf
+    - 3ce1e6c77b4910f1871106cb30dc62b0
+    - cfce8dc43725cc14ffcd9fb4892d5bfc
+  # MiniValine's display language depends on user's browser or system environment
+  # If you want everyone visiting your site to see a uniform language, you can set a force language value
+  # Available values: en  | zh-CN | (and many more)
+  # More i18n info: https://github.com/MiniValine/minivaline-i18n
+  lang:
+  # Expression Url.
+  # https://github.com/MiniValine/MiniValine/blob/master/.github/FAQ.md#how-to-customize-emoticons
+  emoticonUrl:
+    - https://cdn.jsdelivr.net/npm/alus@latest
+    - https://cdn.jsdelivr.net/gh/MiniValine/qq@latest
+    - https://cdn.jsdelivr.net/gh/MiniValine/Bilibilis@latest
+    - https://cdn.jsdelivr.net/gh/MiniValine/tieba@latest
+    - https://cdn.jsdelivr.net/gh/MiniValine/twemoji@latest
+    - https://cdn.jsdelivr.net/gh/MiniValine/weibo@latest

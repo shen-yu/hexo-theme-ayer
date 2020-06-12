@@ -1,85 +1,65 @@
-<article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope
-  itemprop="blogPost" data-scroll-reveal>
-
+<article
+  id="<%= post.layout %>-<%= post.slug %>"
+  class="article article-type-<%= post.layout %>"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
   <div class="article-inner">
     <% if (post.link || post.title){ %>
     <header class="article-header">
       <%- partial('post/title', {class_name: 'article-title'}) %>
     </header>
-    <% } %>
-
-    <% if (index || is_post()) { %>
+    <% } %> <% if (index || is_post()) { %>
     <div class="article-meta">
-      <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-      <%- partial('post/category') %>
-      <% if(theme.word_count && theme.word_count.enable && !post.no_word_count){%>
-      <%- partial('post/word') %>
-      <% } %>
+      <%- partial('post/date', {class_name: 'article-date', date_format: null})
+      %> <%- partial('post/category') %> <% if(theme.word_count &&
+      theme.word_count.enable && !post.no_word_count){%> <%-
+      partial('post/word') %> <% } %>
     </div>
-    <% } %>
-
-    <% if (theme.toc && is_post()){ %>
-    <%- partial('post/tocbot') %>
-    <% } %>
-
-    <% if (theme.excerpt_all&&index){ %>
-    <% }else{ %>
+    <% } %> <% if (theme.toc && is_post()){ %> <%- partial('post/tocbot') %> <%
+    } %> <% if (theme.excerpt_all&&index){ %> <% }else{ %>
     <div class="article-entry" itemprop="articleBody">
-      <%- partial('post/justifiedGallery') %>
-      <%- partial('post/gallery') %>
-      <% if (post.excerpt && index){ %>
-      <%- post.excerpt %>
-      <% if (theme.excerpt_link){ %>
-      <a class="article-more-link" href="<%- url_for(post.path) %>"><%= theme.excerpt_link %></a>
-      <% } %>
-      <% } else { %>
-      <%- post.content %>
-      <% } %>
+      <%- partial('post/justifiedGallery') %> <%- partial('post/gallery') %> <%
+      if (post.excerpt && index){ %> <%- post.excerpt %> <% if
+      (theme.excerpt_link){ %>
+      <a class="article-more-link" href="<%- url_for(post.path) %>"
+        ><%= theme.excerpt_link %></a
+      >
+      <% } %> <% } else { %> <%- post.content %> <% } %>
       <!-- reward -->
-      <% if ((theme.reward_type === 2 || (theme.reward_type === 1 && post.reward)) && !index && !post.no_reward){ %>
+      <% if ((theme.reward_type === 2 || (theme.reward_type === 1 &&
+      post.reward)) && !index && !post.no_reward){ %>
       <div id="reward-btn">
         <%= __('post.reward') %>
       </div>
       <% } %>
     </div>
     <% } %>
-    
-      <!-- copyright -->
-      <% if (((theme.copyright_type === 2) || (theme.copyright_type === 1 && post.copyright)) && !index){ %>
-        <div class="declare">
-          <ul class="post-copyright">
-            <li>
-              <i class="ri-copyright-line"></i>
-              <strong><%= __('post.copyright_title') %>： </strong>
-              <%= __('post.copyright_content') %>
-            </li>
-          </ul>
-        </div>
-        <% } %>
+
+    <!-- copyright -->
+    <% if (((theme.copyright_type === 2) || (theme.copyright_type === 1 &&
+    post.copyright)) && !index){ %>
+    <div class="declare">
+      <ul class="post-copyright">
+        <li>
+          <i class="ri-copyright-line"></i>
+          <strong><%= __('post.copyright_title') %>： </strong>
+          <%= __('post.copyright_content') %>
+        </li>
+      </ul>
+    </div>
+    <% } %>
     <footer class="article-footer">
-      <% if (!index && theme.share_enable){ %>
-          <%- partial('post/share') %>
-      <% } %>
-      <%- partial('post/tag') %>
-
+      <% if (!index && theme.share_enable){ %> <%- partial('post/share') %> <% }
+      %> <%- partial('post/tag') %>
     </footer>
-
   </div>
 
-  <% if (!index){ %>
-  <%- partial('post/nav') %>
-  <% } %>
-
-  <% if (theme.valine && theme.valine.enable && !post.no_valine){ %>
-  <%- partial('post/valine', {
-            key: post.slug,
-            title: post.title,
-            url: config.url+url_for(post.path)
-          }) %>
-  <% } %>
-
-  <% if (is_post()) { %>
-  <%- partial('post/gitalk') %>
-  <% } %>
-
+  <% if (!index){ %> <%- partial('post/nav') %> <% } %> <% if (theme.valine &&
+  theme.valine.enable && !post.no_valine){ %> <%- partial('post/valine', { key:
+  post.slug, title: post.title, url: config.url+url_for(post.path) }) %> <% } %>
+  <% if (is_post()) { %> <%- partial('post/gitalk') %> <% } %> <% if
+  (theme.minivaline && theme.minivaline.enable && !post.no_minivaline){ %> <%-
+  partial('post/minivaline') %> <% } %>
 </article>

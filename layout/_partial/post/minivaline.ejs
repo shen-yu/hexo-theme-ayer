@@ -1,0 +1,88 @@
+<% if (!index && theme.leancloud && theme.leancloud.enable){ %>
+<!-- minivaline评论 -->
+<div id="mvcomments-box">
+  <div id="mvcomments"></div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/minivaline@2/dist/MiniValine.min.js"></script>
+<script>
+    new MiniValine({
+        el: '#mvcomments',
+        appId: '<%- theme.leancloud.app_id %>',
+        appKey: '<%- theme.leancloud.app_key %>',
+        mode: '<%- theme.minivaline.mode %>',
+        placeholder: '<%- theme.minivaline.placeholder %>',
+        pathname: window.location.pathname,
+        lang: '<%- theme.minivaline.lang %>',
+        adminEmailMd5: '<%- theme.minivaline.adminEmailMd5 %>',
+        tagMeta: <%- '["' + theme.minivaline.tagMeta.join('", "') + '"]' %>,
+        master: <%- '["' + theme.minivaline.master.join('", "') + '"]' %>,
+        friends: <%- '["' + theme.minivaline.friends.join('", "') + '"]' %>,
+        math: <%- theme.minivaline.math %>,
+        md: <%- theme.minivaline.md %>,
+        enableQQ: <%- theme.minivaline.enableQQ %>,
+        NoRecordIP: <%- theme.minivaline.NoRecordIP %>,
+        visitor: <%- theme.minivaline.visitor %>,
+        maxNest: <%- theme.minivaline.maxNest %>,
+        pageSize: <%- theme.minivaline.pageSize %>,
+        serverURLs: '<%- theme.minivaline.serverURLs %>',
+        emoticonUrl: <%- '["' + theme.minivaline.emoticonUrl.join('", "') + '"]' %>,
+    });
+  const infoEle = document.querySelector('#mvcomments .info');
+  if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
+      infoEle.childNodes.forEach(function (item) {
+          item.parentNode.removeChild(item);
+      });
+  }
+</script>
+<style>
+	#mvcomments-box {
+	padding: 5px 30px;
+	}
+
+	@media screen and (max-width: 800px) {
+	#mvcomments-box {
+	  padding: 5px 0px;
+	}
+	}
+
+	.v .vlist .vcard .vh {
+	padding-right: 20px;
+	}
+
+	.v .vlist .vcard {
+	padding-left: 10px;
+	}
+	
+	.darkmode .commentTrigger{
+		background-color: #403e3e !important;
+	  }
+	.darkmode .MiniValine .vpage .more{
+		background: #21232F
+	}
+	.darkmode img{
+		  filter: brightness(30%)
+	}
+	.darkmode .MiniValine .vlist .vcard .vcomment-body .text-wrapper .vcomment.expand:before{
+		background: linear-gradient(180deg, rgba(246,246,246,0), rgba(0,0,0,0.9))
+	}
+	.darkmode .MiniValine .vlist .vcard .vcomment-body .text-wrapper .vcomment.expand:after{
+		background: rgba(0,0,0,0.9)
+	}
+	.darkmode .MiniValine .vlist .vcard .vcomment-body .text-wrapper .vcomment pre{
+		background: #282c34
+		border: 1px solid #282c34
+	}
+	.darkmode .MiniValine .vinputs-area .textarea-wrapper textarea{
+		color: #000;
+	}
+	.darkmode .MiniValine .vinputs-area .auth-section .input-wrapper input{
+		color: #000;
+	}
+	.darkmode .MiniValine .info .col .count{
+		color: #000;
+	}
+	.darkmode .MiniValine .vinputs-area .vextra-area .vsmile-icons{
+		background: transparent;
+	}
+</style>
+<% } %>
