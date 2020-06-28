@@ -39,3 +39,21 @@
 <% if (theme.subtitle.enable){ %>
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
 <% } %>
+
+<!-- Subtitle -->
+<% if (theme.subtitle.enable){ %>
+  <script>
+    try {
+      var typed = new Typed("#subtitle", {
+        strings: ['<%= theme.subtitle.text %>', '<%= theme.subtitle.text2 %>', '<%= theme.subtitle.text3 %>'],
+        startDelay: <%= theme.subtitle.startDelay %>,
+        typeSpeed: <%= theme.subtitle.typeSpeed %>,
+        loop: <%= theme.subtitle.loop %>,
+        backSpeed: <%= theme.subtitle.backSpeed %>,
+        showCursor: <%= theme.subtitle.showCursor %>
+      });
+    } catch (err) {
+      console.log(err)
+    }
+  </script>
+  <% } %>
