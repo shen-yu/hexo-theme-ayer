@@ -7,9 +7,11 @@
   <% } %>
   <ul class="nav nav-main">
     <% for (var i in theme.menu){ %>
-    <li class="nav-item">
-      <a class="nav-item-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
-    </li>
+      <% if (theme.menu[i] != null){ %>
+        <li class="nav-item">
+          <a class="nav-item-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+        </li>
+      <% } %>
     <% } %>
   </ul>
 </nav>
