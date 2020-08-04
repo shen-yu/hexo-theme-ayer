@@ -63,7 +63,7 @@ cd themes/ayer
 git pull
 ```
 
-### Muti Language Support
+### Multi Language Support
 zh-CN（中文简体） en（English） zh-TW（中文繁体） ja（Japanese） es（Spanish） de（German） fr（French） ru（Russian） ko（Korean） vi（Vietnamese） nl（Dutch） no（Norwegian） pt（Portuguese）
 
 English is default languge, if you want to change, modify `language` option in `_config.yml` file in your blog's root folder.
