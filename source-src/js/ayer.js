@@ -92,7 +92,7 @@
     const scrollElem = $('#totop');
 
     // Scroll to top speed
-    const scrollSpeed = 1600;
+    const scrollSpeed = 1000;
 
     // Show and hide the scroll to top link based on scroll position
     scrollElem.hide();
