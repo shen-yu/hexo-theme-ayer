@@ -1,6 +1,6 @@
 {
   "name": "ayer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "a clean and elegant theme for hexo.",
   "scripts": {
     "dev": "parcel serve source-src/main.js -d source/dist",
