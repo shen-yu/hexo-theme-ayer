@@ -19,7 +19,7 @@
   </a>
   <br>
   <a href="https://github.com/Shen-Yu/hexo-theme-ayer/releases" target="_blank" rel="noopener noreferrer">
-    <img alt="GitHub tag (latest by date)" src="https://img.shields.io/github/v/tag/Shen-Yu/hexo-theme-ayer?color=blue">
+    <img alt="GitHub package.json version" src="https://img.shields.io/github/package-json/v/Shen-Yu/hexo-theme-ayer">
   </a> 
  <img alt="language" src="https://img.shields.io/badge/language-ejs--stylus-green.svg">
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/Shen-Yu/hexo-theme-ayer?color=%23af8ddc">
