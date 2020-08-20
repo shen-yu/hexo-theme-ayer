@@ -6,3 +6,5 @@ cache:
   npm: true
 
 install: npm install
+
+script: npm run build
