@@ -26,6 +26,7 @@
   "devDependencies": {
     "autoprefixer": "^9.7.4",
     "parcel-bundler": "^1.12.4",
+    "parcel-plugin-bundle-visualiser": "^1.2.0",
     "postcss-modules": "^1.5.0"
   },
   "dependencies": {}
