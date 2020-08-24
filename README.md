@@ -42,13 +42,24 @@
 
 ![Screenshot](screenshots/hexo-theme-ayer.png)
 
-### Install
+## Install
 
-``` bash
-$ git clone https://github.com/Shen-Yu/hexo-theme-ayer.git themes/ayer
+### For hexo < 5.0
+
+``` shell
+git clone https://github.com/Shen-Yu/hexo-theme-ayer.git themes/ayer
 ```
 
-### Enable
+### For hexo >= 5.0
+
+``` shell
+npm i hexo-theme-ayer -S
+```
+
+- If this theme is newly installed, a `_config.ayer.yml` file will be generated in the root directory after the installation is complete, and you can directly edit the `_config.ayer.yml` file for configuration.
+- If it is a theme upgrade, you can use the configuration method of hexo < 5.0, or you can move the original configuration file to the root directory and rename it to `_config.ayer.yml`.
+
+## Enable
 
 Modify `theme` setting in `_config.yml` to `ayer`
 
@@ -56,19 +67,19 @@ Modify `theme` setting in `_config.yml` to `ayer`
 theme: ayer
 ```
 
-### Update
+## Update
 
 ``` bash
 cd themes/ayer
 git pull
 ```
 
-### Multi Language Support
+## Multi Language Support
 zh-CN（中文简体） en（English） zh-TW（中文繁体） ja（Japanese） es（Spanish） de（German） fr（French） ru（Russian） ko（Korean） vi（Vietnamese） nl（Dutch） no（Norwegian） pt（Portuguese）
 
 English is default languge, if you want to change, modify `language` option in `_config.yml` file in your blog's root folder.
 
-### Configuration
+## Configuration
 
 let me know if you have any questions.
 
@@ -245,7 +256,7 @@ since: 2019
 pageFooter: true
 ```
 
-### Plugins
+## Plugins
 
 + [hexo-generator-search](https://github.com/wzpan/hexo-generator-search) (for Local Search)
 	
@@ -288,7 +299,7 @@ pageFooter: true
   $ npm uninstall hexo-generator-index --save
   $ npm install hexo-generator-index-pin-top --save
   ```
-### Categories
+## Categories
 ``` bash
   hexo new page categories
 ```
@@ -301,10 +312,10 @@ layout: "categories"
 ---
 ```
 
-### Tags
+## Tags
 Same as categories.
 
-### Gallery
+## Gallery
 Need to write in the head of the markdown, this is not a good way to write, I hope to get a better way to write on github.
 
 ``` md
@@ -318,7 +329,7 @@ albums: [
 ---
 ```
 
-### Toc
+## Toc
 
 Use Tocbot to parse the title tags (h1~h6) in the content and insert the directory. 
 

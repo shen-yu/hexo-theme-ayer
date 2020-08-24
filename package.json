@@ -1,10 +1,11 @@
 {
-  "name": "ayer",
+  "name": "hexo-theme-ayer",
   "version": "1.8.2",
   "description": "a clean and elegant theme for hexo.",
   "scripts": {
     "dev": "parcel serve source-src/main.js -d source/dist",
-    "build": "rimraf source/dist && parcel build source-src/main.js -d source/dist --no-source-maps"
+    "build": "rimraf source/dist && parcel build source-src/main.js -d source/dist --no-source-maps",
+    "postinstall": "node ./move_config.js"
   },
   "source": "source-src/main.js",
   "repository": {
@@ -17,10 +18,11 @@
     "blog",
     "ayer"
   ],
-  "author": "Shen-Yu",
+  "author": "Shen-Yu <shenyu@hotmail.com>",
   "license": "SATA",
   "bugs": {
-    "url": "https://github.com/Shen-Yu/hexo-theme-ayer/issues"
+    "url": "https://github.com/Shen-Yu/hexo-theme-ayer/issues",
+    "email": "shenyu@hotmail.com"
   },
   "homepage": ".",
   "devDependencies": {
