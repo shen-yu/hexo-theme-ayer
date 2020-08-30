@@ -29,8 +29,16 @@
     <ul>
       <% if (theme.icp&&theme.icp.enable){ %>
         <li>
-          <a href="<%= theme.icp.url %>" target="_black"><%= theme.icp.text %></a>
+          <a href="<%= theme.icp.url %>" target="_black" rel="nofollow"><%= theme.icp.text %></a>
         </li>
+        <% } %>
+    </ul>
+    <ul>
+      <% if (theme.gongan&&theme.gongan.enable){ %>
+      <li>
+          <img src="<%= theme.gongan.img %>"></img>
+          <a href="<%= theme.gongan.url %>" target="_black" rel="nofollow"><%= theme.gongan.text %></a>
+      </li>
         <% } %>
     </ul>
     <ul>
