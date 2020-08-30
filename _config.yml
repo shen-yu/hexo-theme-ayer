@@ -165,7 +165,7 @@ icp:
 gongan:
   enable: false
   img: /images/beian.png #公安备案图片
-  url: "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=" #公安备案链接
+  url: "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=01234567890123" #公安备案链接
   text: "湘公网安备01234567890123号" #公安备案信息
 
 # 评论：1、Valine(推荐)；2、Gitalk；3、MiniValine
