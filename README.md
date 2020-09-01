@@ -121,6 +121,12 @@ cover:
 # ProgressBar  
 progressBar: true
 
+# Boardcast
+broadcast:
+  enable: true
+  type: 2 # 1：custom，2：hitokoto api(https://hitokoto.cn/)
+  text: a clean and elegant theme, fast and responsive. # only work in custom mode
+
 # Article Setting
 # (Use this to excerpt if article is too long：<!--more-->)
 excerpt_link: Read More...

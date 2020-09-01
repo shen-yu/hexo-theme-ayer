@@ -1,4 +1,7 @@
 <section class="outer">
+  <% if (theme.broadcast.enable && pagination == 2){ %>
+  <%- partial('_partial/broadcast') %>
+  <% } %>
   <article class="articles">
     <%
     var title = '';
