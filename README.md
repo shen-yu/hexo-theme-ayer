@@ -269,7 +269,7 @@ icp:
   text: "浙ICP备88888888"
 # gongan
 gongan:
-  enable: true
+  enable: false
   img: /images/beian.png
   url: "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=01234567890123" #link
   text: "浙公网安备01234567890123号"

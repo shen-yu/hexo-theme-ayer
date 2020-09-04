@@ -169,7 +169,7 @@ icp:
   text: "浙ICP备88888888" # 备案信息
 # 公安备案信息尾部显示
 gongan:
-  enable: true
+  enable: false
   img: /images/beian.png #公安备案图片
   url: "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=01234567890123" #公安备案链接
   text: "浙公网安备01234567890123号" #公安备案信息
