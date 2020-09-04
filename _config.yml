@@ -162,17 +162,17 @@ since: 2015
 # 是否显示页脚信息(建议保留)
 pageFooter: true
 
-#ICP备案信息尾部显示
+# ICP备案信息尾部显示
 icp:
   enable: false
   url: "http://www.beian.miit.gov.cn/" # 备案链接
   text: "浙ICP备88888888" # 备案信息
-#公安备案信息尾部显示
+# 公安备案信息尾部显示
 gongan:
-  enable: false
+  enable: true
   img: /images/beian.png #公安备案图片
   url: "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=01234567890123" #公安备案链接
-  text: "湘公网安备01234567890123号" #公安备案信息
+  text: "浙公网安备01234567890123号" #公安备案信息
 
 # 评论：1、Valine(推荐)；2、Gitalk；3、MiniValine
 

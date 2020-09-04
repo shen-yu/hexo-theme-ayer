@@ -260,6 +260,19 @@ since: 2019
 
 # pageFooter (Set true can let more people know this theme, Thanks!)
 pageFooter: true
+
+# only for chinese website
+# ICP
+icp:
+  enable: false
+  url: "http://www.beian.miit.gov.cn/"
+  text: "浙ICP备88888888"
+# gongan
+gongan:
+  enable: true
+  img: /images/beian.png
+  url: "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=01234567890123" #link
+  text: "浙公网安备01234567890123号"
 ```
 
 ## Plugins
