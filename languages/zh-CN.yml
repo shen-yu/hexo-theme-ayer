@@ -20,6 +20,7 @@ category: Category
 tag: Tag
 site_visitors: 访问人数
 page_views: 浏览次数
+friends: 友情链接
 
 post:
   word_count: 字数统计

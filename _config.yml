@@ -6,6 +6,7 @@ menu:
   标签: /tags
   旅行: /tags/旅行/
   摄影: http://shenyu-vip.lofter.com
+  友链: /friends
   关于我: /2019/about
 
 # 站点次标题和打字动效
@@ -173,6 +174,26 @@ gongan:
   img: /images/beian.png #公安备案图片
   url: "http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=01234567890123" #公安备案链接
   text: "浙公网安备01234567890123号" #公安备案信息
+
+# 友情链接
+friends_link:
+  Ayer主题: #网站名称
+    #网站地址
+    url: https://github.com/Shen-Yu/hexo-theme-ayer
+    #网站图片(可忽略不写)
+    img: /images/ayer.png
+  GitHub:
+    url: https://github.com/Shen-Yu
+    img: https://i.loli.net/2020/09/07/indb4PRYDA98EkN.png
+  码云:
+    url: https://gitee.com/shen-yu
+    img: https://i.loli.net/2020/09/07/K3AqO7h6krQFlRX.png
+  Hexo官网:
+    url: https://hexo.io
+    img: https://i.loli.net/2020/09/07/UYGzjo7h68CRWny.png
+  Hexo图表插件:
+    url: https://github.com/Shen-Yu/hexo-tag-chart
+    img: https://i.loli.net/2020/09/07/GIXBYE5SoylhR1r.png
 
 # 评论：1、Valine(推荐)；2、Gitalk；3、MiniValine
 

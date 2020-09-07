@@ -20,6 +20,7 @@ category: Category
 tag: Tag
 site_visitors: Visitors
 page_views: Views
+friends: Friends
 
 post:
   word_count: Word count

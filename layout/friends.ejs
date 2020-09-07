@@ -1,0 +1,20 @@
+<section class="outer">
+    <% if(theme.friends_link && theme.friends_link.length != 0){ %>
+    <h1 class="page-type-title"><%= __('friends') %></h1>
+    <ul id="friends_link">
+        <% for (var i in theme.friends_link){ %>
+        <li class="friends_li">
+            <a href="<%- url_for(theme.friends_link[i].url) %>" target="_blank" class="search-title"
+                <% if (theme.friends_link[i].description){ %>title="<%= theme.friends_link[i].description %>" <% } %>>
+                <% if (theme.friends_link[i].img){ %>
+                <img src="<%- url_for(theme.friends_link[i].img) %>">
+                <% } else { %>
+                <i class="ri-user-fill"></i>
+                <% } %>
+                <%= i %>
+            </a>
+        </li>
+        <% } %>
+    </ul>
+    <%}%>
+</section>
