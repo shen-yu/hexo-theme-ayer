@@ -41,7 +41,7 @@
 
     <!-- copyright -->
     <% if (((theme.copyright_type === 2) || (theme.copyright_type === 1 &&
-    post.copyright)) && !index){ %>
+    post.copyright)) && !index && !post.no_copyright){ %>
     <div class="declare">
       <ul class="post-copyright">
         <li>
@@ -53,7 +53,7 @@
     </div>
     <% } %>
     <footer class="article-footer">
-      <% if (!index && theme.share_enable){ %> <%- partial('post/share') %> <% }
+      <% if (!index && theme.share_enable && !post.no_sharing){ %> <%- partial('post/share') %> <% }
       %> <%- partial('post/tag') %>
     </footer>
   </div>
