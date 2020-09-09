@@ -184,16 +184,16 @@ friends_link:
     img: /images/ayer.png
   GitHub:
     url: https://github.com/Shen-Yu
-    img: https://i.loli.net/2020/09/07/indb4PRYDA98EkN.png
+    img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/github.png
   码云:
     url: https://gitee.com/shen-yu
-    img: https://i.loli.net/2020/09/07/K3AqO7h6krQFlRX.png
+    img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/gitee.png
   Hexo官网:
     url: https://hexo.io
-    img: https://i.loli.net/2020/09/07/UYGzjo7h68CRWny.png
+    img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/hexo.png
   Hexo图表插件:
     url: https://github.com/Shen-Yu/hexo-tag-chart
-    img: https://i.loli.net/2020/09/07/GIXBYE5SoylhR1r.png
+    img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/hexo-tag-chart.png
 
 # 评论：1、Valine(推荐)；2、Gitalk；3、MiniValine
 
