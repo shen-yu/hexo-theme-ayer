@@ -47,7 +47,11 @@
         <li>
           <i class="ri-copyright-line"></i>
           <strong><%= __('post.copyright_title') %>： </strong>
+          <% if (post.copyright_content) { %>
+          <%= post.copyright_content %>
+          <% } else { %>
           <%= __('post.copyright_content') %>
+          <% } %>
         </li>
       </ul>
     </div>
