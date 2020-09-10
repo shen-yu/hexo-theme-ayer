@@ -312,7 +312,7 @@ friends_link:
     format: html
   ```
 
-+ [hexo-generate-feed](https://github.com/hexojs/hexo-generator-feed) (for RSS)
++ [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) (for RSS)
 
   ```yml
   $ npm install hexo-generator-feed --save
