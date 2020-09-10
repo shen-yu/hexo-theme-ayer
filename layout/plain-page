@@ -1,0 +1,4 @@
+<section class="outer">
+  <h1 class="page-type-title"><%= page.title %></h1>
+  <%- page.content %>
+</section>
