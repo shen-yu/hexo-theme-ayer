@@ -423,3 +423,7 @@ The basic idea is, whenever using a project using SATA license, people shall sta
 - 提出你在使用过程中发现的BUG或者提一些建设性的意见
 - 告诉你的朋友们这个开源项目碉堡了(博主: 就像我在宣传SATA)
 - 当然，你也可以只是在心里默默的感激，不用让全世界都知道
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/Shen-Yu/hexo-theme-ayer.svg)](https://starchart.cc/Shen-Yu/hexo-theme-ayer)
