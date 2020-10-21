@@ -8,6 +8,7 @@ menu:
   摄影: http://shenyu-vip.lofter.com
   友链: /friends
   关于我: /2019/about
+  播放器: /player
 
 # 站点次标题和打字动效
 # https://github.com/mattboldt/typed.js
@@ -201,8 +202,8 @@ friends_link:
 # 启用Valine必须先创建leancloud应用， 获取 id|key 填入即可
 leancloud:
   enable: true
-  app_id: #
-  app_key: #
+  app_id: chaSYi8FMdJBwzIBpxeNjqWC-gzGzoHsz
+  app_key: PqqkLYgPkHvH1BmyQqySWnSK
 # Valine配置
 valine:
   enable: true # 是否启用
