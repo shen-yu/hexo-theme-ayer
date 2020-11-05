@@ -1,0 +1,3 @@
+*.html linguist-language=javascript
+*.stylus linguist-language=javascript
+*.ejs linguist-language=javascript
