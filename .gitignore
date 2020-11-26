@@ -7,6 +7,3 @@ package-lock.json
 node_modules/
 .cache
 .history
-
-# Setting
-_config.yml
