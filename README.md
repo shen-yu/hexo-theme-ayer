@@ -207,6 +207,7 @@ layout:
   sidebar_width: 8rem
 
 # Comment：1、Valine (recommended)；2、Gitalk
+# You can close the comment section on one of your posts by marking `comments: false` in front-matter.
 
 # 1、Valine [A fast, simple & powerful comment system](https://github.com/xCss/Valine)
 # You need create leancloud account first (https://console.leancloud.app), then put the id|key in below.

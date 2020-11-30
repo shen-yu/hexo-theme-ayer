@@ -1,4 +1,4 @@
-<% if (theme.gitalk.enable) { %>
+<% if (theme.gitalk.enable && post.comments) { %>
 <div class="gitalk" id="gitalk-container"></div>
 <%- css('https://cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.css') %>
 <%- js('https://cdn.jsdelivr.net/npm/gitalk@1.6.2/dist/gitalk.min.js') %>
