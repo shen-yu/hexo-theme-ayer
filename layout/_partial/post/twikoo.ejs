@@ -1,0 +1,9 @@
+<% if (!index && theme.twikoo && theme.twikoo.enable){ %>
+    <script src="https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js"></script>
+    <div id="twikoo" class="twikoo"></div>
+    <script>
+        twikoo.init({
+            envId: "<%- theme.twikoo.envId %>"
+        })
+    </script>
+<% } %>
