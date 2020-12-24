@@ -220,7 +220,7 @@ gitalk:
 
 # 3、Twikoo(https://github.com/imaegoo/twikoo)
 twikoo:
-  enable: true
+  enable: false
   envId: #
 
 # 4、MiniValine
