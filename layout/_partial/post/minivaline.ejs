@@ -1,9 +1,9 @@
-<% if (!index && theme.leancloud && theme.leancloud.enable && post.comments){ %>
+<% if (!index && post.comments){ %>
 <!-- minivaline评论 -->
 <div id="mvcomments-box">
   <div id="mvcomments"></div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/minivaline@5"></script>
+<script src="https://cdn.jsdelivr.net/npm/minivaline@latest"></script>
 <script>
     new MiniValine(Object.assign(<%- JSON.stringify(theme.minivaline) %>, {
 	  el: '#mvcomments',
@@ -17,23 +17,16 @@
 </script>
 <style>
 	#mvcomments-box {
-	padding: 5px 30px;
+		padding: 5px 30px;
 	}
-
 	@media screen and (max-width: 800px) {
-	#mvcomments-box {
-	  padding: 5px 0px;
+		#mvcomments-box {
+		  padding: 5px 0px;
+		}
 	}
+	.darkmode .MiniValine *{
+		color: #f1f1f1!important;
 	}
-
-	.v .vlist .vcard .vh {
-	padding-right: 20px;
-	}
-
-	.v .vlist .vcard {
-	padding-left: 10px;
-	}
-	
 	.darkmode .commentTrigger{
 		background-color: #403e3e !important;
 	  }
@@ -41,7 +34,7 @@
 		background: #21232F
 	}
 	.darkmode img{
-		  filter: brightness(30%)
+		filter: brightness(30%)
 	}
 	.darkmode .MiniValine .vlist .vcard .vcomment-body .text-wrapper .vcomment.expand:before{
 		background: linear-gradient(180deg, rgba(246,246,246,0), rgba(0,0,0,0.9))
@@ -59,11 +52,26 @@
 	.darkmode .MiniValine .vinputs-area .auth-section .input-wrapper input{
 		color: #000;
 	}
-	.darkmode .MiniValine .info .col .count{
-		color: #000;
-	}
 	.darkmode .MiniValine .vinputs-area .vextra-area .vsmile-icons{
 		background: transparent;
+	}
+	.darkmode .MiniValine .vinputs-wrap{
+		border-color: #b2b2b5;
+	}
+	.darkmode .MiniValine .vinputs-wrap:hover{
+		border: 1px dashed #2196f3;
+	}
+	.darkmode .MiniValine .vinputs-area .auth-section .input-wrapper{
+		border-bottom: 1px dashed #b2b2b5;
+	}
+	.darkmode .MiniValine .vinputs-area .auth-section .input-wrapper:hover{
+		border-bottom: 1px dashed #2196f3;
+	}
+	.darkmode .MiniValine .vbtn{
+		background-color: transparent!important;
+	}
+	.darkmode .MiniValine .vbtn:hover{
+		border: 1px dashed #2196f3;
 	}
 </style>
 <% } %>
