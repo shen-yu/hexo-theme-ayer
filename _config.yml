@@ -233,3 +233,17 @@ minivaline:
   # 下面是一个例子：
   backend: waline
   serverURL: https://waline.vercel.app
+
+# 首页广告配置
+# 可以根据需要自行增加ad_3，ad_4...，留空则不显示
+ads:
+  ad_1:
+    title: 腾讯云限时秒杀
+    img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/ad_1.jpg
+    url: https://curl.qcloud.com/ezctH6FU
+    width: 300
+  ad_2:
+    title: 云服务器全球购低至2折
+    img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/ad_2.jpg
+    url: https://curl.qcloud.com/kvO7hb43
+    width: 300

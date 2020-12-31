@@ -206,34 +206,10 @@ layout:
   article_width: 80rem
   sidebar_width: 8rem
 
-# Comment：1、Valine (recommended)；2、Gitalk
-# You can close the comment section on one of your posts by marking `comments: false` in front-matter.
-
-# 1、Valine [A fast, simple & powerful comment system](https://github.com/xCss/Valine)
-# You need create leancloud account first (https://console.leancloud.app), then put the id|key in below.
-leancloud:  
-  enable: true
-  app_id: #
-  app_key: #
-# Valine Setting
-valine:
-  enable: true 
-  verify: false # comment verify
-  avatar: mp # (https://valine.js.org/avatar.html)
-  placeholder: Add some comments to my article~ # placeholder
-
-# 2、Gitalk(https://github.com/gitalk/gitalk)
-gitalk:
-  enable: false # true
-  clientID: # GitHub Application Client ID
-  clientSecret: # Client Secret
-  repo: # Repository name
-  owner: # GitHub ID
-  admin: # GitHub ID
-
 # GitHub Ribbons(https://github.blog/2008-12-19-github-ribbons/)
 github: 
   # (Set false if you don't need)
+  enable: false
   url: https://github.com/Shen-Yu/hexo-theme-ayer
 
 # pv&uv statistics
@@ -298,6 +274,44 @@ friends_link:
   hexo-tag-chart:
     url: https://github.com/Shen-Yu/hexo-tag-chart
     img: https://i.loli.net/2020/09/07/GIXBYE5SoylhR1r.png
+
+# Comment：1、Valine (recommended)；2、Gitalk；3、Twikoo；4、MiniValine
+# You can close the comment section on one of your posts by marking `comments: false` in front-matter.
+
+# 1、Valine [A fast, simple & powerful comment system](https://github.com/xCss/Valine)
+# You need create leancloud account first (https://console.leancloud.app), then put the id|key in below.
+leancloud:  
+  enable: true
+  app_id: #
+  app_key: #
+# Valine Setting
+valine:
+  enable: true 
+  avatar: mp # (https://valine.js.org/avatar.html)
+  placeholder: Add some comments to my article~ # placeholder
+
+# 2、Gitalk(https://github.com/gitalk/gitalk)
+gitalk:
+  enable: false # true
+  clientID: # GitHub Application Client ID
+  clientSecret: # Client Secret
+  repo: # Repository name
+  owner: # GitHub ID
+  admin: # GitHub ID
+
+# 3、Twikoo(https://github.com/imaegoo/twikoo)
+twikoo:
+  enable: false
+  envId: #
+
+# 4、MiniValine
+# See: https://github.com/MiniValine/MiniValine
+minivaline:
+  enable: false
+  md: true
+  # more options https://minivaline.js.org/docs/cn/#/Options 
+  backend: waline
+  serverURL: https://waline.vercel.app
 ```
 
 ## Plugins
