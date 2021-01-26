@@ -29,10 +29,10 @@
   <link rel="shortcut icon" href="<%- theme.favicon %>" />
   <% } %>
   <%- css('dist/main') %>
-  <%- css('https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min') %>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css">
   <%- css('css/custom') %>
   <% if (theme.progressBar){ %>
-  <%- js('https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min') %>
+  <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
   <% } %>
   <%- partial('google-analytics') %>
   <%- partial('baidu-analytics') %>
