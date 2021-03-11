@@ -1,6 +1,6 @@
 {
   "name": "hexo-theme-ayer",
-  "version": "1.8.14",
+  "version": "1.8.15",
   "description": "a clean and elegant theme for hexo.",
   "scripts": {
     "dev": "parcel serve source-src/main.js -d source/dist",
