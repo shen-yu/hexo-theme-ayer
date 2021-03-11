@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "parcel serve source-src/main.js -d source/dist",
     "build": "rimraf source/dist && parcel build source-src/main.js -d source/dist --no-source-maps",
-    "postinstall": "node ./move_config.js"
+    "postinstall": "node ./move_config.js",
+    "test": "stylint source-src/css/style.styl -c .stylintrc"
   },
   "source": "source-src/main.js",
   "repository": {
@@ -30,7 +31,7 @@
     "cssnano": "^4.1.10",
     "parcel-bundler": "^1.12.4",
     "parcel-plugin-bundle-visualiser": "^1.2.0",
-    "postcss-modules": "^1.5.0"
-  },
-  "dependencies": {}
+    "postcss-modules": "^1.5.0",
+    "stylint": "^2.0.0"
+  }
 }
