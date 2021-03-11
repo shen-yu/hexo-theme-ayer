@@ -1,10 +1,9 @@
 
 function generate(url, opts) {
   var url = url.replace(/<%-sUrl%>/g, encodeURIComponent(opts.sUrl))
-    .replace(/<%-sTitle%>/g, opts.sTitle)
-    .replace(/<%-sDesc%>/g, opts.sDesc)
+    .replace(/<%-sTitle%>/g, encodeURIComponent(opts.sTitle))
+    .replace(/<%-sDesc%>/g, encodeURIComponent(opts.sDesc))
     .replace(/<%-sPic%>/g, encodeURIComponent(opts.sPic));
-
   window.open(url);
 }
 
@@ -30,7 +29,7 @@ function handleClick(type, opts) {
   } else if (type === 'facebook') {
     generate('https://www.facebook.com/sharer/sharer.php?u=<%-sUrl%>', opts)
   } else if (type === 'twitter') {
-    generate('https://twitter.com/intent/tweet?text=<%-sTitle%>&url=<%-sUrl%>&via=<%-config.url%>', opts)
+    generate('https://twitter.com/intent/tweet?text=<%-sTitle%>&url=<%-sUrl%>', opts)
   } else if (type === 'google') {
     generate('https://plus.google.com/share?url=<%-sUrl%>', opts)
   } else if (type === 'weixin') {
