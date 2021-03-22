@@ -79,9 +79,9 @@ git pull
 ```
 
 ## Multi Language Support
-zh-CN（中文简体） en（English） zh-TW（中文繁体） ja（Japanese） es（Spanish） de（German） fr（French） ru（Russian） ko（Korean） vi（Vietnamese） nl（Dutch） no（Norwegian） pt（Portuguese）
+zh-CN（中文简体） en（English） zh-TW（中文繁体） ja（日本語） es（Español） de（Deutsch） fr（Français） ru（Русский） ko（한국어） vi（Tiếng Việt） nl（Nederlands） no（norsk） pt（Português）
 
-English is default languge, if you want to change, modify `language` option in `_config.yml` file in your blog's root folder.
+English is default languge, if you want to change, modify `language` option in `_config.yml` file in your Hexo blog's root folder.
 
 ## Configuration
 
