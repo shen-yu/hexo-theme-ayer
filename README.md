@@ -423,6 +423,17 @@ Use Tocbot to parse the title tags (h1~h6) in the content and insert the directo
 
 <br/>
 
+## Code Contributors
+
+This project exists thanks to all the people who contribute.
+
+<a href="https://github.com/Shen-Yu/hexo-theme-ayer/graphs/contributors"><img src="https://opencollective.com/ayer/contributors.svg?width=890&button=false" /></a>
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/Shen-Yu/hexo-theme-ayer.svg)](https://starchart.cc/Shen-Yu/hexo-theme-ayer)
+
+
 ## License
 
 <a src="https://github.com/Shen-Yu/hexo-theme-ayer">Ayer</a> by <a  href="https://github.com/Shen-Yu">Eric-Shen</a> is licensed under  <a rel="license" href="https://github.com/Shen-Yu/hexo-theme-ayer/blob/master/LICENSE">SATA-License</a>.
@@ -438,7 +449,3 @@ The basic idea is, whenever using a project using SATA license, people shall sta
 - 提出你在使用过程中发现的BUG或者提一些建设性的意见
 - 告诉你的朋友们这是一个多棒的开源项目
 - 当然，你也可以只是在心里默默的感激，不用让全世界都知道
-
-## Stargazers over time
-
-[![Stargazers over time](https://starchart.cc/Shen-Yu/hexo-theme-ayer.svg)](https://starchart.cc/Shen-Yu/hexo-theme-ayer)
