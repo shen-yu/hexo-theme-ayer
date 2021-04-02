@@ -1,68 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>404</title>
+    <meta name="keywords" content="Hexo,Ayer,404,Design" />
+    <meta name="description" content="hexo theme ayer page 404." />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
+    <style>
+      html,
+      figure {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+      }
 
-<head>
-	<meta charset="UTF-8">
-	<title>404</title>
-	<meta name="keywords" content="Hexo,Ayer,404,Design">
-	<meta name="description" content="hexo theme ayer page 404.">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-	<style>
-		html,
-		figure {
-			margin: 0;
-			padding: 0;
-			overflow-x: hidden;
-		}
+      body {
+        margin: 20px;
+        overflow: hidden;
+      }
 
-		body {
-			margin: 20px;
-			overflow: hidden;
-		}
+      h1,
+      h3 {
+        width: 100%;
+        text-align: center;
+        color: #403e3e;
+      }
 
-		h1,
-		h3 {
-			width: 100%;
-			text-align: center;
-			color: #403e3e;
-		}
+      h3 a {
+        color: #0681d0;
+      }
 
-		h3 a {
-			color: #0681d0;
-		}
+      .forrestgump img {
+        width: 52rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        border-radius: 5%;
+        opacity: 0.8;
+      }
 
-		.forrestgump img {
-			width: 52rem;
-			margin-left: 50%;
-			transform: translateX(-50%);
-			border-radius: 5%;
-			opacity: .8;
-		}
+      @media screen and (max-width: 768px) {
+        .forrestgump img {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
 
-		@media screen and (max-width: 768px) {
-			.forrestgump img {
-				width: 100%;
-			}
-		}
-	</style>
-</head>
-
-<body>
-	<div class="notfound">
-		<a class="notfound-link" href="/">
-			<img width="40"
-				src="data:image/png;base64,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">
-		</a>
-		<figure class="forrestgump">
-			<figcaption>
-				<h1>404<br>Not Found!</h1>
-				<h3>Life was like a journey on the sea, you never know what you're going to get.</h3>
-				<h3>亲，获取不到该路径的页面呢，请检查一下哦，可能你还需要仔细阅读 <a href="https://hexo.io/docs/">Hexo</a> 和 <a
-						href="https://shen-yu.gitee.io/2019/ayer/">Ayer</a> 的说明文档~</h3>
-			</figcaption>
-			<img src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/404.jpg">
-		</figure>
-	</div>
-</body>
-
+  <body>
+    <div class="notfound">
+      <a class="notfound-link" href="/">
+        <img
+          width="40"
+          src="data:image/png;base64,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"
+        />
+      </a>
+      <figure class="forrestgump">
+        <figcaption>
+          <h1>404<br />Not Found!</h1>
+          <h3>
+            Please check it, Maybe you should read
+            <a href="https://hexo.io/docs/">Hexo</a> and
+            <a href="https://shen-yu.gitee.io/2019/ayer/">Ayer</a> Docs
+            carefully.
+          </h3>
+          <h3>
+            亲，获取不到该路径的页面呢，请检查一下哦，可能你还需要仔细阅读
+            <a href="https://hexo.io/docs/">Hexo</a> 和
+            <a href="https://shen-yu.gitee.io/2019/ayer/">Ayer</a> 的说明文档~
+          </h3>
+        </figcaption>
+        <img src="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/404.jpg" />
+      </figure>
+    </div>
+  </body>
 </html>
