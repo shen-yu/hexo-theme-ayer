@@ -1,0 +1,8 @@
+<% if (post.authors && post.authors.length){ %>
+    <div class="<%= class_name %>" <% if (!index){ %> style="text-align: center" <% }%>>
+        作者：<% for (var i = 0; i < post.authors.length - 1; i++) { %>
+            <%= post.authors[i]%> ,
+        <% }%> <%= post.authors[post.authors.length - 1] %>
+    </div>
+
+<% } %>
