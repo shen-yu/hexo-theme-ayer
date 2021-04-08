@@ -9,6 +9,7 @@
     <% if (post.link || post.title){ %>
     <header class="article-header">
       <%- partial('post/title', {class_name: 'article-title'}) %>
+      <%- partial('post/author', {class_name: 'article-author'}) %>
     </header>
     <% } %> <% if (index || is_post()) { %>
     <div class="article-meta">
