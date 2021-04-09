@@ -25,7 +25,12 @@ if hexo-config('mouse.enable')
 @media(max-width: 768px)
     .tocbot
         display none !important
-    .content
+    .sidebar
+        left 0
         &.on
-            transform translateX($aside-width)
+            left - $aside-width
+    .content
+        transform translateX($aside-width)
+        &.on
+            transform translateX(0)
     
