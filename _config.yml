@@ -157,11 +157,10 @@ katex:
   allpost: true
   copy_tex: false
 
-# mermaid 三个选项缺一不可
+# mermaid流程图 三个选项缺一不可(https://mermaid-js.github.io/mermaid/)
 mermaid:
-  enable: true
-  version: 8.5.2
-  cdn: https://cdn.bootcdn.net/ajax/libs/mermaid
+  enable: false
+  cdn: https://cdn.jsdelivr.net/npm/mermaid@8.9.2/dist/mermaid.min.js
   theme: forest
 
 # 网站成立年份(默认为 2019，若填入年份小于当前年份，则显示为 2018-2019 类似的格式)
@@ -235,7 +234,7 @@ twikoo:
 minivaline:
   enable: false
   md: true
-  # 更多选项 https://minivaline.js.org/docs/cn/#/Options 按照yml格式继续填写即可 （除了 [el] 选项）  
+  # 更多选项 https://minivaline.js.org/docs/cn/#/Options 按照yml格式继续填写即可 （除了 [el] 选项）
   # emoticonUrl 等列表选项 可参考 https://github.com/MiniValine/hexo-next-minivaline
   # 下面是一个例子：
   backend: waline

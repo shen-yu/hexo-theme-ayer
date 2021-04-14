@@ -1,75 +1,57 @@
-<%- js('/js/jquery-2.0.3.min') %>
-<%- js('/js/lazyload.min') %>
+<%- js('/js/jquery-2.0.3.min') %> <%- js('/js/lazyload.min') %>
 <!-- Tocbot -->
-<% if (theme.toc && is_post() && !page.no_toc){ %>
-<%- js('/js/tocbot.min') %>
+<% if (theme.toc && is_post() && !page.no_toc){ %> <%- js('/js/tocbot.min') %>
 <script>
   tocbot.init({
-    tocSelector: '.tocbot',
-    contentSelector: '.article-entry',
-    headingSelector: 'h1, h2, h3, h4, h5, h6',
+    tocSelector: ".tocbot",
+    contentSelector: ".article-entry",
+    headingSelector: "h1, h2, h3, h4, h5, h6",
     hasInnerContainers: true,
     scrollSmooth: true,
-    scrollContainer: 'main',
-    positionFixedSelector: '.tocbot',
-    positionFixedClass: 'is-position-fixed',
-    fixedSidebarOffset: 'auto'
+    scrollContainer: "main",
+    positionFixedSelector: ".tocbot",
+    positionFixedClass: "is-position-fixed",
+    fixedSidebarOffset: "auto",
   });
 </script>
 <% } %>
 <script src="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css">
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/jquery-modal@0.9.2/jquery.modal.min.css"
+/>
 <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.7.0/dist/js/jquery.justifiedGallery.min.js"></script>
 <%- js('dist/main') %>
 <!-- ImageViewer -->
-<% if (theme.image_viewer){ %>
-<%- partial('viewer') %>
-<% } %>
+<% if (theme.image_viewer){ %> <%- partial('viewer') %> <% } %>
 <!-- MathJax -->
-<% if (theme.mathjax){ %>
-<%- partial('mathjax') %>
+<% if (theme.mathjax){ %> <%- partial('mathjax') %>
 <script>
   var ayerConfig = {
-    mathjax: true
-  }
+    mathjax: true,
+  };
 </script>
 <% } %>
 <!-- Katex -->
-<% if (theme.katex.enable){ %>
-<%- partial('katex') %>
-<% } %>
+<% if (theme.katex.enable){ %> <%- partial('katex') %> <% } %>
 <!-- busuanzi  -->
-<% if (theme.busuanzi && theme.busuanzi.enable){ %>
-<%- js('/js/busuanzi-2.3.pure.min') %>
-<% } %>
+<% if (theme.busuanzi && theme.busuanzi.enable){ %> <%-
+js('/js/busuanzi-2.3.pure.min') %> <% } %>
 <!-- ClickLove -->
-<% if (theme.click_effect===1){ %>
-<%- js('/js/clickLove') %>
-<% } %>
+<% if (theme.click_effect===1){ %> <%- js('/js/clickLove') %> <% } %>
 <!-- ClickBoom1 -->
 <% if (theme.click_effect===2){ %>
 <script src="https://cdn.jsdelivr.net/npm/animejs@latest/anime.min.js"></script>
-<%- js('/js/clickBoom1') %>
-<% } %>
+<%- js('/js/clickBoom1') %> <% } %>
 <!-- ClickBoom2 -->
-<% if (theme.click_effect===3){ %>
-<%- js('/js/clickBoom2') %>
-<% } %>
+<% if (theme.click_effect===3){ %> <%- js('/js/clickBoom2') %> <% } %>
 <!-- CodeCopy -->
-<% if (theme.copy_btn == true) { %>
-<%- css('/css/clipboard') %>
-<%- partial('post/clipboard') %>
-<% } %>
+<% if (theme.copy_btn == true) { %> <%- css('/css/clipboard') %> <%-
+partial('post/clipboard') %> <% } %>
 <!-- CanvasBackground -->
-<% if (theme.canvas_bg == 1) { %>
-<%- js('/js/dz') %>
-<% } %>
-<!-- mermaid -->
-<% if (theme.mermaid.enable) { %>
-  <script src='<%= theme.mermaid.cdn %>/<%= theme.mermaid.version %>/mermaid.min.js'></script>
-  <script>
-    if (window.mermaid) {
-      mermaid.initialize({theme: '<%= theme.mermaid.theme %>'});
-    }
-  </script>
-<% } %>
+<% if (theme.canvas_bg == 1) { %> <%- js('/js/dz') %> <% } %>
+<script>
+  if (window.mermaid) {
+    mermaid.initialize({ theme: "<%= theme.mermaid.theme %>" });
+  }
+</script>
