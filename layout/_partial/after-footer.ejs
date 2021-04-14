@@ -64,3 +64,12 @@
 <% if (theme.canvas_bg == 1) { %>
 <%- js('/js/dz') %>
 <% } %>
+<!-- mermaid -->
+<% if (theme.mermaid.enable) { %>
+  <script src='<%= theme.mermaid.cdn %>/<%= theme.mermaid.version %>/mermaid.min.js'></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({theme: '<%= theme.mermaid.theme %>'});
+    }
+  </script>
+<% } %>

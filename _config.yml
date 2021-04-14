@@ -157,6 +157,13 @@ katex:
   allpost: true
   copy_tex: false
 
+# mermaid 三个选项缺一不可
+mermaid:
+  enable: true
+  version: 8.5.2
+  cdn: https://cdn.bootcdn.net/ajax/libs/mermaid
+  theme: forest
+
 # 网站成立年份(默认为 2019，若填入年份小于当前年份，则显示为 2018-2019 类似的格式)
 since: 2015
 
