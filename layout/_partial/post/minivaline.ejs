@@ -3,75 +3,45 @@
 <div id="mvcomments-box">
   <div id="mvcomments"></div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/minivaline@latest"></script>
+<script src="https://cdn.jsdelivr.net/npm/minivaline@6"></script>
 <script>
-    new MiniValine(Object.assign(<%- JSON.stringify(theme.minivaline) %>, {
-	  el: '#mvcomments',
-    }));
+  new MiniValine(Object.assign(<%- JSON.stringify(theme.minivaline) %>, {
+    el: '#mvcomments',
+  }));
   const infoEle = document.querySelector('#mvcomments .info');
   if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0) {
-      infoEle.childNodes.forEach(function (item) {
-          item.parentNode.removeChild(item);
-      });
+    infoEle.childNodes.forEach(function (item) {
+      item.parentNode.removeChild(item);
+    });
   }
 </script>
 <style>
-	#mvcomments-box {
-		padding: 5px 30px;
-	}
-	@media screen and (max-width: 800px) {
-		#mvcomments-box {
-		  padding: 5px 0px;
-		}
-	}
-	.darkmode .MiniValine *{
-		color: #f1f1f1!important;
-	}
-	.darkmode .commentTrigger{
-		background-color: #403e3e !important;
-	  }
-	.darkmode .MiniValine .vpage .more{
-		background: #21232F
-	}
-	.darkmode img{
-		filter: brightness(30%)
-	}
-	.darkmode .MiniValine .vlist .vcard .vcomment-body .text-wrapper .vcomment.expand:before{
-		background: linear-gradient(180deg, rgba(246,246,246,0), rgba(0,0,0,0.9))
-	}
-	.darkmode .MiniValine .vlist .vcard .vcomment-body .text-wrapper .vcomment.expand:after{
-		background: rgba(0,0,0,0.9)
-	}
-	.darkmode .MiniValine .vlist .vcard .vcomment-body .text-wrapper .vcomment pre{
-		background: #282c34
-		border: 1px solid #282c34
-	}
-	.darkmode .MiniValine .vinputs-area .textarea-wrapper textarea{
-		color: #000;
-	}
-	.darkmode .MiniValine .vinputs-area .auth-section .input-wrapper input{
-		color: #000;
-	}
-	.darkmode .MiniValine .vinputs-area .vextra-area .vsmile-icons{
-		background: transparent;
-	}
-	.darkmode .MiniValine .vinputs-wrap{
-		border-color: #b2b2b5;
-	}
-	.darkmode .MiniValine .vinputs-wrap:hover{
-		border: 1px dashed #2196f3;
-	}
-	.darkmode .MiniValine .vinputs-area .auth-section .input-wrapper{
-		border-bottom: 1px dashed #b2b2b5;
-	}
-	.darkmode .MiniValine .vinputs-area .auth-section .input-wrapper:hover{
-		border-bottom: 1px dashed #2196f3;
-	}
-	.darkmode .MiniValine .vbtn{
-		background-color: transparent!important;
-	}
-	.darkmode .MiniValine .vbtn:hover{
-		border: 1px dashed #2196f3;
-	}
+  #mvcomments-box {
+    padding: 5px 30px;
+  }
+  @media screen and (max-width: 800px) {
+    #mvcomments-box {
+      padding: 5px 0px;
+    }
+  }
+  :root .darkmode {
+    --ohhho-color-p: #bbb;
+    --ohhho-color-text: #fff;
+    --ohhho-color-card: #252d38;
+    --ohhho-color-block: rgba(68, 68, 68, 0.65);
+    --ohhho-expand-before-background: linear-gradient(
+      180deg,
+      rgba(246, 246, 246, 0),
+      rgba(0, 0, 0, 0.9)
+    );
+    --ohhho-expand-after-background: rgba(0, 0, 0, 0.9);
+  }
+  .darkmode .ohhho pre {
+    background: #888;
+    border: 1px solid var(--ohhho-color-block);
+  }
+  .darkmode .ohhho .vlist .vcard .vcomment-body .vhead {
+    filter: brightness(85%);
+  }
 </style>
 <% } %>
