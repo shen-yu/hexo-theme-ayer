@@ -33,10 +33,10 @@
 
 ---
 
-:ocean: Ayer is a clean and elegant theme for Hexo, also fast, powerful and responsive. It contains many awesome features, It's perfect for your blog, "Ayer" means "water" in Malaysian and "yesterday" in Spanish. If you have any queries or advice during the process of using, Please contact me!  shenyu@hotmail.com
+:ocean: Ayer is a clean and elegant theme for Hexo, also fast, powerful and responsive. It contains many awesome features, It's perfect for your blog, "Ayer" means "water" in Malaysian and "yesterday" in Spanish. If you have any queries or advice during the process of using, Please contact me! shenyu@hotmail.com
 
-<b>注：收藏本主题请点右上角Star，谢谢~~ </b>
-<b>如果你想给主题添砖加瓦，可以点右上角Fork，然后给此仓库提交PR</b>
+<b>注：收藏本主题请点右上角 Star，谢谢~~ </b>
+<b>如果你想给主题添砖加瓦，可以点右上角 Fork，然后给此仓库提交 PR</b>
 
 ### [Preview 预览](https://shen-yu.gitee.io)
 
@@ -48,37 +48,38 @@
 
 ## Install
 
-### For hexo < 5.0
-
-``` shell
-git clone https://github.com/Shen-Yu/hexo-theme-ayer.git themes/ayer
-```
-
 ### For hexo >= 5.0
 
-``` shell
+```shell
 npm i hexo-theme-ayer -S
 ```
 
 - If this theme is newly installed, a `_config.ayer.yml` file will be generated in the root directory after the installation is complete, and you can directly edit the `_config.ayer.yml` file for configuration.
 - If it is a theme upgrade, you can use the configuration method of hexo < 5.0, or you can move the original configuration file to the root directory and rename it to `_config.ayer.yml`.
 
+### For hexo < 5.0
+
+```shell
+git clone https://github.com/Shen-Yu/hexo-theme-ayer.git themes/ayer
+```
+
 ## Enable
 
 Modify `theme` setting in `_config.yml` to `ayer`
 
-``` yml
+```yml
 theme: ayer
 ```
 
 ## Update
 
-``` bash
+```bash
 cd themes/ayer
 git pull
 ```
 
 ## Multi Language Support
+
 zh-CN（中文简体） en（English） zh-TW（中文繁体） ja（日本語） es（Español） de（Deutsch） fr（Français） ru（Русский） ko（한국어） vi（Tiếng Việt） nl（Nederlands） no（norsk） pt（Português）
 
 English is default languge, if you want to change, modify `language` option in `_config.yml` file in your Hexo blog's root folder.
@@ -87,7 +88,7 @@ English is default languge, if you want to change, modify `language` option in `
 
 let me know if you have any questions.
 
-``` yml
+```yml
 # Menu-Sidebar
 menu:
   Home: /
@@ -104,7 +105,7 @@ subtitle:
   enable: true
   text: A clean and elegant theme
   text2: It's perfect for your hexo blog
-  text3: Have fun!  #Supports up to three lines of text
+  text3: Have fun! #Supports up to three lines of text
   startDelay: 0
   typeSpeed: 200
   loop: true
@@ -115,14 +116,14 @@ subtitle:
 favicon: /favicon.ico
 logo: /images/ayer-side.svg
 
-# Cover Setting 
+# Cover Setting
 # enable: [true|false]；path: [background-image]；logo: [cover-logo-image]
 cover:
   enable: true
-  path: /images/cover1.jpg  # there are some beautiful cover images in Ayer's directory: /source/images, choose your favorite image to replace it.
+  path: /images/cover1.jpg # there are some beautiful cover images in Ayer's directory: /source/images, choose your favorite image to replace it.
   logo: /images/ayer.svg
 
-# ProgressBar  
+# ProgressBar
 progressBar: true
 
 # Boardcast
@@ -169,7 +170,7 @@ word_count:
 # type：0-close reward； 1-only open in article which you have configured reward:true； 2-open in all articles
 reward_type: 2
 # reward word
-reward_wording: 'Buy me a cup of coffee~'
+reward_wording: "Buy me a cup of coffee~"
 # qrcode image path
 alipay: /images/alipay.jpg
 # qrcode image path
@@ -207,7 +208,7 @@ layout:
   sidebar_width: 8rem
 
 # GitHub Ribbons(https://github.blog/2008-12-19-github-ribbons/)
-github: 
+github:
   # (Set false if you don't need)
   enable: false
   url: https://github.com/Shen-Yu/hexo-theme-ayer
@@ -222,9 +223,9 @@ cnzz:
   url: #
 
 # Google Analytics
-google_analytics: ''
+google_analytics: ""
 # Baidu Analytics
-baidu_analytics: ''
+baidu_analytics: ""
 
 # Mathjax Support
 mathjax: true
@@ -280,13 +281,13 @@ friends_link:
 
 # 1、Valine [A fast, simple & powerful comment system](https://github.com/xCss/Valine)
 # You need create leancloud account first (https://console.leancloud.app), then put the id|key in below.
-leancloud:  
+leancloud:
   enable: true
   app_id: #
   app_key: #
 # Valine Setting
 valine:
-  enable: true 
+  enable: true
   avatar: mp # (https://valine.js.org/avatar.html)
   placeholder: Add some comments to my article~ # placeholder
 
@@ -309,20 +310,21 @@ twikoo:
 minivaline:
   enable: false
   md: true
-  # more options https://minivaline.js.org/docs/cn/#/Options 
+  # more options https://minivaline.js.org/docs/cn/#/Options
   backend: waline
   serverURL: https://waline.vercel.app
 ```
 
 ## Plugins
 
-+ [hexo-generator-search](https://github.com/wzpan/hexo-generator-search) (for Local Search)
-	
+- [hexo-generator-search](https://github.com/wzpan/hexo-generator-search) (for Local Search)
+
   ```yml
   $ npm install hexo-generator-searchdb --save
   ```
+
   Then add the plugin configuration in hexo's configuration file `_config.yml` (note: not the theme's configuration file):
-  
+
   ```yml
   # Hexo-generator-search
   search:
@@ -331,16 +333,16 @@ minivaline:
     format: html
   ```
 
-+ [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) (for RSS)
+- [hexo-generator-feed](https://github.com/hexojs/hexo-generator-feed) (for RSS)
 
   ```yml
   $ npm install hexo-generator-feed --save
   ```
-  
+
   Then add the plugin configuration in hexo's configuration file `_config.yml` (note: not the theme's configuration file):
-  
+
   ```yml
-  feed:m 
+  feed:m
       type: atom
       path: atom.xml
       limit: 20
@@ -348,21 +350,25 @@ minivaline:
       content:
       content_limit: 140
       content_limit_delim: ' '
-      order_by: -date	
+      order_by: -date
   ```
-  
-+ [hexo-generator-index-pin-top](https://github.com/netcan/hexo-generator-index-pin-top) (for Sticky Post)
-	
-	``` bash
+
+- [hexo-generator-index-pin-top](https://github.com/netcan/hexo-generator-index-pin-top) (for Sticky Post)
+
+  ```bash
   $ npm uninstall hexo-generator-index --save
   $ npm install hexo-generator-index-pin-top --save
   ```
+
 ## Categories
-``` bash
+
+```bash
   hexo new page categories
 ```
+
 Then paste following codes to file: /source/categories/index.md
-``` md
+
+```md
 ---
 title: categories
 type: categories
@@ -371,53 +377,57 @@ layout: "categories"
 ```
 
 ## Tags
+
 Same as categories.
 
 ## Friend Links
-``` bash
+
+```bash
 hexo new page friends
 ```
+
 Then paste following codes to file: /source/friends/index.md
-``` md
+
+```md
 ---
 title: friends
 type: friends
 layout: "friends"
 ---
 ```
-Then edit `friends_link` in `_config.yml` 
+
+Then edit `friends_link` in `_config.yml`
 
 ## Gallery
+
 Need to write in the head of the markdown, this is not a good way to write, I hope to get a better way to write on github.
 
-``` md
+```md
 ---
 title: Gallery
 
-albums: [
-        ["img_url","img_caption"],
-        ["img_url","img_caption"]
-        ]
+albums: [["img_url", "img_caption"], ["img_url", "img_caption"]]
 ---
 ```
 
 ## Toc
 
-Use Tocbot to parse the title tags (h1~h6) in the content and insert the directory. 
+Use Tocbot to parse the title tags (h1~h6) in the content and insert the directory.
 
-+ ayer/_config.yml
+- ayer/\_config.yml
 
-	``` bash
-	# Toc
+  ```bash
+  # Toc
   toc: true
-	```
-+ If Toc is turned on in ayer/_config.yml, then Tocbot will generate a Toc article directory in the title tag of each blog parsing content, but not all blogs require Toc, so in the Front-matter section of markdown Can be closed:
+  ```
 
-	``` md
-	---
+- If Toc is turned on in ayer/\_config.yml, then Tocbot will generate a Toc article directory in the title tag of each blog parsing content, but not all blogs require Toc, so in the Front-matter section of markdown Can be closed:
+
+  ```md
+  ---
   no_toc: true
   ---
-	```
+  ```
 
 ---
 
@@ -433,19 +443,18 @@ This project exists thanks to all the people who contribute.
 
 [![Stargazers over time](https://starchart.cc/Shen-Yu/hexo-theme-ayer.svg)](https://starchart.cc/Shen-Yu/hexo-theme-ayer)
 
-
 ## License
 
-<a src="https://github.com/Shen-Yu/hexo-theme-ayer">Ayer</a> by <a  href="https://github.com/Shen-Yu">Eric-Shen</a> is licensed under  <a rel="license" href="https://github.com/Shen-Yu/hexo-theme-ayer/blob/master/LICENSE">SATA-License</a>.
+<a src="https://github.com/Shen-Yu/hexo-theme-ayer">Ayer</a> by <a  href="https://github.com/Shen-Yu">Eric-Shen</a> is licensed under <a rel="license" href="https://github.com/Shen-Yu/hexo-theme-ayer/blob/master/LICENSE">SATA-License</a>.
 
 The basic idea is, whenever using a project using SATA license, people shall star/like/+1 that project and thank the author. Just imagine Google stared your project and send you a thank-you letter because they used your project in github!
 <br>
 
-本项目采用<a rel="license" href="https://github.com/Shen-Yu/hexo-theme-ayer/blob/master/LICENSE">SATA</a>开源协议，在遵守MIT许可证的前提下，你应该马不停蹄的给这个开源项目“点个赞”，比如github右上角的star，然后你应该感谢这个开源项目的作者，作者信息可以在许可证头部的版权声明部分找到。<br>
+本项目采用<a rel="license" href="https://github.com/Shen-Yu/hexo-theme-ayer/blob/master/LICENSE">SATA</a>开源协议，在遵守 MIT 许可证的前提下，你应该马不停蹄的给这个开源项目“点个赞”，比如 github 右上角的 star，然后你应该感谢这个开源项目的作者，作者信息可以在许可证头部的版权声明部分找到。<br>
 
-下面是几条SATA作者推荐的感谢途径，也是SATA包含的内容：
+下面是几条 SATA 作者推荐的感谢途径，也是 SATA 包含的内容：
 
-- 给你使用的开源项目的作者发个Email，和他交个朋友
-- 提出你在使用过程中发现的BUG或者提一些建设性的意见
+- 给你使用的开源项目的作者发个 Email，和他交个朋友
+- 提出你在使用过程中发现的 BUG 或者提一些建设性的意见
 - 告诉你的朋友们这是一个多棒的开源项目
 - 当然，你也可以只是在心里默默的感激，不用让全世界都知道
