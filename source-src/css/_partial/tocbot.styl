@@ -8,9 +8,25 @@
   opacity .95
   max-width 255px
   border-radius 8px
-  > .toc-list
+  >.toc-list
     position relative
-    overflow hidden
+    overflow-x hidden
+    overflow-y scroll
+    max-height 70vh 
+    
+  >.toc-list::-webkit-scrollbar
+    width 4px
+    
+  >.toc-list::-webkit-scrollbar-thumb
+    border-radius 10px
+    -webkit-box-shadow inset 0 0 5px rgba(0,0,0,0.2)
+    background rgba(0,0,0,0.2)
+      
+  >.toc-list::-webkit-scrollbar-track
+    -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2)
+    border-radius: 0
+    background: rgba(0,0,0,0.1)
+      
 
 
 .toc-list
