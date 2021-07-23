@@ -30,3 +30,9 @@ post:
   sticky: dính
   copyright_title: Bản quyền
   copyright_content: Bản quyền thuộc sở hữu của tác giả. Đối với tái bản thương mại, xin vui lòng liên hệ với tác giả cho phép. Đối với tái bản phi thương mại, xin vui lòng cho biết nguồn.
+
+lock:
+  lock_info: Please enter password
+  lock_error: Incorrect password, please try again
+  confirm_text: Ok
+  cancel_text: Cancel

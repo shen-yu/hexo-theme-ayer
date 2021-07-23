@@ -240,9 +240,6 @@ katex:
 # since year
 since: 2019
 
-# pageFooter (Set true can let more people know this theme, Thanks!)
-pageFooter: true
-
 # only for chinese website
 # ICP
 icp:
@@ -324,6 +321,11 @@ ads:
     img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/ten_2.jpg
     url: https://curl.qcloud.com/kvO7hb43
     width: 300
+
+# encrypt settings
+lock:
+  enable: false
+  password: 123456
 ```
 
 ## Plugins

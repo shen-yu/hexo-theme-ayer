@@ -30,3 +30,9 @@ post:
   sticky: 置頂
   copyright_title: 版權聲明
   copyright_content: 本博客所有文章除特別聲明外，著作權歸作者所有。轉載請註明出處！
+
+lock:
+  lock_info: 請輸入訪問密碼
+  lock_error: 密碼錯誤，請重試
+  confirm_text: 確定
+  cancel_text: 取消

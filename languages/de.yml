@@ -30,3 +30,9 @@ post:
   sticky: Oben
   copyright_title: Copyright-Hinweis
   copyright_content: Sofern nicht anders angegeben, liegt das Urheberrecht aller Artikel in diesem Blog beim Autor. Nachdruck bitte Quelle angeben!
+
+lock:
+  lock_info: Please enter password
+  lock_error: Incorrect password, please try again
+  confirm_text: Ok
+  cancel_text: Cancel

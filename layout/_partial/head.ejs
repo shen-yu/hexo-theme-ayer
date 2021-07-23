@@ -40,10 +40,21 @@
       <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
       <% } %> <%- partial('google-analytics') %> <%- partial('baidu-analytics')
       %>
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@sweetalert2/theme-bulma@5.0.1/bulma.min.css"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+
       <!-- mermaid -->
       <% if (theme.mermaid.enable) { %>
       <script src="<%= theme.mermaid.cdn %>"></script>
       <% } %>
+      <style>
+        .swal2-styled.swal2-confirm {
+          font-size: 1.6rem;
+        }
+      </style>
     </head>
   </html>
 </html>

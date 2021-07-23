@@ -1,0 +1,37 @@
+<% if (theme.lock.enable){ %>
+<script>
+  const password = "<%= theme.lock.password %>";
+  const lock_password = window.sessionStorage.getItem("lock_password");
+  console.log(password, lock_password);
+  if (lock_password !== password) {
+    Swal.fire({
+      title: "<%= __('lock.lock_info') %>",
+      input: "text",
+      inputAttributes: {
+        autocapitalize: "off",
+      },
+      showCancelButton: false,
+      showLoaderOnConfirm: true,
+      allowOutsideClick: false,
+      confirmButtonText: "<%= __('lock.confirm_text') %>",
+    }).then((result) => {
+      console.log(result);
+      if (result.isConfirmed) {
+        console.log(password);
+        if (result.value === password) {
+          window.sessionStorage.setItem("lock_password", result.value);
+        } else {
+          Swal.fire({
+            icon: "error",
+            title: "<%= __('lock.lock_error') %>",
+            confirmButtonText: "<%= __('lock.confirm_text') %>",
+            allowOutsideClick: false,
+          }).then(() => {
+            window.location.reload();
+          });
+        }
+      }
+    });
+  }
+</script>
+<% } %>

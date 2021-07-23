@@ -30,3 +30,9 @@ post:
   sticky: 上へ
   copyright_title: 著作権表示
   copyright_content: 著作権は著者が所有しています。商業版の複製については、承認について著者に連絡してください。非商業版の複製については、出典を明記してください。
+
+lock:
+  lock_info: Please enter password
+  lock_error: Incorrect password, please try again
+  confirm_text: Ok
+  cancel_text: Cancel

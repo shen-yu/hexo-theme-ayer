@@ -30,3 +30,9 @@ post:
   sticky: липкий
   copyright_title: Авторские права
   copyright_content: Авторские права принадлежат автору. Для коммерческих перепечаток, пожалуйста, свяжитесь с автором для авторизации. Для некоммерческих перепечаток, пожалуйста, укажите источник.
+
+lock:
+  lock_info: Please enter password
+  lock_error: Incorrect password, please try again
+  confirm_text: Ok
+  cancel_text: Cancel

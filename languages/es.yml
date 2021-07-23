@@ -30,3 +30,9 @@ post:
   sticky: Arriba
   copyright_title: Derechos de autor
   copyright_content: Los derechos de autor son propiedad del autor. Para reimpresiones comerciales, comuníquese con el autor para obtener autorización. Para reimpresiones no comerciales, indique la fuente.
+
+lock:
+  lock_info: Please enter password
+  lock_error: Incorrect password, please try again
+  confirm_text: Ok
+  cancel_text: Cancel

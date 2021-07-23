@@ -30,3 +30,9 @@ post:
   sticky: 톱
   copyright_title: 저작권 고지
   copyright_content: 저작권은 저자가 소유합니다. 상업용 재 인쇄의 경우 승인을 위해 저자에게 문의하십시오. 비상업적 재 인쇄의 경우 출처를 명시하십시오.
+
+lock:
+  lock_info: Please enter password
+  lock_error: Incorrect password, please try again
+  confirm_text: Ok
+  cancel_text: Cancel

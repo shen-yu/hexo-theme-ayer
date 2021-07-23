@@ -166,9 +166,6 @@ mermaid:
 # 网站成立年份(默认为 2019，若填入年份小于当前年份，则显示为 2018-2019 类似的格式)
 since: 2015
 
-# 是否显示页脚信息(建议保留)
-pageFooter: true
-
 # ICP备案信息尾部显示
 icp:
   enable: false
@@ -251,3 +248,8 @@ ads:
     img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/vultr.png
     url: https://www.vultr.com/?ref=8630075
     width: 300
+
+# 网站开启加密访问，密码可设置任何字符
+lock:
+  enable: false
+  password: 123456

@@ -30,3 +30,9 @@ post:
   sticky: Sticky
   copyright_title: Opphavsrett
   copyright_content: Opphavsrett eies av forfatteren. For kommersielle opptrykk, vennligst kontakt forfatteren for godkjenning. For ikke-kommersiell uttrykk, vennligst oppgi kilden.
+
+lock:
+  lock_info: Please enter password
+  lock_error: Incorrect password, please try again
+  confirm_text: Ok
+  cancel_text: Cancel
