@@ -15,7 +15,7 @@
     }, searchAnimDuration);
   };
 
-  $(".nav-item-search").click(() => {
+  $(".nav-item-search").on("click", () => {
     if (isSearchAnim) return;
     startSearchAnim();
     $searchWrap.addClass("on");
@@ -24,7 +24,7 @@
     });
   });
 
-  $(document).mouseup((e) => {
+  $(document).on("mouseup", (e) => {
     const _con = $(".local-search");
     if (!_con.is(e.target) && _con.has(e.target).length === 0) {
       $searchWrap.removeClass("on");
@@ -32,7 +32,7 @@
   });
 
   // Not recommended in mobile, /search.xml is actually large.
-  if ($(".local-search").size()) {
+  if ($(".local-search").length) {
     $.getScript("/js/search.js", function () {
       searchFunc("/search.xml", "local-search-input", "local-search-result");
     });
@@ -67,7 +67,7 @@
   };
 
   // Share
-  $(".share-outer").click(() => $(".share-wrap").fadeToggle());
+  $(".share-outer").on("click", () => $(".share-wrap").fadeToggle());
 
   // Lazyload
   $("img.lazy").lazyload({
@@ -82,7 +82,7 @@
 
   // ScrollDown
   $(document).ready(function ($) {
-    $(".anchor").click(function (e) {
+    $(".anchor").on("click", function (e) {
       e.preventDefault();
       $("main").animate({ scrollTop: $(".cover").height() }, "smooth");
     });
@@ -102,7 +102,7 @@
 
     // Show and hide the scroll to top link based on scroll position
     scrollElem.hide();
-    $(".content").scroll(function () {
+    $(".content").on("scroll", () => {
       const scrollTop = $(".content").scrollTop();
       if (scrollTop > upperLimit) {
         $(scrollElem).stop().fadeTo(200, 0.6); // fade back in
@@ -112,7 +112,7 @@
     });
 
     // Scroll to top animation on click
-    $(scrollElem).click(function () {
+    $(scrollElem).on("click", () => {
       $(".content").animate({ scrollTop: 0 }, scrollSpeed);
       return false;
     });
@@ -135,18 +135,18 @@
   const $content = $(".content"),
     $sidebar = $(".sidebar");
 
-  $(".navbar-toggle").on("click", function () {
+  $(".navbar-toggle").on("click", () => {
     $(".content,.sidebar").addClass("anim");
     $content.toggleClass("on");
     $sidebar.toggleClass("on");
   });
 
   // Reward
-  $("#reward-btn").click(() => {
+  $("#reward-btn").on("click", () => {
     $("#reward").fadeIn(150);
     $("#mask").fadeIn(150);
   });
-  $("#reward .close, #mask").click(() => {
+  $("#reward .close, #mask").on("click", () => {
     $("#mask").fadeOut(100);
     $("#reward").fadeOut(100);
   });
@@ -159,7 +159,7 @@
     $("body").removeClass("darkmode");
     $("#todark i").removeClass("ri-sun-line").addClass("ri-moon-line");
   }
-  $("#todark").click(() => {
+  $("#todark").on("click", () => {
     if (sessionStorage.getItem("darkmode") == 1) {
       $("body").removeClass("darkmode");
       $("#todark i").removeClass("ri-sun-line").addClass("ri-moon-line");
