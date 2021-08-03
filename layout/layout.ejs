@@ -20,11 +20,11 @@
       <% } %>
     <main class="content on">
       <%- body %>
-      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
-      <div class="float_btns">
-        <%- partial('_partial/totop') %>
-      </div>
+      <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>    
     </main>
+    <div class="float_btns">
+      <%- partial('_partial/float-btns') %>
+    </div>
     <aside class="sidebar on">
       <%- partial('_partial/sidebar') %>
     </aside>
