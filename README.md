@@ -1,6 +1,6 @@
 <p align="center"><a href="https://shen-yu.gitee.io" target="_blank" rel="noopener noreferrer"><img width="100" src="logo.png" alt="ayer logo"></a></p>
 
-<h3 align="center">一个安静且优雅的 Hexo 主题</h3>
+<h3 align="center">一个干净且优雅的 Hexo 主题</h3>
 
 <p align="center">
   <a href="https://travis-ci.org/Shen-Yu/hexo-theme-ayer?branch=master" target="_blank" rel="noopener noreferrer">
@@ -33,7 +33,7 @@
 
 ---
 
-:ocean: Ayer is a clean and elegant theme for Hexo, also fast, powerful and responsive. It contains many awesome features, It's perfect for your blog, "Ayer" means "water" in Malaysian and "yesterday" in Spanish. If you have any queries or advice during the process of using, Please contact me! shenyu@hotmail.com
+:ocean: Ayer is a clean and elegant theme for Hexo, also fast, powerful and responsive. It contains many awesome features, It's perfect for your blog, "Ayer" means "water" in Malaysian and "yesterday" in Spanish. [Create an issue](https://github.com/shen-yu/hexo-theme-ayer/issues/new/choose) if you have any queries or advice during the process of using, 
 
 <b>注：收藏本主题请点右上角 Star，谢谢~~ </b>
 <b>如果你想给主题添砖加瓦，可以点右上角 Fork，然后给此仓库提交 PR</b>
