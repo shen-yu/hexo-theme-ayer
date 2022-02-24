@@ -84,9 +84,9 @@ reward_type: 2
 # 打赏wording
 reward_wording: "请我喝杯咖啡吧~"
 # 支付宝二维码图片地址，跟你设置logo的方式一样。比如：/images/alipay.jpg
-alipay: https://tvax4.sinaimg.cn/large/9156bd04ly1gzofeba4nlj208c08c3z9.jpg
+alipay: /images/alipay.jpg
 # 微信二维码图片地址
-weixin: https://tvax4.sinaimg.cn/large/9156bd04ly1gzofeo49ywj208c08cgmz.jpg
+weixin: /images/wechat.jpg
 
 # 版权声明
 # 版权声明type设定：0-关闭版权声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有文章均有版权声明
@@ -240,12 +240,12 @@ minivaline:
 ads:
   ad_1:
     title: 云服务器限时秒杀
-    img: https://tva1.sinaimg.cn/large/9156bd04ly1gzofgp4n3oj209l05kgm1.jpg
+    img: https://pic.imgdb.cn/item/62174b452ab3f51d912a5ccc.jpg
     url: https://curl.qcloud.com/kvO7hb43
     width: 300
   ad_2:
     title: vultr优惠vps
-    img: https://tvax1.sinaimg.cn/large/9156bd04ly1gzofguxegxj209l05kgn5.jpg
+    img: https://pic.imgdb.cn/item/62174b452ab3f51d912a5cd7.png
     url: https://www.vultr.com/?ref=8630075
     width: 300
 
