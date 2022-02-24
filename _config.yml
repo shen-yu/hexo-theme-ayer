@@ -84,9 +84,9 @@ reward_type: 2
 # 打赏wording
 reward_wording: "请我喝杯咖啡吧~"
 # 支付宝二维码图片地址，跟你设置logo的方式一样。比如：/images/alipay.jpg
-alipay: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/alipay.jpg
+alipay: https://tvax4.sinaimg.cn/large/9156bd04ly1gzofeba4nlj208c08c3z9.jpg
 # 微信二维码图片地址
-weixin: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/wechat.jpg
+weixin: https://tvax4.sinaimg.cn/large/9156bd04ly1gzofeo49ywj208c08cgmz.jpg
 
 # 版权声明
 # 版权声明type设定：0-关闭版权声明； 1-文章对应的md文件里有copyright: true属性，才有版权声明； 2-所有文章均有版权声明
@@ -160,7 +160,7 @@ katex:
 # mermaid流程图 三个选项缺一不可(https://mermaid-js.github.io/mermaid/)
 mermaid:
   enable: false
-  cdn: https://cdn.jsdelivr.net/npm/mermaid@8.9.2/dist/mermaid.min.js
+  cdn: https://cdn.staticfile.org/mermaid/8.14.0/mermaid.min.js
   theme: forest
 
 # 网站成立年份(默认为 2019，若填入年份小于当前年份，则显示为 2018-2019 类似的格式)
@@ -187,28 +187,28 @@ friends_link:
     img: /images/ayer.png
   GitHub:
     url: https://github.com/Shen-Yu
-    img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/github.png
+    img: /images/github.png
   码云:
     url: https://gitee.com/shen-yu
-    img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/gitee.png
+    img: /images/gitee.png
   Hexo官网:
     url: https://hexo.io
-    img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/hexo.png
+    img: /images/hexo.png
   Hexo图表插件:
     url: https://github.com/Shen-Yu/hexo-tag-chart
-    img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/hexo-tag-chart.png
+    img: /images/hexo-tag-chart.png
 
 # 评论：1、Valine(推荐)；2、Gitalk；3、Twikoo; 4.MiniValine
 
 # 1、Valine[一款快速、简洁且高效的无后端评论系统](https://github.com/xCss/Valine)
 # 启用Valine必须先创建leancloud应用， 获取 id|key 填入即可
 leancloud:
-  enable: true
+  enable: false
   app_id: #
   app_key: #
 # Valine配置
 valine:
-  enable: true # 是否启用
+  enable: false # 是否启用
   avatar: monsterid # 头像样式(https://valine.js.org/avatar.html)
   placeholder: 给我的文章加点评论吧~ # placeholder
 
@@ -223,7 +223,7 @@ gitalk:
 
 # 3、Twikoo(https://github.com/imaegoo/twikoo)
 twikoo:
-  enable: false
+  enable: true
   envId: #
 
 # 4、MiniValine
@@ -240,12 +240,12 @@ minivaline:
 ads:
   ad_1:
     title: 云服务器限时秒杀
-    img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/ten_1.jpg
+    img: https://tva1.sinaimg.cn/large/9156bd04ly1gzofgp4n3oj209l05kgm1.jpg
     url: https://curl.qcloud.com/kvO7hb43
     width: 300
   ad_2:
     title: vultr优惠vps
-    img: https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/img/vultr.png
+    img: https://tvax1.sinaimg.cn/large/9156bd04ly1gzofguxegxj209l05kgn5.jpg
     url: https://www.vultr.com/?ref=8630075
     width: 300
 

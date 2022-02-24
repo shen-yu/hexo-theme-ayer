@@ -32,12 +32,9 @@
       <% if (theme.favicon){ %>
       <link rel="shortcut icon" href="<%- theme.favicon %>" />
       <% } %> <%- css('dist/main') %>
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/gh/Shen-Yu/cdn/css/remixicon.min.css"
-      />
+      <%- css('css/fonts/remixicon') %>
       <%- css('css/custom') %> <% if (theme.progressBar){ %>
-      <script src="https://cdn.jsdelivr.net/npm/pace-js@1.0.2/pace.min.js"></script>
+      <script src="https://cdn.staticfile.org/pace/1.2.4/pace.min.js"></script>
       <% } %> <%- partial('google-analytics') %> <%- partial('baidu-analytics')
       %>
       <link
