@@ -59,12 +59,4 @@ Please follow this Issue template to provide relevant information, such as sourc
 
 ```
 
-### MiniValine Configuration
-
-<!-- Paste configuration from MiniValine (粘贴 MiniValine 配置 中的内容) -->
-
-```
-
-```
-
 ## Other Information <!-- (Like Browser, System, Screenshots) -->

@@ -302,11 +302,6 @@ twikoo:
   enable: false
   envId: #
 
-# 4、MiniValine
-# See: https://github.com/MiniValine/MiniValine
-minivaline:
-  enable: false
-  serverURL: https://minivaline.your-domain.com
 
 # advertisement
 # if there is an "ad" word in photo or url，it may blocked by adblock or any other browser extensions
