@@ -198,7 +198,7 @@ friends_link:
     url: https://github.com/Shen-Yu/hexo-tag-chart
     img: /images/hexo-tag-chart.png
 
-# 评论：1、Valine(推荐)；2、Gitalk；3、Twikoo; 4.MiniValine
+# 评论：1、Valine(推荐)；2、Gitalk；3、Twikoo;
 
 # 1、Valine[一款快速、简洁且高效的无后端评论系统](https://github.com/xCss/Valine)
 # 启用Valine必须先创建leancloud应用， 获取 id|key 填入即可
@@ -225,15 +225,6 @@ gitalk:
 twikoo:
   enable: true
   envId: #
-
-# 4、MiniValine
-# See: https://github.com/MiniValine/MiniValine
-minivaline:
-  enable: false
-  # 更多选项 https://minivaline.js.org/docs/cn/#/Options 按照yml格式继续填写即可 （除了 [el] 选项）
-  # emoticonUrl 等列表选项 可参考 https://github.com/MiniValine/hexo-next-minivaline
-  # 下面是一个例子：
-  serverURL: https://minivaline.your-domain.com
 
 # 首页广告配置
 # 可以根据需要自行增加ad_3，ad_4...，留空则不显示，建议图片和url不要带ad等关键词，否则可能会被adblock等插件屏蔽

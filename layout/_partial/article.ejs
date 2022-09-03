@@ -66,7 +66,6 @@
   <% if (!index){ %> <%- partial('post/nav') %> <% } %> <% if (theme.valine &&
   theme.valine.enable && !post.no_valine){ %> <%- partial('post/valine', { key:
   post.slug, title: post.title, url: config.url+url_for(post.path) }) %> <% } %>
-  <% if (is_post()) { %> <%- partial('post/gitalk') %> <% } %> <% if
-  (theme.minivaline && theme.minivaline.enable && !post.no_minivaline){ %> <%-
-  partial('post/minivaline') %> <% } %> <% if (is_post()) { %> <%- partial('post/twikoo') %> <% } %>
+  <% if (is_post()) { %> <%- partial('post/gitalk') %> <% } %> 
+  <% if (is_post()) { %> <%- partial('post/twikoo') %> <% } %>
 </article>
