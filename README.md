@@ -1,4 +1,4 @@
-<p align="center"><a href="https://shen-yu.gitee.io" target="_blank" rel="noopener noreferrer"><img width="100" src="logo.png" alt="ayer logo"></a></p>
+<p align="center"><a href="https://ayer.886622.xyz" target="_blank" rel="noopener noreferrer"><img width="100" src="logo.png" alt="ayer logo"></a></p>
 
 <h3 align="center">一个干净且优雅的 Hexo 主题</h3>
 
@@ -41,9 +41,9 @@
 ## 本人已转行不做码农了，项目暂停维护，仅供学习！！
 ## QQ：448766534
 
-### [Preview 预览](https://shen-yu.github.io)
+### [Preview 预览](https://ayer.886622.xyz)
 
-### [中文说明](https://shen-yu.github.io/2019/ayer/)
+### [中文说明](https://ayer.886622.xyz/2019/ayer/)
 
 ### [国内镜像](https://gitee.com/shen-yu/hexo-theme-ayer)
 
