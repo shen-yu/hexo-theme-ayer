@@ -11,6 +11,6 @@ issuehunt: # Replace with a single IssueHunt username
 otechie: # Replace with a single Otechie username
 custom:
   [
-    "https://shen-yu.gitee.io/images/wechat.jpg",
-    "https://shen-yu.gitee.io/images/alipay.jpg",
+    "https://shen-yu.github.io/images/wechat.jpg",
+    "https://shen-yu.github.io/images/alipay.jpg",
   ]
